@@ -5,13 +5,13 @@ import { homePage } from "../pages/home";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Innovsol | Innovate · Disrupt · Transform" },
+      { title: "Innovsol | Innovate · Adopt · Transform" },
       {
         name: "description",
         content:
-          "Innovsol delivers enterprise-grade product engineering, AI, and digital transformation services. Innovate. Disrupt. Transform.",
+          "Innovsol delivers enterprise-grade product engineering, AI, and digital transformation services. Innovate. Adopt. Transform.",
       },
-      { property: "og:title", content: "Innovsol | Innovate · Disrupt · Transform" },
+      { property: "og:title", content: "Innovsol | Innovate · Adopt · Transform" },
       { property: "og:url", content: "https://innovsol.ai/" },
       {
         property: "og:description",
@@ -32,7 +32,7 @@ export const Route = createFileRoute("/")({
               logo: "https://innovsol.ai/images/logo.png",
               email: "hello@innovsol.ai",
               telephone: "+91 95827 99988",
-              slogan: "Innovate. Adapt. Transform.",
+              slogan: "Innovate. Adopt. Transform.",
               contactPoint: [
                 {
                   "@type": "ContactPoint",

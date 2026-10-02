@@ -137,7 +137,7 @@ for (const a of insights) {
 /* ───────────── About ───────────── */
 layout({ path: '/about.html', h1: 'About Innovsol', eyebrow: 'Who we are', priority: 0.8, wide: true,
   title: 'About Innovsol: Enterprise AI Engineering', desc: 'Innovsol delivers enterprise-grade AI, product engineering and digital transformation, with engineers embedded in your team to ship production AI in weeks.',
-  intro: 'Innovate. Adapt. Transform. We help enterprises move AI from slideware to production, with engineers embedded inside your team.',
+  intro: 'Innovate. Adopt. Transform. We help enterprises move AI from slideware to production, with engineers embedded inside your team.',
   actions: `<a class="btn-pg dark" href="/#contact-form">Contact us ${arrow}</a><a class="btn-pg line" href="/careers">Join the team</a>`,
   ld: [{ '@context': 'https://schema.org', '@type': 'Organization', name: 'Innovsol', url: SITE, logo: SITE + '/images/logo.png', email: site.email, telephone: site.phone, address: { '@type': 'PostalAddress', streetAddress: '411, Good Earth Business Bay-1, Sector-58', addressLocality: 'Gurugram', postalCode: '122098', addressCountry: 'IN' } }],
   body: sec(head('h-do', 'What we do', 'Full-stack AI services for the enterprise, from strategy to scale.') + `<div class="pg-grid c3">${services.map((s) => `<a class="pg-card reveal" href="/services/${s.slug}.html"><h3>${esc(s.title)}</h3><p>${esc(s.text.split(/ — /)[0])}.</p><span class="more">Learn more ${arrow}</span></a>`).join('')}</div>`, false, 'h-do') +
