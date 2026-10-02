@@ -40,6 +40,27 @@ function PortalLayout() {
             </span>
           </div>
           <nav className="flex items-center gap-3 text-sm">
+            {/* plain link (full page load) so the home page starts cleanly */}
+            <a
+              href="/"
+              className="inline-flex items-center gap-1.5 font-medium text-slate-700 hover:text-blue-700"
+            >
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M3 10.5 12 3l9 7.5" />
+                <path d="M5 9.5V21h5v-6h4v6h5V9.5" />
+              </svg>
+              Home
+            </a>
             <Link to="/portal" className="font-medium text-slate-700 hover:text-blue-700">
               Dashboard
             </Link>

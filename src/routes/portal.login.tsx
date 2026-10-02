@@ -12,6 +12,24 @@ const primary =
 
 type Msg = { kind: "err" | "ok"; text: string } | null;
 
+/** Turn Supabase auth errors into messages a candidate can act on. */
+function friendly(error: { message: string; code?: string; status?: number }): string {
+  const text = `${error.code ?? ""} ${error.message}`.toLowerCase();
+  if (
+    text.includes("rate limit") ||
+    text.includes("over_email_send_rate_limit") ||
+    error.status === 429
+  )
+    return "Too many sign-up emails have been sent in the last hour. Please wait about an hour and try again, or check your inbox: a confirmation email may already have been sent to you.";
+  if (text.includes("already registered") || text.includes("user_already_exists"))
+    return 'An account with this email already exists. Try signing in, or use "Forgot your password?".';
+  if (text.includes("email not confirmed"))
+    return "Please confirm your email first: open the link we sent you, then sign in.";
+  if (text.includes("weak_password") || text.includes("password should"))
+    return "Please choose a stronger password (at least 8 characters).";
+  return error.message;
+}
+
 function Login() {
   const navigate = useNavigate();
   const { session, loading } = useAuth();
@@ -56,7 +74,7 @@ function Login() {
             },
           });
     setBusy(false);
-    if (error) return setMsg({ kind: "err", text: error.message });
+    if (error) return setMsg({ kind: "err", text: friendly(error) });
     if (mode === "up")
       setMsg({ kind: "ok", text: "Account created. Check your email to confirm, then sign in." });
     // signing in is handled by the effect above (it checks for a second factor)
@@ -80,7 +98,7 @@ function Login() {
     // Same message either way: do not reveal whether an account exists.
     setMsg(
       error && error.status !== 400
-        ? { kind: "err", text: error.message }
+        ? { kind: "err", text: friendly(error) }
         : {
             kind: "ok",
             text:
