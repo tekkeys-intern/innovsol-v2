@@ -1,0 +1,13 @@
+# Files Vercel does not need when you deploy with the CLI (Git-based deploys ignore these anyway).
+node_modules
+.env
+.env.*
+!.env.example
+.output
+archive
+docs
+stacks
+tests
+supabase
+scripts/.pages-manifest.json
+*.zip

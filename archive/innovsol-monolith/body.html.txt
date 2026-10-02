@@ -1,0 +1,927 @@
+
+
+<!-- ══ NAVBAR ════════════════════════════════════════════════════════════ -->
+<nav id="nav">
+  <div class="container nav-wrap">
+    <a href="#home" class="nav-logo-wrap">
+      <img src="/images/logo.png" alt="Innovsol" class="nav-logo-img" id="nav-logo-main"/>
+      <img src="/images/white-text-logo.png" alt="Innovsol" class="nav-logo-img" id="nav-logo-alt"/>
+    </a>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#industries">Industries</a>
+      <a href="#casestudies">Case Studies</a>
+      <a href="#fde">FDE Team</a>
+      <a href="#insights">Insights</a>
+      <a href="#careers">Careers</a>
+    </div>
+    <div class="nav-right">
+      <a href="#contact-form" class="btn btn-outline-blue">Contact Us</a>
+      <a href="#contact-form" class="btn btn-orange">Book a Strategy Call</a>
+      <button class="ham" id="ham" onclick="toggleMob()"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<!-- ══ MOBILE DRAWER — outside <nav> so backdrop-filter never clips it ═══ -->
+<div class="mob-nav" id="mobNav">
+  <div class="mob-nav-header">
+    <img src="/images/logo.png" alt="Innovsol" class="mob-nav-logo"/>
+    <button class="mob-close" onclick="toggleMob()" aria-label="Close menu">&#x2715;</button>
+  </div>
+  <div class="mob-nav-links">
+    <a href="#home" onclick="toggleMob()">Home</a>
+    <a href="#services" onclick="toggleMob()">Services</a>
+    <a href="#industries" onclick="toggleMob()">Industries</a>
+    <a href="#casestudies" onclick="toggleMob()">Case Studies</a>
+    <a href="#fde" onclick="toggleMob()">FDE Team</a>
+    <a href="#insights" onclick="toggleMob()">Insights</a>
+    <a href="#careers" onclick="toggleMob()">Careers</a>
+    <a href="#contact-form" onclick="toggleMob()">Contact Us</a>
+  </div>
+  <div class="mob-nav-footer">
+    <a href="#contact-form" class="btn btn-orange" onclick="toggleMob()">Book a Strategy Call &rarr;</a>
+  </div>
+</div>
+<div class="mob-overlay" id="mobOverlay"></div>
+
+<!-- ══ HERO REEL — 4-slide enterprise video carousel ══════════════════════ -->
+<section id="home" class="hero-reel">
+
+  <!-- Videos stacked, only active one visible -->
+  <div class="reel-bg">
+    <video class="reel-video reel-active" autoplay muted playsinline preload="auto">
+      <source src="/OUR%20MISSION.mp4" type="video/mp4"/>
+    </video>
+    <video class="reel-video" muted playsinline preload="metadata">
+      <source src="/Enterprise%20AI.mp4" type="video/mp4"/>
+    </video>
+    <video class="reel-video" muted playsinline preload="metadata">
+      <source src="/Forward%20Deployed%20Engineering.mp4" type="video/mp4"/>
+    </video>
+    <video class="reel-video" muted playsinline preload="metadata">
+      <source src="/Building%20Enterprise%20AI%20Infrastructure.mp4" type="video/mp4"/>
+    </video>
+  </div>
+
+  <!-- Overlay -->
+  <div class="hero-overlay"></div>
+
+  <!-- Slide dots -->
+  <div class="reel-dots">
+    <button class="reel-dot reel-dot-active" data-idx="0" aria-label="Slide 1"></button>
+    <button class="reel-dot" data-idx="1" aria-label="Slide 2"></button>
+    <button class="reel-dot" data-idx="2" aria-label="Slide 3"></button>
+    <button class="reel-dot" data-idx="3" aria-label="Slide 4"></button>
+  </div>
+
+  <!-- Slide content -->
+  <div class="reel-slides">
+
+    <!-- 01 — Our Mission -->
+    <div class="reel-slide reel-active" data-idx="0">
+      <div class="container">
+        <div class="reel-inner">
+          <div class="reel-eyebrow reel-eyebrow-nodash">Our Mission</div>
+          <h1>Elevate enterprise productivity -<br><span class="reel-nowrap"><em>measurably <span style="color:#fff">-</span></em> by embedding AI</span><br>where it matters most.</h1>
+          <div class="reel-btns">
+            <a href="#contact-form" class="btn btn-orange btn-hero-primary">Book a Strategy Call &rarr;</a>
+            <a href="#services" class="btn btn-outline-light">Explore AI Solutions</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 02 — Enterprise AI -->
+    <div class="reel-slide" data-idx="1">
+      <div class="container">
+        <div class="reel-inner">
+          <div class="reel-eyebrow">Enterprise AI</div>
+          <h1>Enterprise AI.<br><em>Deployed,</em> Not Just Discussed.</h1>
+          <p class="reel-sub">We help enterprises build, deploy, and scale production-grade AI systems through embedded Forward Deployed Engineering teams — measurably improving productivity, reducing costs, and creating competitive advantage.</p>
+          <div class="reel-btns">
+            <a href="#services" class="btn btn-orange btn-hero-primary">Explore AI Solutions &rarr;</a>
+            <a href="#casestudies" class="btn btn-outline-light">View Case Studies</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 03 — Forward Deployed Engineering -->
+    <div class="reel-slide" data-idx="2">
+      <div class="container">
+        <div class="reel-inner">
+          <div class="reel-eyebrow">Forward Deployed Engineering</div>
+          <h1>Senior AI engineers embedded inside<br>your team — shipping production AI<br>in under <em>12 weeks, guaranteed.</em></h1>
+          <div class="reel-btns">
+            <a href="#contact-form" class="btn btn-orange btn-hero-primary">Explore FDE Models &rarr;</a>
+            <a href="#careers" class="btn btn-outline-light">Join the FDE Team</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 04 — Enterprise AI Infrastructure -->
+    <div class="reel-slide" data-idx="3">
+      <div class="container">
+        <div class="reel-inner">
+          <div class="reel-eyebrow">Building Enterprise AI Infrastructure</div>
+          <h1>Cloud-native AI platforms, data pipelines,<br>AIOps, and governance frameworks<br>built for <em>production scale.</em></h1>
+          <div class="reel-btns">
+            <a href="#contact-form" class="btn btn-orange btn-hero-primary">Book a Strategy Call &rarr;</a>
+            <a href="#services" class="btn btn-outline-light">Explore Services</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /reel-slides -->
+
+
+</section>
+
+<!-- ══ LOGO STRIP ═════════════════════════════════════════════════════════ -->
+<section id="strip">
+  <div class="strip-label">Trusted by forward-thinking enterprises across 10+ industries</div>
+  <div class="marq-wrap">
+    <div class="marq">
+      <div class="logo-chip"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="9" width="14" height="9" rx="1"/><path d="M1 9l9-7 9 7"/><rect x="7" y="13" width="2.5" height="5"/><rect x="10.5" y="13" width="2.5" height="5"/></svg>Banking Group</div>
+      <div class="logo-chip"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="10" cy="10" r="3"/><path d="M10 2v2M10 16v2M2 10h2M16 10h2M4.22 4.22l1.42 1.42M14.36 14.36l1.42 1.42M4.22 15.78l1.42-1.42M14.36 5.64l1.42-1.42"/></svg>Global Manufacturer</div>
+      <div class="logo-chip"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M10 3v14M3 10h14"/><circle cx="10" cy="10" r="7"/></svg>Healthcare Enterprise</div>
+      <div class="logo-chip"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 2h8l2 4H4L6 2z"/><rect x="3" y="6" width="14" height="12" rx="1"/><path d="M8 11a2 2 0 1 0 4 0 2 2 0 0 0-4 0z"/></svg>Retail Leader</div>
+      <div class="logo-chip"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="10" cy="10" r="2"/><path d="M5.5 5.5a6.5 6.5 0 0 0 0 9M14.5 5.5a6.5 6.5 0 0 1 0 9M3 3a10 10 0 0 0 0 14M17 3a10 10 0 0 1 0 14"/></svg>Telecom Corp</div>
+      <div class="logo-chip"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M10 2l7 3.5V10c0 4-3 6.5-7 8-4-1.5-7-4-7-8V5.5L10 2z"/></svg>Insurance Group</div>
+      <div class="logo-chip"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="10" cy="10" r="7"/><path d="M3 10h14M10 3c-2 2-3 4.5-3 7s1 5 3 7M10 3c2 2 3 4.5 3 7s-1 5-3 7"/></svg>GCC Services</div>
+      <div class="logo-chip"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="5" width="16" height="10" rx="1.5"/><path d="M6 9h2.5M6 12h5M13 9h1"/></svg>Tech Unicorn</div>
+      <div class="logo-chip"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M11 2L5 11h5l-1 7 6-9h-5l1-7z"/></svg>Energy Enterprise</div>
+      <div class="logo-chip"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="5" width="16" height="11" rx="2"/><path d="M2 9h16M6 14h2M10 14h4"/></svg>FinTech Scale-up</div>
+      <div class="logo-chip"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="9" width="14" height="9" rx="1"/><path d="M1 9l9-7 9 7"/><rect x="7" y="13" width="2.5" height="5"/><rect x="10.5" y="13" width="2.5" height="5"/></svg>Banking Group</div>
+      <div class="logo-chip"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="10" cy="10" r="3"/><path d="M10 2v2M10 16v2M2 10h2M16 10h2M4.22 4.22l1.42 1.42M14.36 14.36l1.42 1.42M4.22 15.78l1.42-1.42M14.36 5.64l1.42-1.42"/></svg>Global Manufacturer</div>
+      <div class="logo-chip"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M10 3v14M3 10h14"/><circle cx="10" cy="10" r="7"/></svg>Healthcare Enterprise</div>
+      <div class="logo-chip"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 2h8l2 4H4L6 2z"/><rect x="3" y="6" width="14" height="12" rx="1"/><path d="M8 11a2 2 0 1 0 4 0 2 2 0 0 0-4 0z"/></svg>Retail Leader</div>
+      <div class="logo-chip"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="10" cy="10" r="2"/><path d="M5.5 5.5a6.5 6.5 0 0 0 0 9M14.5 5.5a6.5 6.5 0 0 1 0 9M3 3a10 10 0 0 0 0 14M17 3a10 10 0 0 1 0 14"/></svg>Telecom Corp</div>
+      <div class="logo-chip"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M10 2l7 3.5V10c0 4-3 6.5-7 8-4-1.5-7-4-7-8V5.5L10 2z"/></svg>Insurance Group</div>
+      <div class="logo-chip"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="10" cy="10" r="7"/><path d="M3 10h14M10 3c-2 2-3 4.5-3 7s1 5 3 7M10 3c2 2 3 4.5 3 7s-1 5-3 7"/></svg>GCC Services</div>
+      <div class="logo-chip"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="5" width="16" height="10" rx="1.5"/><path d="M6 9h2.5M6 12h5M13 9h1"/></svg>Tech Unicorn</div>
+      <div class="logo-chip"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M11 2L5 11h5l-1 7 6-9h-5l1-7z"/></svg>Energy Enterprise</div>
+      <div class="logo-chip"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="5" width="16" height="11" rx="2"/><path d="M2 9h16M6 14h2M10 14h4"/></svg>FinTech Scale-up</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ SERVICES ═══════════════════════════════════════════════════════════ -->
+<section id="services">
+  <div class="container">
+    <div class="sec-hd fi">
+      <div class="section-label">Our Services</div>
+      <h2>Full-Stack AI Services for the Enterprise</h2>
+      <p>From strategy through engineering to scale — every capability modern enterprises need to operationalise AI.</p>
+    </div>
+    <div class="svc-grid">
+
+      <div class="svc-card fi">
+<div class="svc-illus">
+          <img class="svc-img" src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=700&h=400&fit=crop&auto=format&q=85" alt="AI Strategy team brainstorming" loading="lazy">
+          <div class="svc-img-overlay"></div>
+          <span class="svc-badge">2 weeks</span>
+        </div>
+        <div class="svc-body">
+          <div class="svc-num2">01</div>
+          <div class="svc-title2">AI Strategy &amp; Transformation</div>
+          <div class="svc-desc2">12-month AI roadmap, maturity assessment, ROI models and a board-ready business case — delivered in as little as 2 weeks. We identify your highest-value AI opportunities and build a phased, costed plan.</div>
+          <a href="#contact-form" class="svc-link">Learn more <svg viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="#3f6cb5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+      </div>
+
+      <div class="svc-card fi">
+<div class="svc-illus">
+          <img class="svc-img" src="https://images.unsplash.com/photo-1559028012-481c04fa702d?w=700&h=400&fit=crop&auto=format&q=85" alt="AI product engineering and UX design" loading="lazy">
+          <div class="svc-img-overlay"></div>
+          <span class="svc-badge">8–16 weeks</span>
+        </div>
+        <div class="svc-body">
+          <div class="svc-num2">02</div>
+          <div class="svc-title2">AI Product Engineering</div>
+          <div class="svc-desc2">End-to-end AI product builds — UX design, backend AI services, production deployment and post-launch optimisation in 8–16 weeks. We build AI-native features your customers will actually adopt.</div>
+          <a href="#contact-form" class="svc-link">Learn more <svg viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="#3f6cb5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+      </div>
+
+
+      <div class="svc-card fi">
+<div class="svc-illus">
+          <img class="svc-img" src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=700&h=400&fit=crop&auto=format&q=85" alt="AI automation robot" loading="lazy">
+          <div class="svc-img-overlay"></div>
+          <span class="svc-badge" style="background:#3f6cb5">Autonomous</span>
+        </div>
+        <div class="svc-body">
+          <div class="svc-num2">03</div>
+          <div class="svc-title2">AI Agents &amp; Agentic Automation</div>
+          <div class="svc-desc2">Autonomous agents that execute complex multi-step workflows across your enterprise without constant human oversight. We design and deploy agents that work reliably in production at scale.</div>
+          <a href="#contact-form" class="svc-link">Learn more <svg viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="#3f6cb5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+      </div>
+
+      <div class="svc-card fi">
+<div class="svc-illus">
+          <img class="svc-img" src="https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=700&h=400&fit=crop&auto=format&q=85" alt="Generative AI language model" loading="lazy">
+          <div class="svc-img-overlay"></div>
+          <span class="svc-badge" style="background:#3f6cb5">RAG-First</span>
+        </div>
+        <div class="svc-body">
+          <div class="svc-num2">04</div>
+          <div class="svc-title2">Generative AI Solutions</div>
+          <div class="svc-desc2">Custom LLM applications tailored to your domain: document intelligence, knowledge assistants, AI-powered search, and enterprise copilots. RAG-first architecture, security-hardened, deeply integrated with your workflows.</div>
+          <a href="#contact-form" class="svc-link">Learn more <svg viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="#3f6cb5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+      </div>
+
+      <div class="svc-card fi">
+<div class="svc-illus">
+          <img class="svc-img" src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=700&h=400&fit=crop&auto=format&q=90" alt="Next gen enterprise infrastructure" loading="lazy">
+          <div class="svc-img-overlay"></div>
+          <span class="svc-badge" style="background:linear-gradient(135deg,#3f6cb5,#0DA868)">Next-Gen</span>
+        </div>
+        <div class="svc-body">
+          <div class="svc-num2">05</div>
+          <div class="svc-title2">Enterprise AI Infrastructure</div>
+          <div class="svc-desc2">Cloud-native AI platforms, edge computing, scalable data pipelines, and modern enterprise tech stacks — designed for speed, resilience, and the demands of next-generation AI workloads.</div>
+          <a href="#contact-form" class="svc-link">Learn more <svg viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="#3f6cb5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+      </div>
+
+      <div class="svc-card fi">
+<div class="svc-illus">
+          <img class="svc-img" src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=700&h=400&fit=crop&auto=format&q=85" alt="Forward deployed engineering team" loading="lazy">
+          <div class="svc-img-overlay"></div>
+          <span class="svc-badge">&lt;12 weeks</span>
+        </div>
+        <div class="svc-body">
+          <div class="svc-num2">06</div>
+          <div class="svc-title2">Forward Deployed Engineering</div>
+          <div class="svc-desc2">Our engineers embed inside your team, work in your systems, and ship production-ready AI in under 12 weeks. Not strategy decks — engineers inside your organisation building what works for your reality.</div>
+          <a href="#contact-form" class="svc-link">Learn more <svg viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="#3f6cb5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ WHY INNOVSOL ════════════════════════════════════════════════════════ -->
+<section id="why">
+  <div class="container">
+    <div class="sec-hd fi">
+      <div class="section-label">The Innovsol Difference</div>
+      <h2>We Deploy AI. We Don't Just Recommend It.</h2>
+      <p>Enterprise AI transformation needs engineering muscle, domain knowledge, and a model built for production — not advisory decks.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card fi">
+        <div class="why-img-wrap">
+          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=700&h=400&fit=crop&auto=format&q=85" alt="Business growth and analytics charts" loading="lazy">
+          <span class="why-img-tag">Business-First</span>
+        </div>
+        <div class="why-body">
+          <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div>
+          <h3>Business-First AI</h3>
+          <p>Every initiative anchored in cost reduction, revenue growth, or efficiency. We never build AI for its own sake — every line of code connects to a business result.</p>
+        </div>
+      </div>
+      <div class="why-card fi">
+        <div class="why-img-wrap">
+          <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=700&h=400&fit=crop&auto=format&q=85" alt="Fast delivery speed to production" loading="lazy">
+          <span class="why-img-tag">12-Week Delivery</span>
+        </div>
+        <div class="why-body">
+          <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+          <h3>Faster Time to Production</h3>
+          <p>Idea to production in under 12 weeks. No long consulting engagements. The FDE model eliminates the handoff gap that kills most enterprise AI initiatives.</p>
+        </div>
+      </div>
+      <div class="why-card fi">
+        <div class="why-img-wrap">
+          <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=700&h=400&fit=crop&auto=format&q=85" alt="Diverse engineering team collaborating" loading="lazy">
+          <span class="why-img-tag">Embedded Teams</span>
+        </div>
+        <div class="why-body">
+          <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+          <h3>Embedded Engineering Teams</h3>
+          <p>FDE engineers work inside your organisation — in your codebase, your sprints, your systems. They build AI that fits your reality, not a generic template.</p>
+        </div>
+      </div>
+      <div class="why-card fi">
+        <div class="why-img-wrap">
+          <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=700&h=400&fit=crop&auto=format&q=85" alt="Cybersecurity and enterprise protection" loading="lazy">
+          <span class="why-img-tag">Enterprise Security</span>
+        </div>
+        <div class="why-body">
+          <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></div>
+          <h3>Enterprise-Grade Security</h3>
+          <p>Data isolation, RBAC, audit logging, and responsible AI governance built in from day one — not bolted on after the fact. We design all AI with compliance at the core.</p>
+        </div>
+      </div>
+      <div class="why-card fi">
+        <div class="why-img-wrap">
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=700&h=400&fit=crop&auto=format&q=85" alt="Analytics dashboard showing outcomes" loading="lazy">
+          <span class="why-img-tag">Measurable ROI</span>
+        </div>
+        <div class="why-body">
+          <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/><line x1="2" y1="20" x2="22" y2="20"/></svg></div>
+          <h3>Outcome-Driven Delivery</h3>
+          <p>We define measurable success criteria before we start and report against them throughout. Results are our responsibility — not just yours.</p>
+        </div>
+      </div>
+      <div class="why-card fi">
+        <div class="why-img-wrap">
+          <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=700&h=400&fit=crop&auto=format&q=85" alt="Global domain expertise across industries" loading="lazy">
+          <span class="why-img-tag">10+ Industries</span>
+        </div>
+        <div class="why-body">
+          <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+          <h3>Deep Domain Expertise</h3>
+          <p>Pattern recognition from real deployments across 10+ industries. Banking, Healthcare, Manufacturing, Retail, Insurance — we understand your world before we build in it.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ METRICS ════════════════════════════════════════════════════════════ -->
+<section id="metrics">
+  <div class="container">
+    <div class="met-grid">
+
+      <div class="met-cell fi">
+        <div class="met-trend"><svg viewBox="0 0 12 12" fill="none"><path d="M2 9L6 4l4 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg> Trending Up</div>
+        <span class="mn" data-count="40" data-sfx="%">0%</span>
+        <div class="ml">Faster Operations</div>
+        <div class="met-bar"><div class="met-fill" style="--w:40%"></div></div>
+      </div>
+
+      <div class="met-cell fi">
+        <div class="met-trend"><svg viewBox="0 0 12 12" fill="none"><path d="M2 9L6 4l4 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg> Trending Up</div>
+        <span class="mn" data-count="60" data-sfx="%">0%</span>
+        <div class="ml">Reduction in Manual Work</div>
+        <div class="met-bar"><div class="met-fill" style="--w:60%"></div></div>
+      </div>
+
+      <div class="met-cell fi">
+        <div class="met-trend"><svg viewBox="0 0 12 12" fill="none"><circle cx="6" cy="6" r="4" stroke="currentColor" stroke-width="1.8"/><path d="M6 4v2l1.5 1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg> Active</div>
+        <span class="mn" data-count="10" data-sfx="+">0+</span>
+        <div class="ml">Industries Served</div>
+        <div class="met-bar"><div class="met-fill" style="--w:75%"></div></div>
+      </div>
+
+      <div class="met-cell fi">
+        <div class="met-trend"><svg viewBox="0 0 12 12" fill="none"><circle cx="6" cy="6" r="4" stroke="currentColor" stroke-width="1.8"/><circle cx="6" cy="6" r="1.5" fill="currentColor"/></svg> Always On</div>
+        <span class="mn" data-sfx="×7" data-static="24">24×7</span>
+        <div class="ml">AI-Powered Workflows</div>
+        <div class="met-bar"><div class="met-fill" style="--w:100%"></div></div>
+      </div>
+
+      <div class="met-cell fi">
+        <div class="met-trend"><svg viewBox="0 0 12 12" fill="none"><path d="M2 9L6 4l4 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg> Fast Track</div>
+        <span class="mn" data-count="12" data-pfx="&lt;" data-sfx=" wk">&lt;12 wk</span>
+        <div class="ml">Idea to Production</div>
+        <div class="met-bar"><div class="met-fill" style="--w:85%"></div></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ INDUSTRIES ═════════════════════════════════════════════════════════ -->
+<section id="industries">
+  <div class="container">
+    <div class="sec-hd fi">
+      <div class="section-label">10+ Industries</div>
+      <h2>AI Built for Your Industry —<br>Not Adapted From Someone Else's</h2>
+      <p>We bring pattern recognition from real deployments across every major vertical. We understand your world before we build in it.</p>
+    </div>
+    <div class="ind-grid">
+      <a href="/industries/banking_finance.html" class="ind-card fi" style="text-decoration: none; color: inherit;">
+        <div class="ind-img-wrap">
+          <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600&h=360&fit=crop&auto=format&q=85" alt="Banking and financial services AI" loading="lazy">
+        </div>
+        <div class="ind-body">
+          <div class="ind-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="10" width="18" height="11" rx="1"/><path d="M1 10l11-8 11 8"/><rect x="8" y="14" width="3" height="7"/><rect x="13" y="14" width="3" height="7"/></svg></div>
+          <h3>Banking &amp; Financial Services</h3>
+          <p>Credit risk AI · Fraud detection · Regulatory automation · Wealth copilots · Intelligent onboarding</p>
+        </div>
+      </a>
+      <a href="/industries/manufacturingOperations.html" class="ind-card fi" style="text-decoration: none; color: inherit;">
+        <div class="ind-img-wrap">
+          <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&h=360&fit=crop&auto=format&q=85" alt="Manufacturing operations and robotics" loading="lazy">
+        </div>
+        <div class="ind-body">
+          <div class="ind-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.22 4.22l2.12 2.12M17.66 17.66l2.12 2.12M2 12h3M19 12h3M4.22 19.78l2.12-2.12M17.66 6.34l2.12-2.12"/></svg></div>
+          <h3>Manufacturing &amp; Operations</h3>
+          <p>Predictive maintenance · Quality inspection AI · Supply chain intelligence · Production optimisation</p>
+        </div>
+      </a>
+      <a href="/industries/healthcare.html" class="ind-card fi" style="text-decoration: none; color: inherit;">
+        <div class="ind-img-wrap">
+          <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&h=360&fit=crop&auto=format&q=85" alt="Healthcare and life sciences technology" loading="lazy">
+        </div>
+        <div class="ind-body">
+          <div class="ind-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M12 8v8M8 12h8"/></svg></div>
+          <h3>Healthcare &amp; Life Sciences</h3>
+          <p>Clinical documentation AI · Patient flow · Medical imaging analysis · Prior authorisation automation</p>
+        </div>
+      </a>
+      <a href="/industries/retail.html" class="ind-card fi" style="text-decoration: none; color: inherit;">
+        <div class="ind-img-wrap">
+          <img src="https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=600&h=360&fit=crop&auto=format&q=85" alt="Retail and e-commerce shopping" loading="lazy">
+        </div>
+        <div class="ind-body">
+          <div class="ind-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg></div>
+          <h3>Retail &amp; E-Commerce</h3>
+          <p>Personalisation engines · Demand forecasting · Conversational commerce · Dynamic pricing AI</p>
+        </div>
+      </a>
+      <a href="/industries/telecom.html" class="ind-card fi" style="text-decoration: none; color: inherit;">
+        <div class="ind-img-wrap">
+          <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=600&h=360&fit=crop&auto=format&q=85" alt="Telecom and media network technology" loading="lazy">
+        </div>
+        <div class="ind-body">
+          <div class="ind-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="2"/><path d="M16.24 7.76a6 6 0 0 1 0 8.49M7.76 16.24a6 6 0 0 1 0-8.49M19.07 4.93a10 10 0 0 1 0 14.14M4.93 19.07a10 10 0 0 1 0-14.14"/></svg></div>
+          <h3>Telecom &amp; Media</h3>
+          <p>Network operations AI · Churn prediction · AI customer care · Revenue assurance automation</p>
+        </div>
+      </a>
+      <a href="/industries/insurance.html" class="ind-card fi" style="text-decoration: none; color: inherit;">
+        <div class="ind-img-wrap">
+          <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=600&h=360&fit=crop&auto=format&q=85" alt="Insurance risk and protection" loading="lazy">
+        </div>
+        <div class="ind-body">
+          <div class="ind-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></div>
+          <h3>Insurance</h3>
+          <p>Claims automation · AI underwriting support · Fraud intelligence · Customer service AI</p>
+        </div>
+      </a>
+      <a href="/industries/gcc.html" class="ind-card fi" style="text-decoration: none; color: inherit;">
+        <div class="ind-img-wrap">
+          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&h=360&fit=crop&auto=format&q=85" alt="Global shared services and GCC office" loading="lazy">
+        </div>
+        <div class="ind-body">
+          <div class="ind-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+          <h3>GCCs &amp; Shared Services</h3>
+          <p>Intelligent document processing · AI-augmented F&amp;A · Agentic back-office automation</p>
+        </div>
+      </a>
+      <a href="/industries/startups.html" class="ind-card fi" style="text-decoration: none; color: inherit;">
+        <div class="ind-img-wrap">
+          <img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=600&h=360&fit=crop&auto=format&q=85" alt="High-growth startup innovation team" loading="lazy">
+        </div>
+        <div class="ind-body">
+          <div class="ind-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C12 2 19 6 19 13l-4 5H9l-4-5c0-7 7-11 7-11z"/><circle cx="12" cy="11" r="2.5"/><path d="M9 18l-2 4M15 18l2 4"/></svg></div>
+          <h3>High-Growth Startups</h3>
+          <p>AI product features · LLM integration · AI-native architecture · Growth AI at startup pace</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ ENGAGEMENT ══════════════════════════════════════════════════════════ -->
+<!-- Scroll driver: anchor here so nav link scrolls to the very top of the driver -->
+<div class="eng-scroll-driver" id="engagement">
+<section class="eng-section">
+  <div class="container">
+    <div class="eng-wrapper">
+
+      <!-- ── Centred header ─────────────────────────────────────────────── -->
+      <div class="eng-header">
+        <div class="section-label">Our Engagement Model</div>
+      </div>
+
+      <!-- ── Phase selector ────────────────────────────────────────────── -->
+      <nav class="eng-steplist">
+        <a class="eng-steplbl active" data-phase="0">Discover</a>
+        <a class="eng-steplbl" data-phase="1">Design</a>
+        <a class="eng-steplbl" data-phase="2">Deploy</a>
+        <a class="eng-steplbl" data-phase="3">Scale</a>
+      </nav>
+
+      <!-- ── Stage: cards absolutely stacked, JS drives which is visible ── -->
+      <div class="eng-stage">
+
+        <div class="eng-card eng-active" data-idx="0">
+          <div class="eng-ghost-num">01</div>
+          <div class="eng-card-body">
+            <div class="eng-card-tag">Week 1 – 2</div>
+            <h3 class="eng-card-title">Discover</h3>
+            <p class="eng-card-desc">AI maturity assessment, stakeholder interviews, data landscape review, and use case prioritisation across your enterprise.</p>
+            <div class="eng-deliverable">
+              <span class="eng-del-lbl">Output Deliverable</span>
+              <span class="eng-del-txt">AI Opportunity Map + Prioritised Use Case Backlog</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="eng-card" data-idx="1">
+          <div class="eng-ghost-num">02</div>
+          <div class="eng-card-body">
+            <div class="eng-card-tag">Week 3 – 4</div>
+            <h3 class="eng-card-title">Design</h3>
+            <p class="eng-card-desc">Technical architecture, technology selection, security framework, team structure, and a sprint-by-sprint 12-week build plan.</p>
+            <div class="eng-deliverable">
+              <span class="eng-del-lbl">Output Deliverable</span>
+              <span class="eng-del-txt">Technical Blueprint + Security &amp; Governance Framework</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="eng-card" data-idx="2">
+          <div class="eng-ghost-num">03</div>
+          <div class="eng-card-body">
+            <div class="eng-card-tag">Week 5 – 12</div>
+            <h3 class="eng-card-title">Deploy</h3>
+            <p class="eng-card-desc">FDE engineers embedded and shipping — AI features, agents, and infrastructure built, tested, and deployed into your production environment.</p>
+            <div class="eng-deliverable">
+              <span class="eng-del-lbl">Output Deliverable</span>
+              <span class="eng-del-txt">Live AI Systems + Integration Test Reports</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="eng-card" data-idx="3">
+          <div class="eng-ghost-num">04</div>
+          <div class="eng-card-body">
+            <div class="eng-card-tag">Week 13+</div>
+            <h3 class="eng-card-title">Scale</h3>
+            <p class="eng-card-desc">Performance monitoring, model optimisation, new use cases, and structured knowledge transfer to your internal team.</p>
+            <div class="eng-deliverable">
+              <span class="eng-del-lbl">Output Deliverable</span>
+              <span class="eng-del-txt">Self-Sufficient AI + Ongoing Optimisation Roadmap</span>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /eng-stage -->
+    </div><!-- /eng-wrapper -->
+
+    <!-- Progress dots — right side -->
+    <div class="eng-progress">
+      <div class="eng-dot active" data-dot="0"></div>
+      <div class="eng-dot" data-dot="1"></div>
+      <div class="eng-dot" data-dot="2"></div>
+      <div class="eng-dot" data-dot="3"></div>
+      <span class="eng-scroll-lbl">scroll</span>
+    </div>
+
+  </div>
+</section>
+</div><!-- /eng-scroll-driver -->
+
+<!-- Summary pills outside the driver so they scroll normally -->
+<div class="eng-pills-row">
+  <div class="container">
+    <div class="eng-summary">
+      <div class="eng-sum-pill"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M8 1L3 8h4l-1 7 6-8H8l1-7z"/></svg>Discover + Design: fixed-price 2-week sprint</div>
+      <div class="eng-sum-pill"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="2" y="3" width="12" height="10" rx="1.5"/><path d="M5 7h6M5 10h4"/></svg>Production-ready AI in under 12 weeks</div>
+      <div class="eng-sum-pill"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M13 8A5 5 0 1 1 8 3"/><path d="M10 1l3 2-2 3"/></svg>No long-term commitment to start</div>
+      <div class="eng-sum-pill"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M2 12l3-4 3 2 3-5 3 3"/><path d="M2 14h12"/></svg>Measurable ROI at every phase</div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ CASE STUDIES ═══════════════════════════════════════════════════════ -->
+<section id="casestudies">
+  <div class="container">
+    <div class="sec-hd fi">
+      <div class="section-label" style="color:var(--blue)">Case Studies</div>
+      <h2>Where Frontier AI Meets the Real World</h2>
+      <p>Real AI deployments. Real business challenges. Measurable outcomes — achieved through embedded engineering.</p>
+    </div>
+    <div class="cs-grid">
+      <div class="cs-card fi">
+        <div class="cs-ind">Insurance</div>
+        <div class="cs-type">AI Agents &amp; Automation</div>
+        <h3>Claims Triage &amp; Assessment Automation</h3>
+        <div class="cs-det">50,000+ claims/month &nbsp;·&nbsp; 12 weeks to production &nbsp;·&nbsp; Azure OpenAI + LangChain</div>
+        <div class="cs-sep"></div>
+        <div class="cs-r1">68% reduction in average handle time</div>
+        <div class="cs-r2">40% reduction in cost-per-claim</div>
+      </div>
+      <div class="cs-card fi">
+        <div class="cs-ind">Manufacturing — Automotive</div>
+        <div class="cs-type">Enterprise AI Infrastructure</div>
+        <h3>Predictive Maintenance Across 200+ Machines</h3>
+        <div class="cs-det">18 months of sensor data &nbsp;·&nbsp; Real-time streaming inference &nbsp;·&nbsp; AWS SageMaker + Kafka</div>
+        <div class="cs-sep"></div>
+        <div class="cs-r1">42% reduction in unplanned downtime</div>
+        <div class="cs-r2">$1.4M annualised cost saving</div>
+      </div>
+      <div class="cs-card fi">
+        <div class="cs-ind">Banking — Retail</div>
+        <div class="cs-type">Generative AI Solutions</div>
+        <h3>AI Customer Service Agent — RAG Architecture</h3>
+        <div class="cs-det">Core banking integration &nbsp;·&nbsp; Anthropic Claude + Pinecone &nbsp;·&nbsp; 10 weeks</div>
+        <div class="cs-sep"></div>
+        <div class="cs-r1">51% queries resolved without human escalation</div>
+        <div class="cs-r2">CSAT improved from 72% to 84%</div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:2.5rem">
+      <a href="#contact-form" class="btn btn-ghost">View All Case Studies &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FDE TEAM ════════════════════════════════════════════════════════════ -->
+<section id="fde">
+  <div class="container">
+    <div class="fde-grid">
+      <div class="fi-left">
+        <div class="fde-lbl">Forward Deployed Engineering</div>
+        <h2>Your AI Engineers.<br>Embedded. Shipping<br>in Weeks.</h2>
+        <p class="lead">Our FDE engineers embed directly inside your organisation — working in your codebase, your Jira, your sprint ceremonies — as a fully integrated part of your AI team.</p>
+        <div class="fde-highlight">95% of enterprise AI pilots fail to reach production. The primary cause is the handoff gap. <strong>FDE eliminates the handoff. We don't leave until it works.</strong></div>
+        <div class="fde-stages">
+          <div class="fde-stage"><span class="fde-wk">Wk 1–2</span><span class="fde-act">Discovery &amp; architecture design</span></div>
+          <div class="fde-stage"><span class="fde-wk">Wk 3–6</span><span class="fde-act">Sprint 1 — first live AI feature deployed</span></div>
+          <div class="fde-stage"><span class="fde-wk">Wk 7–10</span><span class="fde-act">Sprint 2 — infrastructure stabilised</span></div>
+          <div class="fde-stage"><span class="fde-wk">Wk 11–12</span><span class="fde-act">Go-live &rarr; Scale plan activated</span></div>
+        </div>
+        <div class="fde-btns">
+          <a href="#contact-form" class="btn btn-blue">Explore FDE Models &rarr;</a>
+          <a href="#careers" class="btn btn-outline-blue">Join the FDE Team</a>
+        </div>
+      </div>
+      <div class="fi-right">
+        <div class="stat-cards">
+          <div class="stat-card"><div class="big">&lt;12</div><div class="sm">weeks from kickoff to production-ready AI</div></div>
+          <div class="stat-card"><div class="big">100%</div><div class="sm">embedded inside your engineering team</div></div>
+          <div class="stat-card"><div class="big">95%</div><div class="sm">of AI pilots fail without the FDE model</div></div>
+          <div class="stat-card"><div class="big">2 wk</div><div class="sm">Discover→Design sprint before you commit</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ INSIGHTS ════════════════════════════════════════════════════════════ -->
+<section id="insights">
+  <div class="container">
+    <div class="sec-hd fi">
+      <div class="section-label">Insights from the Frontier</div>
+      <h2>Enterprise AI — What's Actually Working</h2>
+      <p>Written from experience, not theory. Practical insights from real deployments and production AI systems.</p>
+    </div>
+    <div class="ins-grid">
+      <div class="ins-card fi">
+        <div class="ins-top"><span class="ins-tag">FDE &amp; Delivery</span><span class="ins-date">Jun 2025</span></div>
+        <div class="ins-body">
+          <h3>Why 95% of Enterprise AI Pilots Fail — and How the FDE Model Fixes It</h3>
+          <p>An analysis of the root causes of AI pilot failure in large enterprises, and how Forward Deployed Engineering addresses each one systematically.</p>
+          <a href="#contact-form" class="ins-link">Read article</a>
+        </div>
+      </div>
+      <div class="ins-card fi">
+        <div class="ins-top"><span class="ins-tag">AI Strategy</span><span class="ins-date">Jun 2025</span></div>
+        <div class="ins-body">
+          <h3>The 12-Week AI Sprint: From Idea to Production</h3>
+          <p>A behind-the-scenes look at how Innovsol structures its 12-week FDE engagement — week by week, from discovery through to go-live.</p>
+          <a href="#contact-form" class="ins-link">Read article</a>
+        </div>
+      </div>
+      <div class="ins-card fi">
+        <div class="ins-top"><span class="ins-tag">Technology</span><span class="ins-date">May 2025</span></div>
+        <div class="ins-body">
+          <h3>RAG vs. Fine-Tuning: Which LLM Approach Fits Your Enterprise Use Case?</h3>
+          <p>A practical framework for choosing between Retrieval-Augmented Generation and fine-tuning for enterprise LLM applications.</p>
+          <a href="#contact-form" class="ins-link">Read article</a>
+        </div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:2.5rem">
+      <a href="#contact-form" class="btn btn-outline-blue">View All Insights &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CAREERS ════════════════════════════════════════════════════════════ -->
+<section id="careers">
+  <div class="container">
+    <div class="car-grid">
+      <div class="fi-left">
+        <div class="section-label">Careers</div>
+        <h2>Build AI That Actually Ships.</h2>
+        <p class="lead">We are looking for engineers, scientists, and builders who want to move fast, work on hard problems, and see their work running in production at scale.</p>
+        <div class="perks">
+          <div class="perk"><span class="pdot"></span><span>Work on frontier AI applied to real enterprise problems</span></div>
+          <div class="perk"><span class="pdot"></span><span>Embedded model — work inside world-class organisations</span></div>
+          <div class="perk"><span class="pdot"></span><span>Remote-friendly with annual team offsites</span></div>
+          <div class="perk"><span class="pdot"></span><span>Competitive salary, performance bonus, equity for senior roles</span></div>
+          <div class="perk"><span class="pdot"></span><span>Annual learning budget for courses &amp; conferences</span></div>
+        </div>
+      </div>
+      <div class="fi-right">
+        <div class="roles">
+          <a href="/careers/SeniorAiEngineer.html" class="role" style="text-decoration: none; color: inherit;"><div><div class="role-t">Senior AI Engineer</div><div class="role-d">Python · LLMs · MLOps · Cloud infrastructure</div></div><span class="badge">Hiring</span></a>
+          <a href="/careers/MachineLearningEngineer.html" class="role" style="text-decoration: none; color: inherit;"><div><div class="role-t">Machine Learning Engineer</div><div class="role-d">NLP · Classification · Time-series · Production models</div></div><span class="badge">Hiring</span></a>
+          <a href="/careers/AISolutionsArchitect.html" class="role" style="text-decoration: none; color: inherit;"><div><div class="role-t">AI Solutions Architect</div><div class="role-d">Pre-sales · Enterprise architecture · Delivery leadership</div></div><span class="badge">Hiring</span></a>
+          <a href="/careers/DataEngineer.html" class="role" style="text-decoration: none; color: inherit;"><div><div class="role-t">Data Engineer</div><div class="role-d">Pipelines · Streaming · AI data infrastructure</div></div><span class="badge">Hiring</span></a>
+          <a href="/careers/AIStrategyConsultant.html" class="role" style="text-decoration: none; color: inherit;"><div><div class="role-t">AI Strategy Consultant</div><div class="role-d">Roadmaps · ROI models · C-suite engagement</div></div><span class="badge">Hiring</span></a>
+          <a href="/careers/FDEEngagementLead.html" class="role" style="text-decoration: none; color: inherit;"><div><div class="role-t">FDE Engagement Lead</div><div class="role-d">Senior engineer + client leadership · 12-week sprints</div></div><span class="badge">Hiring</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ DUAL CTA ════════════════════════════════════════════════════════════ -->
+<section id="cta">
+  <div class="container">
+    <div class="cta-duo">
+      <div class="cta-l fi-left">
+        <div class="section-label" style="color:rgba(63,108,181,.8)">For Enterprises</div>
+        <h3>Ready to Move Beyond<br>the AI Pilot?</h3>
+        <p>Join enterprises that have made AI operational. Our FDE engineers are ready to embed with your team and build AI that works in the real world — not just in demos.</p>
+        <div style="display:flex;gap:.8rem;flex-wrap:wrap">
+          <a href="#contact-form" class="btn btn-orange">Book a Strategy Call &rarr;</a>
+          <a href="#contact-form" class="btn btn-ghost" style="font-size:.82rem">AI Readiness Guide</a>
+        </div>
+        <div class="cta-pill">Start with a Discovery Sprint — 2 weeks to your AI roadmap · fixed price · no long-term commitment required</div>
+      </div>
+      <div class="cta-r fi-right">
+        <div class="section-label" style="color:rgba(255,255,255,.6)">For AI Talent</div>
+        <h3>Build AI That<br>Actually Ships.</h3>
+        <p>Join the FDE team. Embed in ambitious enterprises. Work on hard problems. See your AI running in production — fast.</p>
+        <div class="cta-pill">Reach us directly: <strong style="color:#fff">hello@innovsol.ai</strong></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CONTACT (redesigned) ══════════════════════════════════════════════════ -->
+<section id="contact">
+  <div class="con-hero">
+
+    <!-- ── Location image background ── -->
+    <div class="con-map-bg">
+      <img src="/location.png" alt="Innovsol global presence map" class="con-loc-img"/>
+      <div class="con-map-overlay"></div>
+    </div>
+
+    <!-- ── Content over the map ── -->
+    <div class="container con-map-content">
+
+      <!-- Left: contact info panel -->
+      <div class="con-panel fi">
+        <div class="section-label" style="color:var(--orange)">Get in Touch</div>
+        <h2>Let's Talk About<br>Your AI Journey.</h2>
+        <p>Whether you're exploring AI for the first time or ready to scale — a conversation with our team is the fastest way forward.</p>
+        <div class="con-details">
+          <div class="con-det">
+            <span class="con-icon">✉️</span>
+            <span><a href="mailto:hello@innovsol.ai" style="color:inherit;text-decoration:none">hello@innovsol.ai</a></span>
+          </div>
+          <div class="con-det">
+            <span class="con-icon">📞</span>
+            <span><a href="tel:+919582799988" style="color:inherit;text-decoration:none">+91 95827 99988</a></span>
+          </div>
+          <div class="con-det">
+            <span class="con-icon">⚡</span>
+            <span>Strategy calls within 5 business days</span>
+          </div>
+          <div class="con-det">
+            <span class="con-icon">🔒</span>
+            <span>Enterprise-grade security · GDPR compliant</span>
+          </div>
+        </div>
+        <a href="#contact-form" class="btn btn-orange" style="margin-top:1.5rem;align-self:flex-start">Book a Strategy Call &rarr;</a>
+      </div>
+
+      <!-- HQ address simple text -->
+      <div class="con-hq-text">
+        <span class="con-hq-label">&#x1F4CD; Headquarters</span>
+        <span class="con-hq-addr">411, Good Earth Business Bay-1, Sector-58,<br>Gurugram-122098, India</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ CONTACT FORM ══════════════════════════════════════════════════════════ -->
+<section id="contact-form" class="contact-form-sec">
+  <div class="container">
+    <div class="contact-form-inner">
+      <div class="cform-left">
+        <p class="cform-tag">Get In Touch</p>
+        <h2 class="cform-h2">Start the<br><em>Conversation.</em></h2>
+        <p class="cform-sub">Tell us about your AI challenge. Our team responds within 1 business day.</p>
+        <ul class="cform-trust">
+          <li>Strategy calls within 5 days</li>
+          <li>Enterprise-grade security</li>
+          <li>GDPR compliant</li>
+        </ul>
+      </div>
+      <form id="cform" class="cform-modern fi" onsubmit="sendForm(event)">
+          <div class="frow">
+            <div class="fg"><label>First Name *</label><input type="text" name="firstName" placeholder="First name" required/></div>
+            <div class="fg"><label>Last Name *</label><input type="text" name="lastName" placeholder="Last name" required/></div>
+          </div>
+          <div class="fg"><label>Work Email *</label><input type="email" name="email" placeholder="you@company.com" required/></div>
+          <div class="fg"><label>Phone Number</label><input type="tel" name="phone" placeholder="" /></div>
+          <div class="fg"><label>Company *</label><input type="text" name="company" placeholder="Your organisation" required/></div>
+          <div class="frow">
+            <div class="fg"><label>Industry</label>
+              <select name="industry">
+                <option value="">Select industry</option>
+                <option>Banking &amp; Financial Services</option>
+                <option>Manufacturing</option>
+                <option>Healthcare &amp; Life Sciences</option>
+                <option>Retail &amp; E-Commerce</option>
+                <option>Telecom &amp; Media</option>
+                <option>Insurance</option>
+                <option>GCC / Shared Services</option>
+                <option>High-Growth Startup</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="fg"><label>Enquiry Type</label>
+              <select name="enquiryType">
+                <option value="">Select type</option>
+                <option>Strategy Consultation</option>
+                <option>FDE Engagement</option>
+                <option>Solution Deployment</option>
+                <option>Partnership</option>
+                <option>Careers</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="fg"><label>Message</label><textarea name="message" placeholder="Tell us about your AI challenge or ambition..."></textarea></div>
+          <button type="submit" class="fsub">Send Message &rarr;</button>
+          <div class="fnote">By submitting you agree to our Privacy Policy. All enquiries reviewed within 1 business day.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ══════════════════════════════════════════════════════════════ -->
+<footer>
+  <div class="container">
+    <!-- Main footer row: logo | nav | contact -->
+    <div class="ft-main">
+      <div class="ft-left">
+        <a href="#home" class="ft-logo-link"><img src="/images/white-text-logo.png" alt="Innovsol" class="ft-logo-img"/></a>
+        <p class="ft-tagline">Enterprise AI. Deployed,<br>Not Just Discussed.</p>
+      </div>
+      <nav class="ft-nav">
+        <div class="ft-col">
+          <span class="ft-col-head">Company</span>
+          <a href="#why">About Us</a>
+          <a href="#fde">FDE Team</a>
+          <a href="#careers">Careers</a>
+          <a href="#contact-form">Contact</a>
+        </div>
+        <div class="ft-col">
+          <span class="ft-col-head">Services</span>
+          <a href="#services">AI Strategy</a>
+          <a href="#services">AI Agents</a>
+          <a href="#services">GenAI Solutions</a>
+          <a href="#services">FDE Engineering</a>
+        </div>
+        <div class="ft-col">
+          <span class="ft-col-head">Industries</span>
+          <a href="#industries">Banking</a>
+          <a href="#industries">Healthcare</a>
+          <a href="#industries">Manufacturing</a>
+          <a href="#industries">GCCs</a>
+        </div>
+        <div class="ft-col">
+          <span class="ft-col-head">Resources</span>
+          <a href="#insights">Blog</a>
+          <a href="#casestudies">Case Studies</a>
+          <a href="#contact-form">AI Guide</a>
+          <a href="#contact-form">Webinars</a>
+        </div>
+      </nav>
+      <div class="ft-right">
+        <a class="ft-email" href="mailto:hello@innovsol.ai">hello@innovsol.ai</a>
+        <a href="tel:+919582799988" class="ft-phone">+91 95827 99988</a>
+        <a href="#contact-form" class="btn btn-orange ft-cta">Book a Strategy Call &rarr;</a>
+      </div>
+    </div>
+    <!-- Bottom bar -->
+    <div class="ft-bar">
+      <p>&copy; 2026 Innovsol &nbsp;·&nbsp; Innovate . Disrupt . Transform</p>
+      <div class="ft-bar-links">
+        <a href="#contact-form">Privacy Policy</a>
+        <a href="#contact-form">Cookie Policy</a>
+        <a href="#contact-form">Terms of Use</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button id="totop" onclick="window.scrollTo({top:0,behavior:'smooth'})">&#8679;</button>
+<div id="toast">Message sent! We'll be in touch within 1 business day. ✓</div>
+
+<!-- ══ JAVASCRIPT ══════════════════════════════════════════════════════════ -->
+
+

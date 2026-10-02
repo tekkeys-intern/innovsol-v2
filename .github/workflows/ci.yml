@@ -1,0 +1,41 @@
+name: CI
+on:
+  push: { branches: [main] }
+  pull_request:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: npm }
+      - run: npm ci
+      - name: Generate pages (industries, jobs, sitemap, legal, extra pages)
+        run: npm run gen
+      - name: Link / CTA / image / SEO check
+        run: npm run check
+      - name: Type check
+        run: npx tsc --noEmit
+      - name: Lint (new + changed code must be clean)
+        run: npx eslint src/lib src/pages src/routes/__root.tsx src/routes/portal*.tsx src/components/portal --quiet
+      - name: Unit tests
+        run: npm run test:unit
+      - name: Build (Vercel Build Output)
+        run: npm run build
+      - name: Rehearse the deployment (routing, headers, API, 404) against the build output
+        run: npm run test:vercel
+      - name: Dependency audit (fail on high/critical)
+        run: npm audit --omit=dev --audit-level=high
+  accessibility:
+    runs-on: ubuntu-latest
+    needs: verify
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: npm }
+      - run: npm ci
+      - run: npm run gen
+      - name: axe-core accessibility scan of every static page
+        run: npm run test:a11y
+        env: { CHROME: /usr/bin/google-chrome }

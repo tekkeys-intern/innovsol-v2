@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git commit -m ' *)",
+      "Bash(npm install *)",
+      "Bash(node -e \"const p = require\\('./node_modules/@tanstack/react-start/package.json'\\); console.log\\(p.version\\)\")",
+      "Bash(node -e \"try { require.resolve\\('@tanstack/start/api'\\); console.log\\('found'\\); } catch\\(e\\) { console.log\\('not found:', e.message\\); }\")",
+      "Bash(node -e \"const p = require\\('./node_modules/@tanstack/react-start/package.json'\\); console.log\\(JSON.stringify\\(Object.keys\\(p.exports || {}\\).filter\\(k => k.includes\\('api'\\)\\)\\)\\)\")",
+      "Bash(node -e \"const p = require\\('./node_modules/@tanstack/react-start/package.json'\\); const keys = Object.keys\\(p.exports || {}\\); console.log\\(keys.slice\\(0,40\\).join\\('\\\\n'\\)\\)\")",
+      "Bash(node -e \"try { const m = require\\('./node_modules/@tanstack/react-start'\\); console.log\\(Object.keys\\(m\\).filter\\(k=>k.toLowerCase\\(\\).includes\\('api'\\) || k.toLowerCase\\(\\).includes\\('route'\\)\\).join\\('\\\\n'\\)\\); } catch\\(e\\){console.log\\(e.message\\)}\")",
+      "Bash(node -e \"try { require.resolve\\('@tanstack/react-start/api'\\); console.log\\('found'\\); } catch\\(e\\) { console.log\\('not found:', e.message\\); }\")",
+      "Bash(node -e \"const m = require\\('./node_modules/@tanstack/react-start/dist/cjs/index.cjs'\\); const keys = Object.keys\\(m\\); console.log\\(keys.filter\\(k=>k.includes\\('API'\\)||k.includes\\('api'\\)||k.includes\\('Route'\\)\\).join\\('\\\\n'\\)\\)\")",
+      "Bash(git rm *)",
+      "Bash(git pull *)",
+      "Bash(git stash *)",
+      "Bash(git rebase *)",
+      "Bash(ls \"C:/Users/HP/Downloads/polished-presence1-new-varcel-update\" 2>&1 | head -5 || ls \"C:/Users/HP/Downloads/polished-presence1/polished-presence1-new-varcel-update\" 2>&1 | head -5)",
+      "Read(//c/Users/HP/Downloads/**)",
+      "Bash(git remote *)",
+      "Bash(git commit *)"
+    ]
+  }
+}

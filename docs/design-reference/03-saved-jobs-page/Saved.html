@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My Saved Jobs – InnovSol Careers</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#0b0f19;--text:#1f2430;--muted:#4b5263;--line:#e2e5ec;--blue:#1d5be0;--btn:#1a56db}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{background:#fff}
+  body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;color:var(--text);-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  button{font-family:inherit;cursor:pointer}
+  svg.lucide{display:block}
+  .page{width:1016px;margin:0 auto;position:relative;background:#fff;font-weight:500}
+
+  .hdr{height:101px;border-bottom:1px solid #e8eaef;position:relative}
+  .burger{position:absolute;left:37px;top:40px;width:28px;height:21px;display:flex;flex-direction:column;justify-content:space-between;border:0;background:none}
+  .burger span{height:2.8px;background:var(--ink);border-radius:2px}
+  .logo{position:absolute;left:377px;top:14px;width:157px}
+  .bell{position:absolute;left:872px;top:33px;color:var(--ink)}
+  .bell svg{width:28px;height:28px;stroke-width:1.8}
+  .bell b{position:absolute;right:-8px;top:-7px;width:17px;height:17px;border-radius:50%;background:var(--blue);color:#fff;font-size:10px;font-weight:700;display:flex;align-items:center;justify-content:center;border:1.5px solid #fff}
+  .avatar{position:absolute;left:929px;top:21px;width:57px;height:57px;border-radius:50%;object-fit:cover}
+
+  .crumbs{height:55px;border-bottom:1px solid #e8eaef;display:flex;align-items:center;padding-left:36px;font-size:13.3px;color:#2b3040}
+  .crumbs svg{width:19px;height:19px;stroke-width:1.9;color:var(--ink)}
+  .crumbs .sep{width:14px;height:14px;margin:0 15px;stroke-width:2}
+
+  .wrap{padding:0 37px 0 36px}
+  .head{position:relative;height:133px}
+  .head h1{position:absolute;left:0;top:24px;font-size:32px;font-weight:700;color:var(--ink);letter-spacing:-.6px;line-height:40px}
+  .heart{position:absolute;left:249px;top:25px;width:38px;height:38px;border-radius:50%;background:#e9effc;display:flex;align-items:center;justify-content:center;color:var(--blue)}
+  .heart svg{width:21px;height:21px;stroke-width:2}
+  .head p{position:absolute;left:0;top:77px;font-size:14px;color:var(--muted)}
+  .emailme{position:absolute;right:0;top:25px;width:259px;height:69px;border:1.4px solid #b9cbf1;border-radius:6px;background:#fbfcff;display:flex;align-items:center;gap:15px;padding-left:17px}
+  .emailme b{display:block;font-size:14.4px;font-weight:700;color:var(--blue)}
+  .emailme span{display:block;font-size:11.4px;color:#3b4252;margin-top:5px}
+
+  .tabs{display:flex;border-bottom:1.4px solid #e3e6ec;height:36px;margin-top:0}
+  .tabs a{font-size:13.6px;color:#3b4252;height:36px;position:relative;padding:0 20px;margin-right:18px}
+  .tabs a.on{color:var(--blue);font-weight:600}
+  .tabs a.on:after{content:"";position:absolute;left:0;right:0;bottom:-1.4px;height:3px;background:var(--blue);border-radius:2px}
+
+  .filters{display:flex;margin-top:27px;height:45px}
+  .dd{height:45px;border:1px solid #dfe2e8;border-radius:6px;display:flex;align-items:center;justify-content:space-between;padding:0 16px 0 18px;font-size:13.6px;color:var(--ink);background:#fff}
+  .dd svg{width:16px;height:16px;stroke-width:2}
+  .vt{width:49px;height:45px;border-radius:6px;display:flex;align-items:center;justify-content:center;border:1px solid #dfe2e8;background:#f2f4f8;color:#4b5263}
+  .vt svg{width:20px;height:20px;stroke-width:1.9}
+  .vt.on{background:var(--blue);border-color:var(--blue);color:#fff}
+
+  .job{border:1px solid var(--line);border-radius:10px;position:relative;background:#fff}
+  .job .ic{position:absolute;left:23px;top:29px;width:89px;height:89px;border-radius:16px;background:#eef3fd;display:flex;align-items:center;justify-content:center;color:#2a5bd7}
+  .job .ic svg{width:48px;height:48px;stroke-width:1.5}
+  .job h3{position:absolute;left:140px;font-size:18.3px;font-weight:700;color:var(--ink);letter-spacing:-.2px;display:flex;align-items:center;gap:16px}
+  .hp{font-size:13px;font-weight:500;color:#f08a00;background:#ffecd4;height:30px;padding:0 11px;border-radius:5px;display:inline-flex;align-items:center;letter-spacing:0}
+  .job .meta{position:absolute;left:140px;display:flex;gap:0;font-size:13.8px;color:#2b3040}
+  .job .meta span{display:flex;align-items:center;gap:6px;margin-right:24px}
+  .job .meta svg{width:15px;height:15px;stroke-width:1.8;color:#2b3040}
+  .tags{position:absolute;left:140px;display:flex;gap:15px}
+  .tags span{height:25px;border:1px solid #d3d9e4;background:#f7f8fb;border-radius:4px;font-size:12.2px;color:#3b4252;padding:0 8px;display:flex;align-items:center}
+  .tags span.b{border-color:#9fb9ec;background:#f6f9ff}
+  .saved{position:absolute;right:31px;display:flex;align-items:center;gap:9px;font-size:12.3px;color:#3b4252}
+  .saved svg{width:15px;height:15px;fill:#4b5263;stroke:#4b5263}
+  .apply{position:absolute;right:22px;width:180px;height:38px;border-radius:4px;background:var(--btn);color:#fff;font-size:14.6px;font-weight:600;display:flex;align-items:center;justify-content:center}
+  .remove{position:absolute;right:71px;display:flex;align-items:center;gap:11px;font-size:14px;color:#3b4252}
+  .remove svg{width:16px;height:16px;stroke-width:1.8}
+
+  .match{margin-top:27px;height:120px;border:1px solid #e3e7f2;border-radius:10px;background:#f5f7fd;position:relative}
+  .wand{position:absolute;left:22px;top:24px;width:69px;height:69px;border-radius:50%;background:#e7edfb;display:flex;align-items:center;justify-content:center}
+  .match h4{position:absolute;left:118px;top:24px;font-size:17.5px;font-weight:700;color:var(--ink)}
+  .match p{position:absolute;left:118px;top:49px;font-size:13.6px;line-height:24px;color:#1d2230}
+  .upd{position:absolute;left:683px;top:34px;width:220px;height:49px;border:1.4px solid var(--blue);border-radius:6px;display:flex;align-items:center;justify-content:center;gap:24px;color:var(--blue);font-size:15.5px;font-weight:700;background:#fff}
+  .upd svg{width:19px;height:19px;stroke-width:2.2}
+
+  .alert{margin-top:33px;height:133px;border-radius:10px;border:1px solid #e3e7f2;background:linear-gradient(90deg,#f4f7fe 0%,#f1f4fd 55%,#efeafc 100%);position:relative;overflow:hidden}
+  .alert h4{position:absolute;left:35px;top:36px;font-size:20.5px;font-weight:700;color:var(--ink);letter-spacing:-.2px}
+  .alert p{position:absolute;left:35px;top:78px;font-size:14.4px;color:#1d2230}
+  .cja{position:absolute;left:518px;top:43px;width:194px;height:48px;border-radius:5px;background:var(--btn);color:#fff;font-size:15.2px;font-weight:600;display:flex;align-items:center;justify-content:center;gap:13px}
+  .cja svg{width:19px;height:19px;stroke-width:2}
+  .alert img{position:absolute;left:738px;top:-2px;width:174px;height:135px;-webkit-mask-image:radial-gradient(ellipse 50% 50% at 50% 50%,#000 62%,transparent 100%);mask-image:radial-gradient(ellipse 50% 50% at 50% 50%,#000 62%,transparent 100%)}
+
+  .bnav{margin-top:37px;height:80px;border-top:1px solid #e3e6ec;display:flex;align-items:center;font-size:14px;color:#3b4252;position:sticky;bottom:0;background:#fff}
+  .bnav a{display:flex;align-items:center;gap:12px;position:absolute}
+  .bnav svg{width:24px;height:24px;stroke-width:1.7;color:#3b4252}
+  .bnav a.on{color:var(--blue);font-weight:600}
+  .bnav a.on svg{color:var(--blue);fill:var(--blue)}
+</style>
+</head>
+<body>
+<div class="page" id="page">
+  <header class="hdr">
+    <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    <svg class="logo" viewBox="8 6 150 62" xmlns="http://www.w3.org/2000/svg" aria-label="innovsol">
+      <g fill="none" stroke="#2F5FD0" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18.6 34 L27 42.5 L27 64"/><path d="M31.8 18.4 L31.8 64"/><path d="M41 30.4 L41 64"/><path d="M53 30.4 L53 44 L47 51 L47 64"/>
+        <circle cx="16.5" cy="31" r="3.3" fill="#fff"/><circle cx="31.8" cy="15" r="3.4" fill="#F5B301"/><circle cx="41" cy="27" r="3.3" fill="#fff"/><circle cx="53" cy="27" r="3.3" fill="#fff"/>
+      </g>
+      <text x="60" y="49" font-family="Poppins" font-size="16.8" letter-spacing="3" textLength="92" fill="#141414">innovsol</text>
+      <text x="61" y="62.5" font-family="Poppins" font-weight="500" font-size="5.3" textLength="90" fill="#141414">Innovate . Disrupt . Transform</text>
+    </svg>
+    <a class="bell" href="#" aria-label="Notifications"><i data-lucide="bell"></i><b>3</b></a>
+    <img class="avatar" src="assets/avatar.jpg" alt="Profile">
+  </header>
+
+  <nav class="crumbs"><i data-lucide="house"></i><span style="margin-left:26px">Careers</span><i data-lucide="chevron-right" class="sep"></i><span>Saved Jobs</span></nav>
+
+  <main class="wrap">
+    <div class="head">
+      <h1>My Saved Jobs</h1>
+      <span class="heart"><i data-lucide="heart"></i></span>
+      <p>Jobs you've saved to review later or apply.</p>
+      <a class="emailme" href="#"><i data-lucide="mail" style="width:30px;height:30px;color:#fff;fill:#1d5be0;stroke-width:1.6;stroke:#fff" class="m"></i><div><b>Email me new jobs</b><span>Get matching jobs in your inbox</span></div></a>
+    </div>
+
+    <div class="tabs">
+      <a class="on" href="#">All Saved Jobs (6)</a>
+      <a href="#">Applied (2)</a>
+      <a href="#">Expired (0)</a>
+    </div>
+
+    <div class="filters">
+      <div class="dd" style="width:197px">All Departments <i data-lucide="chevron-down"></i></div>
+      <div class="dd" style="width:200px;margin-left:17px">All Locations <i data-lucide="chevron-down"></i></div>
+      <div class="dd" style="width:220px;margin-left:17px">Sort by: Recently Saved <i data-lucide="chevron-down"></i></div>
+      <a class="vt" href="#" style="margin-left:auto"><i data-lucide="list"></i></a>
+      <a class="vt on" href="#" style="margin-left:9px"><i data-lucide="layout-grid"></i></a>
+    </div>
+
+    <!-- job 1 -->
+    <article class="job" style="margin-top:31px;height:167px">
+      <span class="ic">
+        <svg viewBox="8 6 50 62" style="width:50px;height:58px" fill="none" stroke="#2F5FD0" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M18.6 34 L27 42.5 L27 64"/><path d="M31.8 18.4 L31.8 64"/><path d="M41 30.4 L41 64"/><path d="M53 30.4 L53 44 L47 51 L47 64"/><circle cx="16.5" cy="31" r="3.3"/><circle cx="31.8" cy="15" r="3.4" fill="#F5B301"/><circle cx="41" cy="27" r="3.3"/><circle cx="53" cy="27" r="3.3"/></svg>
+      </span>
+      <h3 style="top:27px">Senior AI Engineer <span class="hp">High Priority</span></h3>
+      <div class="meta" style="top:74px"><span><i data-lucide="map-pin"></i>Remote / Hybrid / Gurgaon</span><span><i data-lucide="briefcase-business"></i>Full-Time</span><span><i data-lucide="briefcase"></i>3 - 8 Years</span></div>
+      <div class="tags" style="top:109px"><span class="b">Python</span><span>LLMs</span><span>MLOps</span><span>Cloud</span><span>AI Agents</span></div>
+      <div class="saved" style="top:28px"><i data-lucide="heart"></i>Saved on 20 May 2025</div>
+      <a class="apply" href="#" style="top:64px">Apply Now</a>
+      <a class="remove" href="#" style="top:120px"><i data-lucide="trash-2"></i>Remove</a>
+    </article>
+
+    <!-- job 2 -->
+    <article class="job" style="margin-top:16px;height:157px">
+      <span class="ic" style="top:24px"><i data-lucide="brain-circuit"></i></span>
+      <h3 style="top:27px">Machine Learning Engineer</h3>
+      <div class="meta" style="top:69px"><span><i data-lucide="map-pin"></i>Remote / Hybrid</span><span><i data-lucide="briefcase-business"></i>Full-Time</span><span><i data-lucide="briefcase"></i>2 - 6 Years</span></div>
+      <div class="tags" style="top:105px"><span>NLP</span><span>Classification</span><span>Time-series</span><span>ML Models</span><span>Python</span></div>
+      <div class="saved" style="top:27px"><i data-lucide="heart"></i>Saved on 18 May 2025</div>
+      <a class="apply" href="#" style="top:59px">Apply Now</a>
+      <a class="remove" href="#" style="top:114px"><i data-lucide="trash-2"></i>Remove</a>
+    </article>
+
+    <!-- job 3 -->
+    <article class="job" style="margin-top:17px;height:157px">
+      <span class="ic" style="top:24px"><i data-lucide="box"></i></span>
+      <h3 style="top:28px">AI Solutions Architect</h3>
+      <div class="meta" style="top:69px"><span><i data-lucide="map-pin"></i>Remote / Hybrid / Gurgaon</span><span><i data-lucide="briefcase-business"></i>Full-Time</span><span><i data-lucide="briefcase"></i>5 - 10 Years</span></div>
+      <div class="tags" style="top:105px"><span>Architecture</span><span>LLMs</span><span>Cloud</span><span>Pre-sales</span><span>Leadership</span></div>
+      <div class="saved" style="top:27px"><i data-lucide="heart"></i>Saved on 17 May 2025</div>
+      <a class="apply" href="#" style="top:59px">Apply Now</a>
+      <a class="remove" href="#" style="top:114px"><i data-lucide="trash-2"></i>Remove</a>
+    </article>
+
+    <!-- job 4 -->
+    <article class="job" style="margin-top:17px;height:158px">
+      <span class="ic" style="top:24px"><i data-lucide="database"></i></span>
+      <h3 style="top:28px">Data Engineer</h3>
+      <div class="meta" style="top:70px"><span><i data-lucide="map-pin"></i>Remote / Hybrid</span><span><i data-lucide="briefcase-business"></i>Full-Time</span><span><i data-lucide="briefcase"></i>3 - 7 Years</span></div>
+      <div class="tags" style="top:106px"><span>Data Pipelines</span><span>Streaming</span><span>AWS</span><span>Kafka</span><span>Python</span></div>
+      <div class="saved" style="top:27px"><i data-lucide="heart"></i>Saved on 16 May 2025</div>
+      <a class="apply" href="#" style="top:60px">Apply Now</a>
+      <a class="remove" href="#" style="top:115px"><i data-lucide="trash-2"></i>Remove</a>
+    </article>
+
+    <section class="match">
+      <span class="wand"><i data-lucide="wand-sparkles" style="width:34px;height:34px;color:#4f7fe8;stroke-width:1.7"></i></span>
+      <h4>Find better matches</h4>
+      <p>Add your skills and preferences to get job recommendations<br>that match your profile.</p>
+      <a class="upd" href="#">Update Preferences <i data-lucide="arrow-right"></i></a>
+    </section>
+
+    <section class="alert">
+      <h4>Don’t miss your perfect role!</h4>
+      <p>Get personalized job alerts and be the first to know.</p>
+      <a class="cja" href="#"><i data-lucide="bell"></i>Create Job Alert</a>
+      <img src="assets/job-alert.png" alt="">
+    </section>
+  </main>
+
+  <nav class="bnav">
+    <a href="#" style="left:100px"><i data-lucide="search"></i>Explore Jobs</a>
+    <a class="on" href="#" style="left:321px"><i data-lucide="heart"></i>Saved Jobs</a>
+    <a href="#" style="left:543px"><i data-lucide="file-text"></i>Applied Jobs</a>
+    <a href="#" style="left:813px"><i data-lucide="user-round"></i>Profile</a>
+  </nav>
+</div>
+
+<script src="assets/lucide.min.js"></script>
+<script>
+  lucide.createIcons();
+  (function(){
+    var W = 1016, p = document.getElementById('page');
+    function fit(){ p.style.zoom = Math.min(Math.max(innerWidth / W, 0.35), 1.6); }
+    fit(); addEventListener('resize', fit);
+  })();
+</script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+/* ── Open Roles ──────────────────────────────────────────────────────── */
+.car-roles{padding:6rem 0;background:#070f1e}
+.car-roles-hd{text-align:center;margin-bottom:3rem}
+.car-roles-hd h2{
+  font-size:clamp(1.8rem,3vw,2.8rem);
+  font-weight:900;color:#fff;letter-spacing:-.04em;margin:.4rem 0 .6rem}
+.car-roles-sub{font-size:.8rem;color:rgba(255,255,255,.72);margin:0}
+.car-roles-list{
+  display:flex;flex-direction:column;
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:14px;overflow:hidden}
+.car-role{border-bottom:1px solid rgba(255,255,255,.07)}
+.car-role:last-child{border-bottom:none}
+
+/* Role header row */
+.car-role-hd{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:1.35rem 1.8rem;cursor:pointer;
+  transition:background .2s;gap:1.2rem}
+.car-role-hd:hover{background:rgba(255,255,255,.03)}
+.car-role.open .car-role-hd{background:rgba(255,255,255,.04)}
+.car-role-left{display:flex;align-items:center;gap:1.1rem;flex:1;min-width:0}
+.car-role-badge{
+  display:inline-flex;align-items:center;
+  padding:.22rem .65rem;border-radius:20px;
+  background:rgba(52,199,89,.1);color:#34c759;
+  font-size:.56rem;font-weight:700;letter-spacing:.12em;
+  text-transform:uppercase;flex-shrink:0;
+  border:1px solid rgba(52,199,89,.2)}
+.car-role-title{
+  font-size:clamp(.88rem,1.4vw,1.05rem);
+  font-weight:700;color:#fff;margin:0 0 .3rem;letter-spacing:-.02em}
+.car-role-tags{display:flex;flex-wrap:wrap;gap:.3rem}
+.car-role-tags span{
+  font-size:.58rem;padding:.15rem .5rem;border-radius:20px;
+  background:rgba(63,108,181,.14);
+  color:rgba(255,255,255,.5);font-weight:600}
+.car-role-right{display:flex;align-items:center;gap:.9rem;flex-shrink:0}
+.car-role-type{font-size:.66rem;color:rgba(255,255,255,.66);white-space:nowrap}
+.car-role-toggle{
+  width:30px;height:30px;border-radius:50%;
+  background:rgba(255,255,255,.06);border:none;
+  display:flex;align-items:center;justify-content:center;
+  cursor:pointer;color:rgba(255,255,255,.45);
+  transition:all .25s;flex-shrink:0}
+.car-role-toggle svg{width:14px;height:14px;transition:transform .3s}
+.car-role.open .car-role-toggle{background:rgba(255,255,255,.12)}
+.car-role.open .car-role-toggle svg{transform:rotate(180deg)}
+
+/* Expandable body */
+.car-role-body{
+  max-height:0;overflow:hidden;
+  transition:max-height .42s cubic-bezier(.4,0,.2,1)}
+.car-role-content{
+  display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;
+  padding:0 1.8rem 1.8rem;
+  border-top:1px solid rgba(255,255,255,.05)}
+.car-role-col h4{
+  font-size:.56rem;font-weight:700;letter-spacing:.14em;
+  text-transform:uppercase;color:rgba(255,255,255,.28);
+  margin:1.4rem 0 .6rem}
+.car-role-col h4:first-child{margin-top:1.4rem}
+.car-role-col p{
+  font-size:.77rem;color:rgba(255,255,255,.48);
+  line-height:1.8;margin:0 0 .6rem}
+.car-role-col ul{
+  list-style:none;padding:0;margin:0 0 .6rem;
+  display:flex;flex-direction:column;gap:.38rem}
+.car-role-col ul li{
+  font-size:.74rem;color:rgba(255,255,255,.42);
+  line-height:1.65;padding-left:1.1rem;position:relative}
+.car-role-col ul li::before{
+  content:'—';position:absolute;left:0;
+  color:rgba(255,255,255,.18)}
+.car-apply-btn{margin-top:1.2rem;display:inline-flex}
+
+
+.car-apply-note{margin-top:.6rem;font-size:.78rem;color:var(--muted,#6b7280)}
+
+.car-apply-note a{color:var(--blue);font-weight:600;text-decoration:underline}

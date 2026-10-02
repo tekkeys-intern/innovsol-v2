@@ -1,0 +1,34 @@
+{
+  "phases": [
+    {
+      "title": "Discover",
+      "when": "Week 1 – 2",
+      "text": "AI maturity assessment, stakeholder interviews, data landscape review, and use case prioritisation across your enterprise.",
+      "deliverable": "AI Opportunity Map + Prioritised Use Case Backlog"
+    },
+    {
+      "title": "Design",
+      "when": "Week 3 – 4",
+      "text": "Technical architecture, technology selection, security framework, team structure, and a sprint-by-sprint 12-week build plan.",
+      "deliverable": "Technical Blueprint + Security & Governance Framework"
+    },
+    {
+      "title": "Deploy",
+      "when": "Week 5 – 12",
+      "text": "FDE engineers embedded and shipping — AI features, agents, and infrastructure built, tested, and deployed into your production environment.",
+      "deliverable": "Live AI Systems + Integration Test Reports"
+    },
+    {
+      "title": "Scale",
+      "when": "Week 13+",
+      "text": "Performance monitoring, model optimisation, new use cases, and structured knowledge transfer to your internal team.",
+      "deliverable": "Self-Sufficient AI + Ongoing Optimisation Roadmap"
+    }
+  ],
+  "pills": [
+    "Discover + Design: fixed-price 2-week sprint",
+    "Production-ready AI in under 12 weeks",
+    "No long-term commitment to start",
+    "Measurable ROI at every phase"
+  ]
+}

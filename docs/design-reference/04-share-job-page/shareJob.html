@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Share this Job – InnovSol Careers</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#0b0f19;--text:#1f2430;--muted:#4b5263;--line:#e2e5ec;--blue:#1d5be0;--btn:#1a4fd6}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{background:#fff}
+  body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;color:var(--text);-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  button,input{font-family:inherit}
+  svg.lucide{display:block}
+  .page{width:1024px;margin:0 auto;position:relative;background:#fff;font-weight:500}
+
+  .hdr{height:93px;border-bottom:1px solid #e6e8ee;position:relative}
+  .back{position:absolute;left:28px;top:33px;display:flex;align-items:center;gap:22px;font-size:14.6px;color:var(--ink)}
+  .back svg{width:26px;height:26px;stroke-width:2}
+  .logo{position:absolute;left:411px;top:6px;width:178px}
+  .burger{position:absolute;left:949px;top:34px;width:32px;height:24px;display:flex;flex-direction:column;justify-content:space-between;border:0;background:none}
+  .burger span{height:2.8px;background:var(--ink);border-radius:2px}
+
+  .wrap{padding:0 34px 0 37px}
+  .intro{position:relative;height:160px}
+  .intro h1{position:absolute;left:2px;top:37px;font-size:33.5px;font-weight:700;color:var(--ink);letter-spacing:-.6px;line-height:42px}
+  .intro p{position:absolute;left:2px;top:89px;font-size:15px;color:var(--muted)}
+  .intro img{position:absolute;left:701px;top:15px;width:254px;height:132px;-webkit-mask-image:radial-gradient(ellipse 50% 50% at 50% 50%,#000 72%,transparent 100%);mask-image:radial-gradient(ellipse 50% 50% at 50% 50%,#000 72%,transparent 100%)}
+
+  .card{border:1px solid var(--line);border-radius:12px;background:#fff;box-shadow:0 2px 12px rgba(20,30,60,.035)}
+  .job{height:198px;position:relative}
+  .job .ic{position:absolute;left:22px;top:34px;width:101px;height:101px;border-radius:16px;background:#eef3fd;border:1px solid #dfe7f8;display:flex;align-items:center;justify-content:center}
+  .job h2{position:absolute;left:151px;top:20px;font-size:20.5px;font-weight:700;color:var(--ink);letter-spacing:-.3px;display:flex;align-items:center;gap:15px}
+  .hp{font-size:13.2px;font-weight:600;color:#f08a00;background:#ffecd4;height:30px;padding:0 11px;border-radius:5px;display:inline-flex;align-items:center;letter-spacing:0}
+  .meta{position:absolute;left:151px;display:flex;font-size:14.3px;color:#2b3040}
+  .meta span{display:flex;align-items:center;gap:9px;margin-right:27px}
+  .meta svg{width:16px;height:16px;stroke-width:1.8;color:#2b3040}
+  .tags{position:absolute;left:151px;top:141px;display:flex;gap:16px}
+  .tags span{height:28px;border:1px solid #cad8f3;background:#eef3fd;border-radius:5px;font-size:13.3px;color:#2b3040;padding:0 10px;display:flex;align-items:center}
+  .vjd{position:absolute;left:731px;top:126px;width:202px;height:48px;border-radius:5px;background:var(--btn);color:#fff;font-size:15.6px;font-weight:600;display:flex;align-items:center;justify-content:center;gap:18px}
+  .vjd svg{width:20px;height:20px;stroke-width:2.2}
+
+  .share{margin-top:20px;height:800px;padding:0 43px 0 25px}
+  .share h3{font-size:17.5px;font-weight:700;color:var(--ink);letter-spacing:-.2px}
+  .tiles{display:flex;margin-top:17px}
+  .tile{height:112px;border:1px solid #e3e6ec;border-radius:9px;background:#fff;display:flex;flex-direction:column;align-items:center;padding-top:15px;font-size:14.2px;color:var(--ink)}
+  .tile .c{width:46px;height:46px;border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:14px}
+  .tile .c img{width:26px;height:26px}
+  .hr{height:1px;background:#e7e9ee;margin-top:29px}
+  .linkrow{display:flex;margin-top:17px;height:48px}
+  .linkrow .url{flex:1;border:1px solid #d9dde5;border-radius:6px 0 0 6px;border-right:0;display:flex;align-items:center;padding-left:18px;font-size:15px;color:var(--ink)}
+  .copy{width:157px;border:1.4px solid var(--blue);border-radius:6px;color:var(--blue);background:#fff;font-size:15.6px;font-weight:600;display:flex;align-items:center;justify-content:center;gap:10px;cursor:pointer}
+  .copy svg{width:18px;height:18px;stroke-width:2}
+  .info{margin-top:13px;height:38px;border-radius:6px;background:#eef3fd;display:flex;align-items:center;gap:13px;padding-left:18px;font-size:13.2px;color:#2d4aa8}
+  .info svg{width:16px;height:16px;stroke-width:2;color:#3b4a6b}
+  .emailrow{display:flex;margin-top:15px;height:47px}
+  .field{border:1px solid #d9dde5;border-radius:5px;display:flex;align-items:center;padding:0 18px;font-size:14.8px;color:#5b6272;background:#fff}
+  .field input{border:0;outline:0;font-size:14.8px;width:100%;color:var(--ink);font-weight:500}
+  .field input::placeholder{color:#5b6272}
+  .field.sel{justify-content:space-between;padding:0 18px 0 17px}
+  .field.sel svg{width:15px;height:15px;stroke-width:2;color:#3b4252}
+  .send{width:178px;border-radius:5px;background:var(--btn);color:#fff;font-size:15.6px;font-weight:600;display:flex;align-items:center;justify-content:center;gap:15px;border:0;cursor:pointer}
+  .send svg{width:19px;height:19px;stroke-width:2}
+  .msg{margin-top:10px;height:127px;border:1px solid #e1e4ea;border-radius:6px;background:#f8f9fb;padding:12px 18px;font-size:14px;line-height:26.4px;color:#2b3040}
+  .msg a{color:var(--blue)}
+  .post{margin-top:14px;height:95px;border-radius:8px;background:linear-gradient(90deg,#edf2fd 0%,#eef2fd 60%,#f0f1fc 100%);position:relative}
+  .post .ic{position:absolute;left:20px;top:17px;width:61px;height:61px;border-radius:50%;background:#dde6fa;display:flex;align-items:center;justify-content:center;color:var(--blue)}
+  .post .ic svg{width:28px;height:28px;stroke-width:1.8}
+  .post h4{position:absolute;left:100px;top:24px;font-size:17px;font-weight:700;color:var(--ink)}
+  .post p{position:absolute;left:100px;top:55px;font-size:14px;color:#1d2230}
+  .cp{position:absolute;left:701px;top:25px;width:164px;height:48px;border:1.4px solid var(--btn);border-radius:6px;background:#fff;color:var(--btn);font-size:15.6px;font-weight:600;display:flex;align-items:center;justify-content:center;gap:15px}
+  .cp svg{width:19px;height:19px;stroke-width:2}
+
+  .grow{margin-top:29px;height:123px;border-radius:10px;border:1px solid #e6e9f3;background:linear-gradient(90deg,#f1f4fd 0%,#f3f5fd 55%,#f3f0fc 100%);position:relative;overflow:hidden}
+  .grow .ic{position:absolute;left:33px;top:26px;width:80px;height:80px;border-radius:50%;background:#e2e9fa;display:flex;align-items:center;justify-content:center;color:var(--blue)}
+  .grow .ic svg{width:38px;height:38px;stroke-width:1.7}
+  .grow h4{position:absolute;left:142px;top:40px;font-size:20.5px;font-weight:700;color:var(--ink);letter-spacing:-.2px}
+  .grow p{position:absolute;left:142px;top:76px;font-size:14.4px;color:#1d2230}
+  .grow img{position:absolute;left:721px;top:0;width:180px;height:122px;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 14%,#000 86%,transparent 100%);mask-image:linear-gradient(90deg,transparent 0,#000 14%,#000 86%,transparent 100%)}
+
+  .bnav{margin-top:28px;height:86px;border-top:1px solid #e3e6ec;position:sticky;bottom:0;background:#fff;font-size:15px;color:#3b4252}
+  .bnav a{position:absolute;top:22px;display:flex;align-items:center;gap:12px}
+  .bnav svg{width:26px;height:26px;stroke-width:1.6;color:#3b4252}
+  .bnav a.on{color:var(--btn);font-weight:600}
+  .bnav a.on svg{color:var(--btn);stroke-width:2}
+</style>
+</head>
+<body>
+<div class="page" id="page">
+  <header class="hdr">
+    <a class="back" href="#"><i data-lucide="chevron-left"></i>Back to Job Details</a>
+    <svg class="logo" viewBox="8 6 150 62" xmlns="http://www.w3.org/2000/svg" aria-label="innovsol">
+      <g fill="none" stroke="#2F5FD0" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18.6 34 L27 42.5 L27 64"/><path d="M31.8 18.4 L31.8 64"/><path d="M41 30.4 L41 64"/><path d="M53 30.4 L53 44 L47 51 L47 64"/>
+        <circle cx="16.5" cy="31" r="3.3" fill="#fff"/><circle cx="31.8" cy="15" r="3.4" fill="#F5B301"/><circle cx="41" cy="27" r="3.3" fill="#fff"/><circle cx="53" cy="27" r="3.3" fill="#fff"/>
+      </g>
+      <text x="60" y="49" font-family="Poppins" font-weight="500" font-size="16.8" letter-spacing="3" textLength="92" fill="#141414">innovsol</text>
+      <text x="61" y="62.5" font-family="Poppins" font-weight="500" font-size="5.3" textLength="90" fill="#141414">Innovate · Disrupt · Transform</text>
+    </svg>
+    <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </header>
+
+  <main class="wrap">
+    <div class="intro">
+      <h1>Share this job</h1>
+      <p>Know someone who’s perfect for this role? Share it with them.</p>
+      <img src="assets/share-hero.jpg" alt="">
+    </div>
+
+    <section class="card job">
+      <span class="ic">
+        <svg viewBox="8 6 50 62" style="width:56px;height:68px" fill="none" stroke="#2F5FD0" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M18.6 34 L27 42.5 L27 64"/><path d="M31.8 18.4 L31.8 64"/><path d="M41 30.4 L41 64"/><path d="M53 30.4 L53 44 L47 51 L47 64"/><circle cx="16.5" cy="31" r="3.3"/><circle cx="31.8" cy="15" r="3.4" fill="#F5B301"/><circle cx="41" cy="27" r="3.3"/><circle cx="53" cy="27" r="3.3"/></svg>
+      </span>
+      <h2>Senior AI Engineer <span class="hp">High Priority Hiring</span></h2>
+      <div class="meta" style="top:66px"><span><i data-lucide="map-pin"></i>Remote / Hybrid / Gurgaon</span><span><i data-lucide="briefcase-business"></i>Full-Time</span><span><i data-lucide="briefcase"></i>3 - 8 Years Experience</span></div>
+      <div class="meta" style="top:99px"><span><i data-lucide="wallet-cards"></i>₹30-50 LPA (Competitive)</span></div>
+      <div class="tags"><span>Python</span><span>LLMs</span><span>MLOps</span><span>Cloud</span><span>AI Agents</span></div>
+      <a class="vjd" href="#">View Job Details <i data-lucide="arrow-right"></i></a>
+    </section>
+
+    <section class="card share">
+      <h3 style="padding-top:26px">1. Share quickly via</h3>
+      <div class="tiles">
+        <a class="tile" href="#" style="width:113px"><span class="c" style="background:#25D366"><img src="assets/whatsapp.svg" alt=""></span>WhatsApp</a>
+        <a class="tile" href="#" style="width:113px;margin-left:19px"><span class="c" style="background:#0A66C2"><img src="assets/linkedin.svg" alt="" style="width:22px;height:22px"></span>LinkedIn</a>
+        <a class="tile" href="#" style="width:112px;margin-left:19px"><span class="c" style="background:linear-gradient(160deg,#6fb4ff,#2f7ff0)"><i data-lucide="mail" style="width:24px;height:24px;color:#fff;stroke-width:2"></i></span>Email</a>
+        <a class="tile" href="#" style="width:112px;margin-left:19px"><span class="c" style="background:#27A7E7"><img src="assets/telegram.svg" alt="" style="width:30px;height:30px;margin-left:-2px"></span>Telegram</a>
+        <a class="tile" href="#" style="width:112px;margin-left:20px"><span class="c" style="background:#000"><img src="assets/x.svg" alt="" style="width:22px;height:22px"></span>X (Twitter)</a>
+        <a class="tile" href="#" style="width:110px;margin-left:19px"><span class="c"><img src="assets/facebook.svg" alt="" style="width:46px;height:46px"></span>Facebook</a>
+        <a class="tile" href="#" style="width:110px;margin-left:19px"><span class="c" style="background:#eef0f4"><i data-lucide="ellipsis" style="width:24px;height:24px;color:#2b3040;stroke-width:2.6"></i></span>More</a>
+      </div>
+      <div class="hr"></div>
+
+      <h3 style="margin-top:23px">2. Copy job link</h3>
+      <div class="linkrow"><div class="url" id="url">https://innovsol.ai/careers/senior-ai-engineer</div><button class="copy" id="copyBtn"><i data-lucide="copy"></i><span>Copy Link</span></button></div>
+      <div class="info"><i data-lucide="link"></i>Anyone with this link can view the job and apply.</div>
+
+      <h3 style="margin-top:32px">3. Share via email</h3>
+      <div class="emailrow">
+        <label class="field" style="width:362px"><input type="email" placeholder="Enter email address"></label>
+        <div class="field sel" style="width:323px;margin-left:9px">Add a personal message (optional) <i data-lucide="chevron-down"></i></div>
+        <button class="send" style="margin-left:13px">Send Email <i data-lucide="send"></i></button>
+      </div>
+      <div class="msg">Hi,<br>I thought you might be interested in this opportunity at InnovSol.ai.<br>Check out the role and apply if it’s a good fit!<br>Link: <a href="#">https://innovsol.ai/careers/senior-ai-engineer</a></div>
+
+      <h3 style="margin-top:28px">4. Share as post</h3>
+      <div class="post">
+        <span class="ic"><i data-lucide="square-pen"></i></span>
+        <h4>Create a post to share on your network</h4>
+        <p>Let your network know about this amazing opportunity.</p>
+        <a class="cp" href="#">Create Post <i data-lucide="external-link"></i></a>
+      </div>
+    </section>
+
+    <section class="grow">
+      <span class="ic"><i data-lucide="users-round"></i></span>
+      <h4>Help someone grow their career!</h4>
+      <p>Your share can help the right person find the right opportunity.</p>
+      <img src="assets/high-five.png" alt="">
+    </section>
+  </main>
+
+  <nav class="bnav">
+    <a href="#" style="left:65px"><i data-lucide="search"></i>Explore Jobs</a>
+    <a href="#" style="left:269px"><i data-lucide="heart"></i>Saved Jobs</a>
+    <a href="#" style="left:468px"><i data-lucide="file-text"></i>Applied Jobs</a>
+    <a href="#" style="left:677px"><i data-lucide="bell"></i>Notifications</a>
+    <a class="on" href="#" style="left:879px"><i data-lucide="user-round"></i>Profile</a>
+  </nav>
+</div>
+
+<script src="assets/lucide.min.js"></script>
+<script>
+  lucide.createIcons();
+  document.getElementById('copyBtn').addEventListener('click', function(){
+    var b = this.querySelector('span');
+    navigator.clipboard && navigator.clipboard.writeText(document.getElementById('url').textContent).catch(function(){});
+    b.textContent = 'Copied!'; setTimeout(function(){ b.textContent = 'Copy Link'; }, 1600);
+  });
+  (function(){
+    var W = 1024, p = document.getElementById('page');
+    function fit(){ p.style.zoom = Math.min(Math.max(innerWidth / W, 0.35), 1.6); }
+    fit(); addEventListener('resize', fit);
+  })();
+</script>
+</body>
+</html>

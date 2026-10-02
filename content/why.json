@@ -1,0 +1,32 @@
+[
+  {
+    "tag": "Business-First",
+    "title": "Business-First AI",
+    "text": "Every initiative anchored in cost reduction, revenue growth, or efficiency. We never build AI for its own sake — every line of code connects to a business result."
+  },
+  {
+    "tag": "12-Week Delivery",
+    "title": "Faster Time to Production",
+    "text": "Idea to production in under 12 weeks. No long consulting engagements. The FDE model eliminates the handoff gap that kills most enterprise AI initiatives."
+  },
+  {
+    "tag": "Embedded Teams",
+    "title": "Embedded Engineering Teams",
+    "text": "FDE engineers work inside your organisation — in your codebase, your sprints, your systems. They build AI that fits your reality, not a generic template."
+  },
+  {
+    "tag": "Enterprise Security",
+    "title": "Enterprise-Grade Security",
+    "text": "Data isolation, RBAC, audit logging, and responsible AI governance built in from day one — not bolted on after the fact. We design all AI with compliance at the core."
+  },
+  {
+    "tag": "Measurable ROI",
+    "title": "Outcome-Driven Delivery",
+    "text": "We define measurable success criteria before we start and report against them throughout. Results are our responsibility — not just yours."
+  },
+  {
+    "tag": "10+ Industries",
+    "title": "Deep Domain Expertise",
+    "text": "Pattern recognition from real deployments across 10+ industries. Banking, Healthcare, Manufacturing, Retail, Insurance — we understand your world before we build in it."
+  }
+]

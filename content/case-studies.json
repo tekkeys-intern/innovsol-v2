@@ -1,0 +1,50 @@
+[
+  {
+    "slug": "claims-triage-assessment-automation",
+    "industry": "Insurance",
+    "type": "AI Agents & Automation",
+    "title": "Claims Triage & Assessment Automation",
+    "details": [
+      "50,000+ claims/month",
+      "12 weeks to production",
+      "Azure OpenAI + LangChain"
+    ],
+    "results": [
+      "68% reduction in average handle time",
+      "40% reduction in cost-per-claim"
+    ],
+    "industryPage": "/industries/insurance.html"
+  },
+  {
+    "slug": "predictive-maintenance-200-machines",
+    "industry": "Manufacturing — Automotive",
+    "type": "Enterprise AI Infrastructure",
+    "title": "Predictive Maintenance Across 200+ Machines",
+    "details": [
+      "18 months of sensor data",
+      "Real-time streaming inference",
+      "AWS SageMaker + Kafka"
+    ],
+    "results": [
+      "42% reduction in unplanned downtime",
+      "$1.4M annualised cost saving"
+    ],
+    "industryPage": "/industries/manufacturingOperations.html"
+  },
+  {
+    "slug": "ai-customer-service-agent-rag",
+    "industry": "Banking — Retail",
+    "type": "Generative AI Solutions",
+    "title": "AI Customer Service Agent — RAG Architecture",
+    "details": [
+      "Core banking integration",
+      "Anthropic Claude + Pinecone",
+      "10 weeks"
+    ],
+    "results": [
+      "51% queries resolved without human escalation",
+      "CSAT improved from 72% to 84%"
+    ],
+    "industryPage": "/industries/banking_finance.html"
+  }
+]

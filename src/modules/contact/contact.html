@@ -1,0 +1,108 @@
+<!-- ══ CONTACT (redesigned) ══════════════════════════════════════════════════ -->
+<section id="contact">
+  <div class="con-hero">
+
+    <!-- ── Location image background ── -->
+    <div class="con-map-bg">
+      <img src="/media/location.jpg" width="1600" height="900" alt="Innovsol global presence map" class="con-loc-img" loading="lazy" decoding="async"/>
+      <div class="con-map-overlay"></div>
+    </div>
+
+    <!-- ── Content over the map ── -->
+    <div class="container con-map-content">
+
+      <!-- Left: contact info panel -->
+      <div class="con-panel fi">
+        <div class="section-label" style="color:var(--orange)">Get in Touch</div>
+        <h2>Let's Talk About<br>Your AI Journey.</h2>
+        <p>Whether you're exploring AI for the first time or ready to scale — a conversation with our team is the fastest way forward.</p>
+        <div class="con-details">
+          <div class="con-det">
+            <span class="con-icon">✉️</span>
+            <span><a href="mailto:hello@innovsol.ai" style="color:inherit;text-decoration:none">hello@innovsol.ai</a></span>
+          </div>
+          <div class="con-det">
+            <span class="con-icon">📞</span>
+            <span><a href="tel:+919582799988" style="color:inherit;text-decoration:none">+91 95827 99988</a></span>
+          </div>
+          <div class="con-det">
+            <span class="con-icon">⚡</span>
+            <span>Strategy calls within 5 business days</span>
+          </div>
+          <div class="con-det">
+            <span class="con-icon">🔒</span>
+            <span>Enterprise-grade security · Privacy-first handling</span>
+          </div>
+        </div>
+        <a href="#contact-form" class="btn btn-orange" style="margin-top:1.5rem;align-self:flex-start">Book a Strategy Call &rarr;</a>
+      </div>
+
+      <!-- HQ address simple text -->
+      <div class="con-hq-text">
+        <span class="con-hq-label">&#x1F4CD; Headquarters</span>
+        <span class="con-hq-addr">411, Good Earth Business Bay-1, Sector-58,<br>Gurugram-122098, India</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ CONTACT FORM ══════════════════════════════════════════════════════════ -->
+<section id="contact-form" class="contact-form-sec">
+  <div class="container">
+    <div class="contact-form-inner">
+      <div class="cform-left">
+        <p class="cform-tag">Get In Touch</p>
+        <h2 class="cform-h2">Start the<br><em>Conversation.</em></h2>
+        <p class="cform-sub">Tell us about your AI challenge. Our team responds within 1 business day.</p>
+        <ul class="cform-trust">
+          <li>Strategy calls within 5 days</li>
+          <li>Enterprise-grade security</li>
+          <li>Privacy-first data handling</li>
+        </ul>
+      </div>
+      <form id="cform" class="cform-modern fi" onsubmit="sendForm(event)">
+          <div class="frow">
+            <div class="fg"><label>First Name *</label><input type="text" name="firstName" placeholder="First name" required/></div>
+            <div class="fg"><label>Last Name *</label><input type="text" name="lastName" placeholder="Last name" required/></div>
+          </div>
+          <div class="fg"><label>Work Email *</label><input type="email" name="email" placeholder="you@company.com" required/></div>
+          <div class="fg"><label>Phone Number</label><input type="tel" name="phone" placeholder="" aria-label="Phone number" /></div>
+          <div class="fg"><label>Company *</label><input type="text" name="company" placeholder="Your organisation" required/></div>
+          <div class="frow">
+            <div class="fg"><label>Industry</label>
+              <select name="industry" aria-label="Industry">
+                <option value="">Select industry</option>
+                <option>Banking &amp; Financial Services</option>
+                <option>Manufacturing</option>
+                <option>Healthcare &amp; Life Sciences</option>
+                <option>Retail &amp; E-Commerce</option>
+                <option>Telecom &amp; Media</option>
+                <option>Insurance</option>
+                <option>GCC / Shared Services</option>
+                <option>High-Growth Startup</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="fg"><label>Enquiry Type</label>
+              <select name="enquiryType" aria-label="Enquiry type">
+                <option value="">Select type</option>
+                <option>Strategy Consultation</option>
+                <option>FDE Engagement</option>
+                <option>Solution Deployment</option>
+                <option>Partnership</option>
+                <option>Careers</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="fg"><label>Message</label><textarea name="message" maxlength="4000" placeholder="Tell us about your AI challenge or ambition..."></textarea></div>
+          <div class="fg hp" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden"><label>Leave this field empty</label><input type="text" name="website" tabindex="-1" autocomplete="off"/></div>
+          <button type="submit" class="fsub">Send Message &rarr;</button>
+          <p id="cform-status" class="cform-status" role="status" aria-live="polite"></p>
+          <div class="fnote">By submitting you agree to our Privacy Policy. All enquiries reviewed within 1 business day.</div>
+      </form>
+    </div>
+  </div>
+</section>
+

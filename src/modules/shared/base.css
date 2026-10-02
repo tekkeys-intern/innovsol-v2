@@ -1,0 +1,90 @@
+
+/* ═══ RESET & ROOT ════════════════════════════════════════════════════════ */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  /* Brand palette — Blue + Orange + Black + White */
+  --blue:    #3f6cb5;   /* primary brand blue */
+  --blue2:   #2d5294;   /* deeper blue — hover/darks */
+  --blue3:   #edf2fb;   /* pale blue tint */
+  --orange:  #faa720;   /* primary brand orange / CTA */
+  --orange2: #d4890f;   /* deeper orange — hover */
+  --orange3: #fff8e8;   /* pale orange tint */
+  --dark:    #0f1923;   /* near-black */
+  --dark2:   #1e2d3d;   /* secondary dark */
+  --gray:    #5a6a7a;
+  --lgray:   #8fa3b8;
+  --bg:      #f8f9fc;
+  --bg2:     #edf2fb;
+  --border:  #c5d5ef;
+  --white:   #FFFFFF;
+  --font:'Inter','Segoe UI',system-ui,-apple-system,BlinkMacSystemFont,sans-serif;
+}
+html{scroll-behavior:smooth;overflow-x:clip;max-width:100%}
+/* Offset all anchor sections by the fixed navbar height */
+section[id]{scroll-margin-top:104px}
+body{font-family:var(--font);background:var(--white);color:var(--dark);line-height:1.65;overflow-x:clip;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility;font-feature-settings:'cv02','cv03','cv04','cv11'}
+h1,h2,h3,h4{line-height:1.15;font-weight:700;letter-spacing:-.02em}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+
+/* ═══ UTILITIES ═══════════════════════════════════════════════════════════ */
+.container{width:92%;max-width:2200px;margin:0 auto;padding:0 clamp(20px,2.5vw,60px)}
+.section-label{
+  display:inline-flex;align-items:center;gap:.65rem;
+  font-size:1rem;font-weight:800;letter-spacing:.12em;
+  color:var(--orange);text-transform:uppercase;margin-bottom:.75rem}
+.section-label::before{
+  content:'';display:inline-block;width:26px;height:3px;
+  background:var(--orange);border-radius:2px;flex-shrink:0}
+.btn{display:inline-flex;align-items:center;gap:.4rem;padding:.72rem 1.4rem;border-radius:8px;font-size:.88rem;font-weight:600;cursor:pointer;transition:all .22s;border:none;font-family:var(--font);letter-spacing:-.005em}
+.btn-blue{background:var(--blue);color:#fff}
+.btn-blue:hover{background:var(--blue2);transform:translateY(-2px);box-shadow:0 6px 24px rgba(63,108,181,.32)}
+.btn-orange{background:var(--orange);color:#0f1923}
+.btn-orange:hover{background:var(--orange2);color:#fff;transform:translateY(-2px);box-shadow:0 6px 24px rgba(250,167,32,.4)}
+.btn-outline-blue{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.6)}
+.btn-outline-blue:hover{background:rgba(255,255,255,.15);color:#fff;border-color:#fff}
+#nav.sc .btn-outline-blue{color:var(--blue);border-color:var(--blue)}
+#nav.sc .btn-outline-blue:hover{background:var(--blue);color:#fff}
+.btn-ghost{background:rgba(255,255,255,.1);color:#fff;border:1.5px solid rgba(255,255,255,.25)}
+.btn-ghost:hover{background:rgba(255,255,255,.2)}
+.btn-white{background:#fff;color:var(--blue)}
+.btn-white:hover{background:var(--blue3)}
+
+/* ── Hero-specific button pair ─────────────────────────────────────────── */
+/* Primary CTA on dark video — orange fill, near-black text, warm glow */
+.btn-hero-primary{
+  padding:clamp(.35rem,1vw,.55rem) clamp(.7rem,1.8vw,1.3rem);
+  font-size:clamp(.7rem,1.2vw,.88rem);font-weight:700;letter-spacing:.01em;
+  box-shadow:0 4px 20px rgba(250,167,32,.35),0 1px 4px rgba(0,0,0,.25)}
+.btn-hero-primary:hover{
+  background:var(--orange2);color:#fff;
+  box-shadow:0 8px 32px rgba(250,167,32,.55),0 2px 8px rgba(0,0,0,.3);
+  transform:translateY(-3px)}
+
+/* Secondary CTA on dark video — frosted white border, fills blue on hover */
+.btn-outline-light{
+  padding:clamp(.35rem,1vw,.55rem) clamp(.7rem,1.8vw,1.3rem);
+  font-size:clamp(.7rem,1.2vw,.88rem);font-weight:700;letter-spacing:.01em;
+  background:var(--blue);color:#fff;border:2px solid var(--blue);
+  box-shadow:0 4px 18px rgba(63,108,181,.45),0 1px 4px rgba(0,0,0,.3)}
+.btn-outline-light:hover{
+  background:var(--blue2);border-color:var(--blue2);
+  box-shadow:0 8px 28px rgba(63,108,181,.55),0 2px 8px rgba(0,0,0,.35);
+  transform:translateY(-3px)}
+
+/* fade-in on scroll */
+.fi{opacity:0;transform:translateY(32px);transition:opacity .9s cubic-bezier(.25,.46,.45,.94),transform .9s cubic-bezier(.25,.46,.45,.94)}
+.fi.on{opacity:1;transform:none}
+
+/* Slow-motion left/right title reveals */
+.fi-left{opacity:0;transform:translateX(-80px);
+  transition:opacity 1.4s cubic-bezier(.16,1,.3,1),transform 1.4s cubic-bezier(.16,1,.3,1)}
+.fi-left.on{opacity:1;transform:none}
+.fi-right{opacity:0;transform:translateX(80px);
+  transition:opacity 1.4s cubic-bezier(.16,1,.3,1),transform 1.4s cubic-bezier(.16,1,.3,1)}
+.fi-right.on{opacity:1;transform:none}
+
+/* Stagger: label slightly before h2 */
+.fi-left.title-label,.fi-right.title-label{transition-duration:1.2s}
+.fi-left.title-h2,.fi-right.title-h2{transition-delay:.15s;transition-duration:1.5s}
+

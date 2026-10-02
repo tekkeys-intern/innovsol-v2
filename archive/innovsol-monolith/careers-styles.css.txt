@@ -1,0 +1,225 @@
+/* ═══════════════════════════════════════════════════════════════════════
+   CAREERS PAGE — specific styles (loaded on top of main styles.css.txt)
+   ═══════════════════════════════════════════════════════════════════════ */
+
+/* ── Hero ─────────────────────────────────────────────────────────────── */
+.car-hero{
+  position:relative;min-height:100vh;
+  display:flex;align-items:center;
+  background:linear-gradient(160deg,#070f1e 0%,#0c1e3a 60%,#071628 100%);
+  overflow:hidden}
+.car-hero::before{
+  content:'';position:absolute;
+  width:900px;height:900px;border-radius:50%;
+  background:radial-gradient(circle,rgba(63,108,181,.15),transparent 65%);
+  right:-200px;top:-200px;pointer-events:none}
+.car-hero::after{
+  content:'';position:absolute;
+  width:600px;height:600px;border-radius:50%;
+  background:radial-gradient(circle,rgba(250,167,32,.07),transparent 65%);
+  left:-150px;bottom:-100px;pointer-events:none}
+.car-hero-content{
+  position:relative;z-index:1;
+  padding-top:9rem;padding-bottom:5.5rem}
+.car-eyebrow{
+  font-size:.62rem;font-weight:700;letter-spacing:.22em;
+  text-transform:uppercase;color:var(--orange);margin-bottom:1.1rem}
+.car-h1{
+  font-size:clamp(3rem,7vw,5.8rem);
+  font-weight:900;line-height:.9;
+  letter-spacing:-.055em;color:#fff;
+  margin:0 0 1.5rem;max-width:720px}
+.car-h1 em{
+  font-style:normal;display:block;
+  color:transparent;-webkit-text-stroke:2px rgba(255,255,255,.45)}
+.car-sub{
+  font-size:clamp(.85rem,1.1vw,1rem);
+  color:rgba(255,255,255,.48);line-height:1.8;
+  max-width:490px;margin:0 0 2.2rem}
+.car-hero-btns{display:flex;gap:.9rem;flex-wrap:wrap;margin-bottom:3.5rem}
+.btn-outline-white{
+  color:#fff;border:1.5px solid rgba(255,255,255,.28);
+  background:transparent;border-radius:6px;
+  padding:.6rem 1.4rem;font-size:.82rem;font-weight:600;
+  transition:all .25s;display:inline-flex;align-items:center}
+.btn-outline-white:hover{border-color:#fff;background:rgba(255,255,255,.07)}
+.car-stats{
+  display:flex;align-items:center;gap:2.2rem;flex-wrap:wrap;
+  padding-top:2rem;border-top:1px solid rgba(255,255,255,.07)}
+.car-stat{display:flex;flex-direction:column;gap:.18rem}
+.car-stat-n{
+  font-size:clamp(1.5rem,2.5vw,2rem);
+  font-weight:900;color:#fff;letter-spacing:-.04em;line-height:1}
+.car-stat-l{
+  font-size:.58rem;color:rgba(255,255,255,.32);
+  letter-spacing:.1em;text-transform:uppercase}
+.car-stat-div{
+  width:1px;height:38px;
+  background:rgba(255,255,255,.1);flex-shrink:0}
+
+/* ── The FDE Way ─────────────────────────────────────────────────────── */
+.car-model{padding:6rem 0;background:#050d1a}
+.car-model-hd{text-align:center;margin-bottom:3.5rem}
+.car-model-hd h2{
+  font-size:clamp(1.8rem,3vw,2.8rem);
+  font-weight:900;color:#fff;letter-spacing:-.04em;margin:.4rem 0 .8rem}
+.car-model-sub{
+  font-size:.85rem;color:rgba(255,255,255,.38);
+  max-width:460px;margin:0 auto;line-height:1.75}
+.car-model-grid{
+  display:grid;grid-template-columns:repeat(4,1fr);
+  gap:1.5px;background:rgba(255,255,255,.07);
+  border-radius:14px;overflow:hidden}
+.car-model-card{
+  background:#080f1c;padding:2rem 1.6rem;transition:background .3s}
+.car-model-card:hover{background:#0d1630}
+.car-model-num{
+  font-size:2.6rem;font-weight:900;
+  color:rgba(255,255,255,.05);letter-spacing:-.06em;
+  margin-bottom:.75rem;line-height:1}
+.car-model-card h3{
+  font-size:.88rem;font-weight:700;color:#fff;
+  margin:0 0 .55rem;letter-spacing:-.02em}
+.car-model-card p{
+  font-size:.74rem;color:rgba(255,255,255,.36);line-height:1.8;margin:0}
+
+/* ── Why Join ────────────────────────────────────────────────────────── */
+.car-why{padding:6rem 0;background:#f8f9fb}
+.car-why-hd{text-align:center;margin-bottom:3rem}
+.car-why-hd .section-label{color:var(--blue)}
+.car-why-hd h2{
+  font-size:clamp(1.8rem,3vw,2.8rem);
+  font-weight:900;color:var(--dark);letter-spacing:-.04em;margin:.4rem 0}
+.car-why-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
+.car-why-card{
+  padding:1.8rem;border:1px solid rgba(0,0,0,.07);
+  border-radius:14px;background:#fff;
+  transition:all .3s}
+.car-why-card:hover{
+  border-color:rgba(63,108,181,.25);
+  box-shadow:0 10px 36px rgba(63,108,181,.08);
+  transform:translateY(-3px)}
+.car-why-icon{
+  width:38px;height:38px;margin-bottom:1rem;color:var(--blue)}
+.car-why-icon svg{width:100%;height:100%}
+.car-why-card h3{
+  font-size:.9rem;font-weight:700;color:var(--dark);
+  margin:0 0 .45rem;letter-spacing:-.02em}
+.car-why-card p{
+  font-size:.76rem;color:var(--dark2);line-height:1.8;margin:0}
+
+/* ── Open Roles ──────────────────────────────────────────────────────── */
+.car-roles{padding:6rem 0;background:#070f1e}
+.car-roles-hd{text-align:center;margin-bottom:3rem}
+.car-roles-hd h2{
+  font-size:clamp(1.8rem,3vw,2.8rem);
+  font-weight:900;color:#fff;letter-spacing:-.04em;margin:.4rem 0 .6rem}
+.car-roles-sub{font-size:.8rem;color:rgba(255,255,255,.32);margin:0}
+.car-roles-list{
+  display:flex;flex-direction:column;
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:14px;overflow:hidden}
+.car-role{border-bottom:1px solid rgba(255,255,255,.07)}
+.car-role:last-child{border-bottom:none}
+
+/* Role header row */
+.car-role-hd{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:1.35rem 1.8rem;cursor:pointer;
+  transition:background .2s;gap:1.2rem}
+.car-role-hd:hover{background:rgba(255,255,255,.03)}
+.car-role.open .car-role-hd{background:rgba(255,255,255,.04)}
+.car-role-left{display:flex;align-items:center;gap:1.1rem;flex:1;min-width:0}
+.car-role-badge{
+  display:inline-flex;align-items:center;
+  padding:.22rem .65rem;border-radius:20px;
+  background:rgba(52,199,89,.1);color:#34c759;
+  font-size:.56rem;font-weight:700;letter-spacing:.12em;
+  text-transform:uppercase;flex-shrink:0;
+  border:1px solid rgba(52,199,89,.2)}
+.car-role-title{
+  font-size:clamp(.88rem,1.4vw,1.05rem);
+  font-weight:700;color:#fff;margin:0 0 .3rem;letter-spacing:-.02em}
+.car-role-tags{display:flex;flex-wrap:wrap;gap:.3rem}
+.car-role-tags span{
+  font-size:.58rem;padding:.15rem .5rem;border-radius:20px;
+  background:rgba(63,108,181,.14);
+  color:rgba(255,255,255,.5);font-weight:600}
+.car-role-right{display:flex;align-items:center;gap:.9rem;flex-shrink:0}
+.car-role-type{font-size:.66rem;color:rgba(255,255,255,.28);white-space:nowrap}
+.car-role-toggle{
+  width:30px;height:30px;border-radius:50%;
+  background:rgba(255,255,255,.06);border:none;
+  display:flex;align-items:center;justify-content:center;
+  cursor:pointer;color:rgba(255,255,255,.45);
+  transition:all .25s;flex-shrink:0}
+.car-role-toggle svg{width:14px;height:14px;transition:transform .3s}
+.car-role.open .car-role-toggle{background:rgba(255,255,255,.12)}
+.car-role.open .car-role-toggle svg{transform:rotate(180deg)}
+
+/* Expandable body */
+.car-role-body{
+  max-height:0;overflow:hidden;
+  transition:max-height .42s cubic-bezier(.4,0,.2,1)}
+.car-role-content{
+  display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;
+  padding:0 1.8rem 1.8rem;
+  border-top:1px solid rgba(255,255,255,.05)}
+.car-role-col h4{
+  font-size:.56rem;font-weight:700;letter-spacing:.14em;
+  text-transform:uppercase;color:rgba(255,255,255,.28);
+  margin:1.4rem 0 .6rem}
+.car-role-col h4:first-child{margin-top:1.4rem}
+.car-role-col p{
+  font-size:.77rem;color:rgba(255,255,255,.48);
+  line-height:1.8;margin:0 0 .6rem}
+.car-role-col ul{
+  list-style:none;padding:0;margin:0 0 .6rem;
+  display:flex;flex-direction:column;gap:.38rem}
+.car-role-col ul li{
+  font-size:.74rem;color:rgba(255,255,255,.42);
+  line-height:1.65;padding-left:1.1rem;position:relative}
+.car-role-col ul li::before{
+  content:'—';position:absolute;left:0;
+  color:rgba(255,255,255,.18)}
+.car-apply-btn{margin-top:1.2rem;display:inline-flex}
+
+/* ── Apply CTA ───────────────────────────────────────────────────────── */
+.car-apply-cta{
+  padding:5rem 0;background:#000;
+  border-top:1px solid rgba(255,255,255,.05)}
+.car-apply-cta-inner{
+  display:flex;align-items:center;
+  justify-content:space-between;gap:3rem}
+.car-apply-cta-txt .section-label{color:var(--orange)}
+.car-apply-cta-txt h2{
+  font-size:clamp(1.6rem,3vw,2.5rem);
+  font-weight:900;color:#fff;letter-spacing:-.04em;
+  margin:.4rem 0 .8rem;line-height:1.05}
+.car-apply-cta-txt p{
+  font-size:.8rem;color:rgba(255,255,255,.38);
+  line-height:1.75;max-width:500px;margin:0}
+.car-apply-cta-btn{white-space:nowrap;flex-shrink:0;font-size:.85rem}
+
+/* ── Responsive ──────────────────────────────────────────────────────── */
+@media(max-width:1024px){
+  .car-model-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:860px){
+  .car-hero-content{padding-top:7.5rem;padding-bottom:4rem}
+  .car-h1{font-size:clamp(2.4rem,8vw,3.5rem)}
+  .car-stats{gap:1.4rem}
+  .car-stat-div{display:none}
+  .car-why-grid{grid-template-columns:repeat(2,1fr)}
+  .car-role-content{grid-template-columns:1fr;gap:0}
+  .car-apply-cta-inner{flex-direction:column;align-items:flex-start;gap:1.8rem}
+}
+@media(max-width:560px){
+  .car-model-grid{grid-template-columns:1fr}
+  .car-why-grid{grid-template-columns:1fr}
+  .car-h1{font-size:clamp(2rem,9vw,2.8rem)}
+  .car-role-hd{flex-direction:column;align-items:flex-start;gap:.8rem}
+  .car-role-right{width:100%;justify-content:space-between}
+  .car-role-left{flex-wrap:wrap}
+}

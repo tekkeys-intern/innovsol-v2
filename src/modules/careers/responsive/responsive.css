@@ -1,0 +1,21 @@
+/* ── Responsive ──────────────────────────────────────────────────────── */
+@media(max-width:1024px){
+  .car-model-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:860px){
+  .car-hero-content{padding-top:7.5rem;padding-bottom:4rem}
+  .car-h1{font-size:clamp(2.4rem,8vw,3.5rem)}
+  .car-stats{gap:1.4rem}
+  .car-stat-div{display:none}
+  .car-why-grid{grid-template-columns:repeat(2,1fr)}
+  .car-role-content{grid-template-columns:1fr;gap:0}
+  .car-apply-cta-inner{flex-direction:column;align-items:flex-start;gap:1.8rem}
+}
+@media(max-width:560px){
+  .car-model-grid{grid-template-columns:1fr}
+  .car-why-grid{grid-template-columns:1fr}
+  .car-h1{font-size:clamp(2rem,9vw,2.8rem)}
+  .car-role-hd{flex-direction:column;align-items:flex-start;gap:.8rem}
+  .car-role-right{width:100%;justify-content:space-between}
+  .car-role-left{flex-wrap:wrap}
+}

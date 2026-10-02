@@ -1,0 +1,127 @@
+[
+ {
+  "path": "/services.html",
+  "priority": 0.8,
+  "freq": "monthly"
+ },
+ {
+  "path": "/services/ai-strategy-and-transformation.html",
+  "priority": 0.7,
+  "freq": "monthly"
+ },
+ {
+  "path": "/services/ai-product-engineering.html",
+  "priority": 0.7,
+  "freq": "monthly"
+ },
+ {
+  "path": "/services/ai-agents-and-agentic-automation.html",
+  "priority": 0.7,
+  "freq": "monthly"
+ },
+ {
+  "path": "/services/generative-ai-solutions.html",
+  "priority": 0.7,
+  "freq": "monthly"
+ },
+ {
+  "path": "/services/enterprise-ai-infrastructure.html",
+  "priority": 0.7,
+  "freq": "monthly"
+ },
+ {
+  "path": "/services/forward-deployed-engineering.html",
+  "priority": 0.7,
+  "freq": "monthly"
+ },
+ {
+  "path": "/case-studies.html",
+  "priority": 0.8,
+  "freq": "monthly"
+ },
+ {
+  "path": "/case-studies/claims-triage-assessment-automation.html",
+  "priority": 0.6,
+  "freq": "monthly"
+ },
+ {
+  "path": "/case-studies/predictive-maintenance-200-machines.html",
+  "priority": 0.6,
+  "freq": "monthly"
+ },
+ {
+  "path": "/case-studies/ai-customer-service-agent-rag.html",
+  "priority": 0.6,
+  "freq": "monthly"
+ },
+ {
+  "path": "/about.html",
+  "priority": 0.8,
+  "freq": "monthly"
+ },
+ {
+  "path": "/engagement-models.html",
+  "priority": 0.7,
+  "freq": "monthly"
+ },
+ {
+  "path": "/faq.html",
+  "priority": 0.6,
+  "freq": "monthly"
+ },
+ {
+  "path": "/security.html",
+  "priority": 0.6,
+  "freq": "monthly"
+ },
+ {
+  "path": "/accessibility.html",
+  "priority": 0.3,
+  "freq": "monthly"
+ },
+ {
+  "path": "/brand.html",
+  "priority": 0.3,
+  "freq": "monthly"
+ },
+ {
+  "path": "/playbooks/banking_finance.html",
+  "priority": 0.5,
+  "freq": "monthly"
+ },
+ {
+  "path": "/playbooks/manufacturingOperations.html",
+  "priority": 0.5,
+  "freq": "monthly"
+ },
+ {
+  "path": "/playbooks/healthcare.html",
+  "priority": 0.5,
+  "freq": "monthly"
+ },
+ {
+  "path": "/playbooks/retail.html",
+  "priority": 0.5,
+  "freq": "monthly"
+ },
+ {
+  "path": "/playbooks/telecom.html",
+  "priority": 0.5,
+  "freq": "monthly"
+ },
+ {
+  "path": "/playbooks/insurance.html",
+  "priority": 0.5,
+  "freq": "monthly"
+ },
+ {
+  "path": "/playbooks/gcc.html",
+  "priority": 0.5,
+  "freq": "monthly"
+ },
+ {
+  "path": "/playbooks/startups.html",
+  "priority": 0.5,
+  "freq": "monthly"
+ }
+]

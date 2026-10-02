@@ -1,0 +1,17 @@
+/* ── Apply CTA ───────────────────────────────────────────────────────── */
+.car-apply-cta{
+  padding:5rem 0;background:#000;
+  border-top:1px solid rgba(255,255,255,.05)}
+.car-apply-cta-inner{
+  display:flex;align-items:center;
+  justify-content:space-between;gap:3rem}
+.car-apply-cta-txt .section-label{color:var(--orange)}
+.car-apply-cta-txt h2{
+  font-size:clamp(1.6rem,3vw,2.5rem);
+  font-weight:900;color:#fff;letter-spacing:-.04em;
+  margin:.4rem 0 .8rem;line-height:1.05}
+.car-apply-cta-txt p{
+  font-size:.8rem;color:rgba(255,255,255,.72);
+  line-height:1.75;max-width:500px;margin:0}
+.car-apply-cta-btn{white-space:nowrap;flex-shrink:0;font-size:.85rem}
+

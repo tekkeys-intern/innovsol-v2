@@ -1,0 +1,1346 @@
+{
+  "AISolutionsArchitect": {
+    "slug": "AISolutionsArchitect",
+    "title": "AI Solutions Architect",
+    "badge": "High Priority Hiring",
+    "meta": [
+      {
+        "icon": "map-pin",
+        "text": "Hybrid"
+      },
+      {
+        "icon": "briefcase-business",
+        "text": "Full-time"
+      },
+      {
+        "icon": "wallet-cards",
+        "text": "Competitive"
+      },
+      {
+        "icon": "briefcase",
+        "text": "Relevant Experience"
+      }
+    ],
+    "tags": [
+      "Pre-sales",
+      "Enterprise Architecture",
+      "Delivery Leadership"
+    ],
+    "why": [
+      {
+        "icon": "rocket",
+        "title": "Work on Real AI Projects",
+        "text": "Build solutions used by global enterprises."
+      },
+      {
+        "icon": "zap",
+        "title": "Startup Speed",
+        "text": "Fast decisions, ownership and high impact."
+      },
+      {
+        "icon": "globe",
+        "title": "Global Impact",
+        "text": "Work with clients across US, Europe, Middle East & India."
+      },
+      {
+        "icon": "cpu",
+        "title": "Latest Tech",
+        "text": "Hands-on with LLMs, Agents, RAG, MCP & more."
+      },
+      {
+        "icon": "user-round",
+        "title": "Ownership Culture",
+        "text": "Ideas welcome. You build, you own."
+      },
+      {
+        "icon": "lightbulb",
+        "title": "Innovation First",
+        "text": "Experiment, learn and create the future."
+      }
+    ],
+    "about": "Sit at the intersection of sales, engineering, and delivery. You'll lead technical pre-sales conversations, design enterprise AI architectures, and own delivery leadership across complex, multi-stakeholder engagements.",
+    "responsibilities": [
+      "7+ years in enterprise technology, consulting, or solutions engineering",
+      "Pre-sales expertise: RFP responses, solution demos, PoC leadership",
+      "Enterprise architecture design across complex, regulated organisations",
+      "Strong communicator: C-suite presentations to technical deep-dives",
+      "Delivery leadership: managing cross-functional teams and sprint governance",
+      "Commercial acumen: pricing models, SOW construction, contract negotiation"
+    ],
+    "stack": [
+      {
+        "name": "Python",
+        "icon": "assets/python.svg"
+      },
+      {
+        "name": "LangChain",
+        "icon": "assets/langchain.svg"
+      },
+      {
+        "name": "LangGraph",
+        "icon": ""
+      },
+      {
+        "name": "CrewAI",
+        "icon": ""
+      },
+      {
+        "name": "FastAPI",
+        "icon": "assets/fastapi.svg"
+      },
+      {
+        "name": "Docker",
+        "icon": "assets/docker.svg"
+      },
+      {
+        "name": "Kubernetes",
+        "icon": "assets/kubernetes.svg"
+      },
+      {
+        "name": "PostgreSQL",
+        "icon": "assets/postgresql.svg"
+      },
+      {
+        "name": "Redis",
+        "icon": "assets/redis.svg"
+      },
+      {
+        "name": "AWS",
+        "icon": "assets/amazonwebservices.svg"
+      },
+      {
+        "name": "Azure",
+        "icon": "assets/azure.svg"
+      },
+      {
+        "name": "OpenAI",
+        "icon": "assets/openai.svg"
+      },
+      {
+        "name": "Claude",
+        "icon": "assets/claude.svg"
+      },
+      {
+        "name": "Gemini",
+        "icon": ""
+      },
+      {
+        "name": "Git",
+        "icon": "assets/git.svg"
+      },
+      {
+        "name": "Linux",
+        "icon": "assets/linux.svg"
+      }
+    ],
+    "projects": [
+      {
+        "icon": "scan-face",
+        "text": "AI Customer Support Agent"
+      },
+      {
+        "icon": "clipboard-plus",
+        "text": "Healthcare AI Assistant"
+      },
+      {
+        "icon": "users-round",
+        "text": "HR Copilot"
+      },
+      {
+        "icon": "brain-circuit",
+        "text": "Enterprise Knowledge Chatbot"
+      },
+      {
+        "icon": "share-2",
+        "text": "AI Sales Automation"
+      },
+      {
+        "icon": "file-text",
+        "text": "AI Document Processing"
+      }
+    ],
+    "growth": [
+      "AI Engineer",
+      "Senior AI Engineer",
+      "AI Architect",
+      "Technical Lead",
+      "Practice Head",
+      "CTO"
+    ],
+    "perks": [
+      {
+        "icon": "house",
+        "text": "Remote Friendly"
+      },
+      {
+        "icon": "book-open",
+        "text": "Learning Budget"
+      },
+      {
+        "icon": "award",
+        "text": "Certifications Sponsored"
+      },
+      {
+        "icon": "monitor",
+        "text": "Latest Hardware"
+      },
+      {
+        "icon": "shield-plus",
+        "text": "Medical Insurance"
+      },
+      {
+        "icon": "calendar-check",
+        "text": "Paid Leaves"
+      },
+      {
+        "icon": "tent",
+        "text": "Team Retreats"
+      },
+      {
+        "icon": "hand-coins",
+        "text": "ESOP (If Applicable)"
+      }
+    ],
+    "hiring": [
+      "Apply",
+      "Resume Review",
+      "Technical Assessment",
+      "AI Design Interview",
+      "Founder Discussion",
+      "Offer"
+    ],
+    "hiringTime": "7 – 10 Days",
+    "testimonials": [
+      {
+        "quote": "Working here accelerated my AI career. The ownership and learning are unmatched.",
+        "who": "Arjun K., Senior ML Engineer",
+        "avatar": "assets/avatar-arjun.jpg"
+      },
+      {
+        "quote": "Lots of challenging problems, smart people and a culture that truly cares.",
+        "who": "Neha S., AI Architect",
+        "avatar": "assets/avatar-neha.jpg"
+      }
+    ]
+  },
+  "AIStrategyConsultant": {
+    "slug": "AIStrategyConsultant",
+    "title": "AI Strategy Consultant",
+    "badge": "High Priority Hiring",
+    "meta": [
+      {
+        "icon": "map-pin",
+        "text": "Hybrid"
+      },
+      {
+        "icon": "briefcase-business",
+        "text": "Full-time"
+      },
+      {
+        "icon": "wallet-cards",
+        "text": "Competitive"
+      },
+      {
+        "icon": "briefcase",
+        "text": "Relevant Experience"
+      }
+    ],
+    "tags": [
+      "Roadmaps",
+      "ROI Models",
+      "C-suite Engagement"
+    ],
+    "why": [
+      {
+        "icon": "rocket",
+        "title": "Work on Real AI Projects",
+        "text": "Build solutions used by global enterprises."
+      },
+      {
+        "icon": "zap",
+        "title": "Startup Speed",
+        "text": "Fast decisions, ownership and high impact."
+      },
+      {
+        "icon": "globe",
+        "title": "Global Impact",
+        "text": "Work with clients across US, Europe, Middle East & India."
+      },
+      {
+        "icon": "cpu",
+        "title": "Latest Tech",
+        "text": "Hands-on with LLMs, Agents, RAG, MCP & more."
+      },
+      {
+        "icon": "user-round",
+        "title": "Ownership Culture",
+        "text": "Ideas welcome. You build, you own."
+      },
+      {
+        "icon": "lightbulb",
+        "title": "Innovation First",
+        "text": "Experiment, learn and create the future."
+      }
+    ],
+    "about": "Help enterprise leaders navigate AI transformation. Build AI roadmaps, quantify ROI, and sit in boardrooms helping C-suites make confident decisions about where and how to deploy AI. You're the bridge between ambition and execution.",
+    "responsibilities": [
+      "5+ years in strategy consulting, AI advisory, or enterprise transformation",
+      "AI roadmap development: capability assessments and phased delivery plans",
+      "ROI modelling: business case construction and board-level presentations",
+      "C-suite engagement: executive communication and workshop facilitation",
+      "Technology literacy: evaluate AI solutions and challenge vendor claims",
+      "Change management and organisational design experience"
+    ],
+    "stack": [
+      {
+        "name": "Python",
+        "icon": "assets/python.svg"
+      },
+      {
+        "name": "LangChain",
+        "icon": "assets/langchain.svg"
+      },
+      {
+        "name": "LangGraph",
+        "icon": ""
+      },
+      {
+        "name": "CrewAI",
+        "icon": ""
+      },
+      {
+        "name": "FastAPI",
+        "icon": "assets/fastapi.svg"
+      },
+      {
+        "name": "Docker",
+        "icon": "assets/docker.svg"
+      },
+      {
+        "name": "Kubernetes",
+        "icon": "assets/kubernetes.svg"
+      },
+      {
+        "name": "PostgreSQL",
+        "icon": "assets/postgresql.svg"
+      },
+      {
+        "name": "Redis",
+        "icon": "assets/redis.svg"
+      },
+      {
+        "name": "AWS",
+        "icon": "assets/amazonwebservices.svg"
+      },
+      {
+        "name": "Azure",
+        "icon": "assets/azure.svg"
+      },
+      {
+        "name": "OpenAI",
+        "icon": "assets/openai.svg"
+      },
+      {
+        "name": "Claude",
+        "icon": "assets/claude.svg"
+      },
+      {
+        "name": "Gemini",
+        "icon": ""
+      },
+      {
+        "name": "Git",
+        "icon": "assets/git.svg"
+      },
+      {
+        "name": "Linux",
+        "icon": "assets/linux.svg"
+      }
+    ],
+    "projects": [
+      {
+        "icon": "scan-face",
+        "text": "AI Customer Support Agent"
+      },
+      {
+        "icon": "clipboard-plus",
+        "text": "Healthcare AI Assistant"
+      },
+      {
+        "icon": "users-round",
+        "text": "HR Copilot"
+      },
+      {
+        "icon": "brain-circuit",
+        "text": "Enterprise Knowledge Chatbot"
+      },
+      {
+        "icon": "share-2",
+        "text": "AI Sales Automation"
+      },
+      {
+        "icon": "file-text",
+        "text": "AI Document Processing"
+      }
+    ],
+    "growth": [
+      "AI Engineer",
+      "Senior AI Engineer",
+      "AI Architect",
+      "Technical Lead",
+      "Practice Head",
+      "CTO"
+    ],
+    "perks": [
+      {
+        "icon": "house",
+        "text": "Remote Friendly"
+      },
+      {
+        "icon": "book-open",
+        "text": "Learning Budget"
+      },
+      {
+        "icon": "award",
+        "text": "Certifications Sponsored"
+      },
+      {
+        "icon": "monitor",
+        "text": "Latest Hardware"
+      },
+      {
+        "icon": "shield-plus",
+        "text": "Medical Insurance"
+      },
+      {
+        "icon": "calendar-check",
+        "text": "Paid Leaves"
+      },
+      {
+        "icon": "tent",
+        "text": "Team Retreats"
+      },
+      {
+        "icon": "hand-coins",
+        "text": "ESOP (If Applicable)"
+      }
+    ],
+    "hiring": [
+      "Apply",
+      "Resume Review",
+      "Technical Assessment",
+      "AI Design Interview",
+      "Founder Discussion",
+      "Offer"
+    ],
+    "hiringTime": "7 – 10 Days",
+    "testimonials": [
+      {
+        "quote": "Working here accelerated my AI career. The ownership and learning are unmatched.",
+        "who": "Arjun K., Senior ML Engineer",
+        "avatar": "assets/avatar-arjun.jpg"
+      },
+      {
+        "quote": "Lots of challenging problems, smart people and a culture that truly cares.",
+        "who": "Neha S., AI Architect",
+        "avatar": "assets/avatar-neha.jpg"
+      }
+    ]
+  },
+  "DataEngineer": {
+    "slug": "DataEngineer",
+    "title": "Data Engineer",
+    "badge": "High Priority Hiring",
+    "meta": [
+      {
+        "icon": "map-pin",
+        "text": "Remote"
+      },
+      {
+        "icon": "briefcase-business",
+        "text": "Full-time"
+      },
+      {
+        "icon": "wallet-cards",
+        "text": "Competitive"
+      },
+      {
+        "icon": "briefcase",
+        "text": "Relevant Experience"
+      }
+    ],
+    "tags": [
+      "Pipelines",
+      "Streaming",
+      "AI Data Infrastructure"
+    ],
+    "why": [
+      {
+        "icon": "rocket",
+        "title": "Work on Real AI Projects",
+        "text": "Build solutions used by global enterprises."
+      },
+      {
+        "icon": "zap",
+        "title": "Startup Speed",
+        "text": "Fast decisions, ownership and high impact."
+      },
+      {
+        "icon": "globe",
+        "title": "Global Impact",
+        "text": "Work with clients across US, Europe, Middle East & India."
+      },
+      {
+        "icon": "cpu",
+        "title": "Latest Tech",
+        "text": "Hands-on with LLMs, Agents, RAG, MCP & more."
+      },
+      {
+        "icon": "user-round",
+        "title": "Ownership Culture",
+        "text": "Ideas welcome. You build, you own."
+      },
+      {
+        "icon": "lightbulb",
+        "title": "Innovation First",
+        "text": "Experiment, learn and create the future."
+      }
+    ],
+    "about": "Build the data infrastructure that powers enterprise AI. From real-time streaming pipelines to vector databases serving LLMs, you'll be the foundation on which AI systems are built — at enterprise scale.",
+    "responsibilities": [
+      "4+ years data engineering with focus on AI/ML data infrastructure",
+      "Pipeline expertise: Apache Airflow, dbt, Spark, Flink",
+      "Streaming at scale: Kafka, Kinesis, or Google Pub/Sub",
+      "Cloud data platforms: Snowflake, BigQuery, Databricks, or Redshift",
+      "Vector database management: Pinecone, Weaviate, Qdrant, pgvector",
+      "Feature store development and management"
+    ],
+    "stack": [
+      {
+        "name": "Python",
+        "icon": "assets/python.svg"
+      },
+      {
+        "name": "LangChain",
+        "icon": "assets/langchain.svg"
+      },
+      {
+        "name": "LangGraph",
+        "icon": ""
+      },
+      {
+        "name": "CrewAI",
+        "icon": ""
+      },
+      {
+        "name": "FastAPI",
+        "icon": "assets/fastapi.svg"
+      },
+      {
+        "name": "Docker",
+        "icon": "assets/docker.svg"
+      },
+      {
+        "name": "Kubernetes",
+        "icon": "assets/kubernetes.svg"
+      },
+      {
+        "name": "PostgreSQL",
+        "icon": "assets/postgresql.svg"
+      },
+      {
+        "name": "Redis",
+        "icon": "assets/redis.svg"
+      },
+      {
+        "name": "AWS",
+        "icon": "assets/amazonwebservices.svg"
+      },
+      {
+        "name": "Azure",
+        "icon": "assets/azure.svg"
+      },
+      {
+        "name": "OpenAI",
+        "icon": "assets/openai.svg"
+      },
+      {
+        "name": "Claude",
+        "icon": "assets/claude.svg"
+      },
+      {
+        "name": "Gemini",
+        "icon": ""
+      },
+      {
+        "name": "Git",
+        "icon": "assets/git.svg"
+      },
+      {
+        "name": "Linux",
+        "icon": "assets/linux.svg"
+      }
+    ],
+    "projects": [
+      {
+        "icon": "scan-face",
+        "text": "AI Customer Support Agent"
+      },
+      {
+        "icon": "clipboard-plus",
+        "text": "Healthcare AI Assistant"
+      },
+      {
+        "icon": "users-round",
+        "text": "HR Copilot"
+      },
+      {
+        "icon": "brain-circuit",
+        "text": "Enterprise Knowledge Chatbot"
+      },
+      {
+        "icon": "share-2",
+        "text": "AI Sales Automation"
+      },
+      {
+        "icon": "file-text",
+        "text": "AI Document Processing"
+      }
+    ],
+    "growth": [
+      "AI Engineer",
+      "Senior AI Engineer",
+      "AI Architect",
+      "Technical Lead",
+      "Practice Head",
+      "CTO"
+    ],
+    "perks": [
+      {
+        "icon": "house",
+        "text": "Remote Friendly"
+      },
+      {
+        "icon": "book-open",
+        "text": "Learning Budget"
+      },
+      {
+        "icon": "award",
+        "text": "Certifications Sponsored"
+      },
+      {
+        "icon": "monitor",
+        "text": "Latest Hardware"
+      },
+      {
+        "icon": "shield-plus",
+        "text": "Medical Insurance"
+      },
+      {
+        "icon": "calendar-check",
+        "text": "Paid Leaves"
+      },
+      {
+        "icon": "tent",
+        "text": "Team Retreats"
+      },
+      {
+        "icon": "hand-coins",
+        "text": "ESOP (If Applicable)"
+      }
+    ],
+    "hiring": [
+      "Apply",
+      "Resume Review",
+      "Technical Assessment",
+      "AI Design Interview",
+      "Founder Discussion",
+      "Offer"
+    ],
+    "hiringTime": "7 – 10 Days",
+    "testimonials": [
+      {
+        "quote": "Working here accelerated my AI career. The ownership and learning are unmatched.",
+        "who": "Arjun K., Senior ML Engineer",
+        "avatar": "assets/avatar-arjun.jpg"
+      },
+      {
+        "quote": "Lots of challenging problems, smart people and a culture that truly cares.",
+        "who": "Neha S., AI Architect",
+        "avatar": "assets/avatar-neha.jpg"
+      }
+    ]
+  },
+  "FDEEngagementLead": {
+    "slug": "FDEEngagementLead",
+    "title": "FDE Engagement Lead",
+    "badge": "High Priority Hiring",
+    "meta": [
+      {
+        "icon": "map-pin",
+        "text": "Hybrid"
+      },
+      {
+        "icon": "briefcase-business",
+        "text": "Full-time"
+      },
+      {
+        "icon": "wallet-cards",
+        "text": "Competitive"
+      },
+      {
+        "icon": "briefcase",
+        "text": "Relevant Experience"
+      }
+    ],
+    "tags": [
+      "Senior Engineering",
+      "Client Leadership",
+      "12-Week Sprints"
+    ],
+    "why": [
+      {
+        "icon": "rocket",
+        "title": "Work on Real AI Projects",
+        "text": "Build solutions used by global enterprises."
+      },
+      {
+        "icon": "zap",
+        "title": "Startup Speed",
+        "text": "Fast decisions, ownership and high impact."
+      },
+      {
+        "icon": "globe",
+        "title": "Global Impact",
+        "text": "Work with clients across US, Europe, Middle East & India."
+      },
+      {
+        "icon": "cpu",
+        "title": "Latest Tech",
+        "text": "Hands-on with LLMs, Agents, RAG, MCP & more."
+      },
+      {
+        "icon": "user-round",
+        "title": "Ownership Culture",
+        "text": "Ideas welcome. You build, you own."
+      },
+      {
+        "icon": "lightbulb",
+        "title": "Innovation First",
+        "text": "Experiment, learn and create the future."
+      }
+    ],
+    "about": "The most senior delivery role at Innovsol. Lead FDE teams inside enterprise clients — setting technical direction, managing stakeholders at C-suite level, and ensuring every 12-week sprint delivers measurable, production AI outcomes.",
+    "responsibilities": [
+      "8+ years engineering with senior technical leadership experience",
+      "Client-facing leadership: stakeholder management and executive reporting",
+      "FDE delivery expertise: embedded engineering, 12-week sprint methodology",
+      "Full-stack AI delivery: architecture through code review to production handover",
+      "Commercial awareness: scope management and resource optimisation",
+      "People management: mentoring engineers, structured performance feedback"
+    ],
+    "stack": [
+      {
+        "name": "Python",
+        "icon": "assets/python.svg"
+      },
+      {
+        "name": "LangChain",
+        "icon": "assets/langchain.svg"
+      },
+      {
+        "name": "LangGraph",
+        "icon": ""
+      },
+      {
+        "name": "CrewAI",
+        "icon": ""
+      },
+      {
+        "name": "FastAPI",
+        "icon": "assets/fastapi.svg"
+      },
+      {
+        "name": "Docker",
+        "icon": "assets/docker.svg"
+      },
+      {
+        "name": "Kubernetes",
+        "icon": "assets/kubernetes.svg"
+      },
+      {
+        "name": "PostgreSQL",
+        "icon": "assets/postgresql.svg"
+      },
+      {
+        "name": "Redis",
+        "icon": "assets/redis.svg"
+      },
+      {
+        "name": "AWS",
+        "icon": "assets/amazonwebservices.svg"
+      },
+      {
+        "name": "Azure",
+        "icon": "assets/azure.svg"
+      },
+      {
+        "name": "OpenAI",
+        "icon": "assets/openai.svg"
+      },
+      {
+        "name": "Claude",
+        "icon": "assets/claude.svg"
+      },
+      {
+        "name": "Gemini",
+        "icon": ""
+      },
+      {
+        "name": "Git",
+        "icon": "assets/git.svg"
+      },
+      {
+        "name": "Linux",
+        "icon": "assets/linux.svg"
+      }
+    ],
+    "projects": [
+      {
+        "icon": "scan-face",
+        "text": "AI Customer Support Agent"
+      },
+      {
+        "icon": "clipboard-plus",
+        "text": "Healthcare AI Assistant"
+      },
+      {
+        "icon": "users-round",
+        "text": "HR Copilot"
+      },
+      {
+        "icon": "brain-circuit",
+        "text": "Enterprise Knowledge Chatbot"
+      },
+      {
+        "icon": "share-2",
+        "text": "AI Sales Automation"
+      },
+      {
+        "icon": "file-text",
+        "text": "AI Document Processing"
+      }
+    ],
+    "growth": [
+      "AI Engineer",
+      "Senior AI Engineer",
+      "AI Architect",
+      "Technical Lead",
+      "Practice Head",
+      "CTO"
+    ],
+    "perks": [
+      {
+        "icon": "house",
+        "text": "Remote Friendly"
+      },
+      {
+        "icon": "book-open",
+        "text": "Learning Budget"
+      },
+      {
+        "icon": "award",
+        "text": "Certifications Sponsored"
+      },
+      {
+        "icon": "monitor",
+        "text": "Latest Hardware"
+      },
+      {
+        "icon": "shield-plus",
+        "text": "Medical Insurance"
+      },
+      {
+        "icon": "calendar-check",
+        "text": "Paid Leaves"
+      },
+      {
+        "icon": "tent",
+        "text": "Team Retreats"
+      },
+      {
+        "icon": "hand-coins",
+        "text": "ESOP (If Applicable)"
+      }
+    ],
+    "hiring": [
+      "Apply",
+      "Resume Review",
+      "Technical Assessment",
+      "AI Design Interview",
+      "Founder Discussion",
+      "Offer"
+    ],
+    "hiringTime": "7 – 10 Days",
+    "testimonials": [
+      {
+        "quote": "Working here accelerated my AI career. The ownership and learning are unmatched.",
+        "who": "Arjun K., Senior ML Engineer",
+        "avatar": "assets/avatar-arjun.jpg"
+      },
+      {
+        "quote": "Lots of challenging problems, smart people and a culture that truly cares.",
+        "who": "Neha S., AI Architect",
+        "avatar": "assets/avatar-neha.jpg"
+      }
+    ]
+  },
+  "MachineLearningEngineer": {
+    "slug": "MachineLearningEngineer",
+    "title": "Machine Learning Engineer",
+    "badge": "High Priority Hiring",
+    "meta": [
+      {
+        "icon": "map-pin",
+        "text": "Remote"
+      },
+      {
+        "icon": "briefcase-business",
+        "text": "Full-time"
+      },
+      {
+        "icon": "wallet-cards",
+        "text": "Competitive"
+      },
+      {
+        "icon": "briefcase",
+        "text": "Relevant Experience"
+      }
+    ],
+    "tags": [
+      "NLP",
+      "Classification",
+      "Time-series"
+    ],
+    "why": [
+      {
+        "icon": "rocket",
+        "title": "Work on Real AI Projects",
+        "text": "Build solutions used by global enterprises."
+      },
+      {
+        "icon": "zap",
+        "title": "Startup Speed",
+        "text": "Fast decisions, ownership and high impact."
+      },
+      {
+        "icon": "globe",
+        "title": "Global Impact",
+        "text": "Work with clients across US, Europe, Middle East & India."
+      },
+      {
+        "icon": "cpu",
+        "title": "Latest Tech",
+        "text": "Hands-on with LLMs, Agents, RAG, MCP & more."
+      },
+      {
+        "icon": "user-round",
+        "title": "Ownership Culture",
+        "text": "Ideas welcome. You build, you own."
+      },
+      {
+        "icon": "lightbulb",
+        "title": "Innovation First",
+        "text": "Experiment, learn and create the future."
+      }
+    ],
+    "about": "Build and ship ML models that solve real enterprise problems — from NLP classification systems to time-series forecasting at scale. You'll work within client teams, own model development end-to-end, and ensure production reliability.",
+    "responsibilities": [
+      "3+ years ML engineering with production model deployments",
+      "Strong NLP background: transformers, BERT, text classification and extraction",
+      "Time-series expertise: LSTM, Prophet, or classical statistical methods",
+      "Framework proficiency: PyTorch, TensorFlow, scikit-learn, Hugging Face",
+      "Model serving: FastAPI, TorchServe, or Triton Inference Server",
+      "Feature engineering and data pipeline development"
+    ],
+    "stack": [
+      {
+        "name": "Python",
+        "icon": "assets/python.svg"
+      },
+      {
+        "name": "LangChain",
+        "icon": "assets/langchain.svg"
+      },
+      {
+        "name": "LangGraph",
+        "icon": ""
+      },
+      {
+        "name": "CrewAI",
+        "icon": ""
+      },
+      {
+        "name": "FastAPI",
+        "icon": "assets/fastapi.svg"
+      },
+      {
+        "name": "Docker",
+        "icon": "assets/docker.svg"
+      },
+      {
+        "name": "Kubernetes",
+        "icon": "assets/kubernetes.svg"
+      },
+      {
+        "name": "PostgreSQL",
+        "icon": "assets/postgresql.svg"
+      },
+      {
+        "name": "Redis",
+        "icon": "assets/redis.svg"
+      },
+      {
+        "name": "AWS",
+        "icon": "assets/amazonwebservices.svg"
+      },
+      {
+        "name": "Azure",
+        "icon": "assets/azure.svg"
+      },
+      {
+        "name": "OpenAI",
+        "icon": "assets/openai.svg"
+      },
+      {
+        "name": "Claude",
+        "icon": "assets/claude.svg"
+      },
+      {
+        "name": "Gemini",
+        "icon": ""
+      },
+      {
+        "name": "Git",
+        "icon": "assets/git.svg"
+      },
+      {
+        "name": "Linux",
+        "icon": "assets/linux.svg"
+      }
+    ],
+    "projects": [
+      {
+        "icon": "scan-face",
+        "text": "AI Customer Support Agent"
+      },
+      {
+        "icon": "clipboard-plus",
+        "text": "Healthcare AI Assistant"
+      },
+      {
+        "icon": "users-round",
+        "text": "HR Copilot"
+      },
+      {
+        "icon": "brain-circuit",
+        "text": "Enterprise Knowledge Chatbot"
+      },
+      {
+        "icon": "share-2",
+        "text": "AI Sales Automation"
+      },
+      {
+        "icon": "file-text",
+        "text": "AI Document Processing"
+      }
+    ],
+    "growth": [
+      "AI Engineer",
+      "Senior AI Engineer",
+      "AI Architect",
+      "Technical Lead",
+      "Practice Head",
+      "CTO"
+    ],
+    "perks": [
+      {
+        "icon": "house",
+        "text": "Remote Friendly"
+      },
+      {
+        "icon": "book-open",
+        "text": "Learning Budget"
+      },
+      {
+        "icon": "award",
+        "text": "Certifications Sponsored"
+      },
+      {
+        "icon": "monitor",
+        "text": "Latest Hardware"
+      },
+      {
+        "icon": "shield-plus",
+        "text": "Medical Insurance"
+      },
+      {
+        "icon": "calendar-check",
+        "text": "Paid Leaves"
+      },
+      {
+        "icon": "tent",
+        "text": "Team Retreats"
+      },
+      {
+        "icon": "hand-coins",
+        "text": "ESOP (If Applicable)"
+      }
+    ],
+    "hiring": [
+      "Apply",
+      "Resume Review",
+      "Technical Assessment",
+      "AI Design Interview",
+      "Founder Discussion",
+      "Offer"
+    ],
+    "hiringTime": "7 – 10 Days",
+    "testimonials": [
+      {
+        "quote": "Working here accelerated my AI career. The ownership and learning are unmatched.",
+        "who": "Arjun K., Senior ML Engineer",
+        "avatar": "assets/avatar-arjun.jpg"
+      },
+      {
+        "quote": "Lots of challenging problems, smart people and a culture that truly cares.",
+        "who": "Neha S., AI Architect",
+        "avatar": "assets/avatar-neha.jpg"
+      }
+    ]
+  },
+  "SeniorAiEngineer": {
+    "slug": "SeniorAiEngineer",
+    "title": "Senior AI Engineer",
+    "badge": "High Priority Hiring",
+    "meta": [
+      {
+        "icon": "map-pin",
+        "text": "Remote / Hybrid / Gurgaon"
+      },
+      {
+        "icon": "briefcase-business",
+        "text": "Full-Time"
+      },
+      {
+        "icon": "wallet-cards",
+        "text": "₹30-50 LPA / Competitive"
+      },
+      {
+        "icon": "briefcase",
+        "text": "3 - 8 Years Experience"
+      }
+    ],
+    "tags": [
+      "LLM",
+      "AI Agents",
+      "RAG"
+    ],
+    "why": [
+      {
+        "icon": "rocket",
+        "title": "Work on Real AI Projects",
+        "text": "Build solutions used by global enterprises."
+      },
+      {
+        "icon": "zap",
+        "title": "Startup Speed",
+        "text": "Fast decisions, ownership and high impact."
+      },
+      {
+        "icon": "globe",
+        "title": "Global Impact",
+        "text": "Work with clients across US, Europe, Middle East & India."
+      },
+      {
+        "icon": "cpu",
+        "title": "Latest Tech",
+        "text": "Hands-on with LLMs, Agents, RAG, MCP & more."
+      },
+      {
+        "icon": "user-round",
+        "title": "Ownership Culture",
+        "text": "Ideas welcome. You build, you own."
+      },
+      {
+        "icon": "lightbulb",
+        "title": "Innovation First",
+        "text": "Experiment, learn and create the future."
+      }
+    ],
+    "about": "As a Senior AI Engineer, you will design and build scalable AI solutions, LLM applications and intelligent agents that solve complex business problems. You will work closely with clients, architects and cross-functional teams to deliver impact at scale.",
+    "responsibilities": [
+      "Design and develop AI powered applications using LLMs and Agentic frameworks",
+      "Build RAG systems and intelligent workflows",
+      "Prompt engineering and model orchestration",
+      "Deploy and optimize models for production",
+      "Collaborate with clients and internal teams",
+      "Mentor and guide junior engineers"
+    ],
+    "stack": [
+      {
+        "name": "Python",
+        "icon": "assets/python.svg"
+      },
+      {
+        "name": "LangChain",
+        "icon": "assets/langchain.svg"
+      },
+      {
+        "name": "LangGraph",
+        "icon": ""
+      },
+      {
+        "name": "CrewAI",
+        "icon": ""
+      },
+      {
+        "name": "FastAPI",
+        "icon": "assets/fastapi.svg"
+      },
+      {
+        "name": "Docker",
+        "icon": "assets/docker.svg"
+      },
+      {
+        "name": "Kubernetes",
+        "icon": "assets/kubernetes.svg"
+      },
+      {
+        "name": "PostgreSQL",
+        "icon": "assets/postgresql.svg"
+      },
+      {
+        "name": "Redis",
+        "icon": "assets/redis.svg"
+      },
+      {
+        "name": "AWS",
+        "icon": "assets/amazonwebservices.svg"
+      },
+      {
+        "name": "Azure",
+        "icon": "assets/azure.svg"
+      },
+      {
+        "name": "OpenAI",
+        "icon": "assets/openai.svg"
+      },
+      {
+        "name": "Claude",
+        "icon": "assets/claude.svg"
+      },
+      {
+        "name": "Gemini",
+        "icon": ""
+      },
+      {
+        "name": "Git",
+        "icon": "assets/git.svg"
+      },
+      {
+        "name": "Linux",
+        "icon": "assets/linux.svg"
+      }
+    ],
+    "projects": [
+      {
+        "icon": "scan-face",
+        "text": "AI Customer Support Agent"
+      },
+      {
+        "icon": "clipboard-plus",
+        "text": "Healthcare AI Assistant"
+      },
+      {
+        "icon": "users-round",
+        "text": "HR Copilot"
+      },
+      {
+        "icon": "brain-circuit",
+        "text": "Enterprise Knowledge Chatbot"
+      },
+      {
+        "icon": "share-2",
+        "text": "AI Sales Automation"
+      },
+      {
+        "icon": "file-text",
+        "text": "AI Document Processing"
+      }
+    ],
+    "growth": [
+      "AI Engineer",
+      "Senior AI Engineer",
+      "AI Architect",
+      "Technical Lead",
+      "Practice Head",
+      "CTO"
+    ],
+    "perks": [
+      {
+        "icon": "house",
+        "text": "Remote Friendly"
+      },
+      {
+        "icon": "book-open",
+        "text": "Learning Budget"
+      },
+      {
+        "icon": "award",
+        "text": "Certifications Sponsored"
+      },
+      {
+        "icon": "monitor",
+        "text": "Latest Hardware"
+      },
+      {
+        "icon": "shield-plus",
+        "text": "Medical Insurance"
+      },
+      {
+        "icon": "calendar-check",
+        "text": "Paid Leaves"
+      },
+      {
+        "icon": "tent",
+        "text": "Team Retreats"
+      },
+      {
+        "icon": "hand-coins",
+        "text": "ESOP (If Applicable)"
+      }
+    ],
+    "hiring": [
+      "Apply",
+      "Resume Review",
+      "Technical Assessment",
+      "AI Design Interview",
+      "Founder Discussion",
+      "Offer"
+    ],
+    "hiringTime": "7 – 10 Days",
+    "testimonials": [
+      {
+        "quote": "Working here accelerated my AI career. The ownership and learning are unmatched.",
+        "who": "Arjun K., Senior ML Engineer",
+        "avatar": "assets/avatar-arjun.jpg"
+      },
+      {
+        "quote": "Lots of challenging problems, smart people and a culture that truly cares.",
+        "who": "Neha S., AI Architect",
+        "avatar": "assets/avatar-neha.jpg"
+      }
+    ]
+  }
+}

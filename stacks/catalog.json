@@ -1,0 +1,9 @@
+{
+  "product": "Innovsol website",
+  "stacks": [
+    { "id": "A", "name": "React + TanStack Start + Vercel", "status": "production-ready", "path": "/", "docs": ["README.md", "docs/DEPLOYMENT.md", "src/modules/README.md"], "bestFor": "Custom features, SEO/performance control" },
+    { "id": "A+", "name": "Stack A + Supabase portal (Version 2)", "status": "foundation", "path": "supabase/, src/routes/portal*", "docs": ["docs/ARCHITECTURE-V2.md", "docs/SECURITY.md"], "bestFor": "Candidate / recruiter / admin logins" },
+    { "id": "D", "name": "Static HTML export", "status": "possible", "path": "public/ after npm run gen", "docs": ["docs/DEPLOYMENT.md"], "bestFor": "Lowest cost, no runtime" }
+  ],
+  "sharedContent": ["content/industries.json", "content/jobs.json", "scripts/mailto.cjs"]
+}

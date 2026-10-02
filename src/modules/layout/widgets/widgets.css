@@ -1,0 +1,14 @@
+/* ═══ EXTRAS ══════════════════════════════════════════════════════════════ */
+#totop{position:fixed;bottom:1.8rem;right:1.8rem;width:42px;height:42px;background:var(--blue);
+  color:#fff;border:none;border-radius:50%;font-size:1.2rem;cursor:pointer;
+  opacity:0;transform:scale(.7);transition:.3s;z-index:900;box-shadow:0 4px 16px rgba(63,108,181,.4)}
+#totop.on{opacity:1;transform:scale(1)}
+#totop:hover{background:var(--orange)}
+
+#toast{position:fixed;bottom:2rem;left:50%;transform:translateX(-50%) translateY(80px);
+  background:var(--dark);color:#fff;padding:.9rem 1.6rem;border-radius:8px;font-size:.88rem;
+  font-weight:600;opacity:0;transition:.4s;z-index:9999;border-bottom:3px solid var(--orange);
+  box-shadow:0 8px 24px rgba(0,0,0,.3);white-space:nowrap}
+#toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
+
+

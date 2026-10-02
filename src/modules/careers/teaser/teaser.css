@@ -1,0 +1,16 @@
+/* ═══ CAREERS ═════════════════════════════════════════════════════════════ */
+#careers{padding:6rem 0;background:var(--bg2)}
+.car-grid{display:grid;grid-template-columns:1fr 1.3fr;gap:4rem;align-items:start}
+.car-grid h2{font-size:clamp(1.8rem,3vw,2.5rem);color:var(--dark);margin:.4rem 0 1.1rem}
+.car-grid .lead{color:var(--gray);line-height:1.75;margin-bottom:1.5rem}
+.perks{display:flex;flex-direction:column;gap:.65rem;margin:1.2rem 0}
+.perk{display:flex;align-items:flex-start;gap:.7rem;font-size:.88rem;color:var(--dark2)}
+.pdot{width:7px;height:7px;border-radius:50%;background:var(--orange);margin-top:.5rem;flex-shrink:0}
+.roles{display:flex;flex-direction:column;gap:.75rem}
+.role{background:#fff;border:1px solid var(--border);border-radius:8px;padding:1rem 1.3rem;
+  display:flex;justify-content:space-between;align-items:center;transition:.22s;cursor:pointer}
+.role:hover{border-color:var(--blue);box-shadow:0 4px 18px rgba(63,108,181,.1);transform:translateX(4px)}
+.role-t{font-size:.92rem;font-weight:700;color:var(--dark)}
+.role-d{font-size:.77rem;color:var(--gray);margin-top:.15rem}
+.badge{font-size:.7rem;font-weight:800;color:#fff;background:var(--orange);padding:.28rem .65rem;border-radius:20px;white-space:nowrap}
+

@@ -1,0 +1,22 @@
+/* ═══ LOGO STRIP ══════════════════════════════════════════════════════════ */
+#strip{padding:4rem 0;background:#fff;border-top:1px solid var(--border);border-bottom:1px solid var(--border);overflow:hidden}
+.strip-label{text-align:center;font-size:1.15rem;color:var(--dark2);margin-bottom:2.5rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+.marq-wrap{overflow:hidden;position:relative}
+.marq-wrap::before,.marq-wrap::after{content:'';position:absolute;top:0;bottom:0;width:160px;z-index:1}
+.marq-wrap::before{left:0;background:linear-gradient(to right,#fff,transparent)}
+.marq-wrap::after{right:0;background:linear-gradient(to left,#fff,transparent)}
+.marq{display:flex;gap:2rem;animation:marq 40s linear infinite;width:max-content;align-items:center}
+.marq:hover{animation-play-state:paused}
+.logo-chip{
+  display:flex;align-items:center;gap:.9rem;
+  padding:1rem 2rem;border:1.5px solid var(--border);border-radius:12px;
+  font-size:1.1rem;font-weight:700;color:var(--dark2);white-space:nowrap;background:#fff;
+  letter-spacing:-.01em;transition:border-color .3s,box-shadow .3s,background .3s,color .3s}
+.logo-chip:hover{
+  border-color:var(--blue);
+  background:rgba(63,108,181,.05);
+  color:var(--blue);
+  box-shadow:0 0 0 4px rgba(63,108,181,.07),0 4px 18px rgba(63,108,181,.1)}
+.logo-chip svg{width:28px;height:28px;flex-shrink:0;color:var(--blue);opacity:.85}
+@keyframes marq{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+

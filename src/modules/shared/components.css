@@ -1,0 +1,18 @@
+/* ═══ REUSABLE INTERACTIVE COMPONENTS ═════════════════════════════════════
+   Add data-href / data-topic to ANY element and shared/clickable.js makes the whole
+   thing a keyboard- and touch-friendly link. This file only supplies the shared states;
+   each card keeps its own hover look.
+
+   <div class="svc-card" data-topic="AI Agents">        → opens the contact form, pre-filled
+   <div class="why-card" data-href="#industries">        → smooth-scrolls to a section
+   <div class="cs-card"  data-href="/industries/x.html"> → navigates
+*/
+.is-clickable{cursor:pointer;-webkit-tap-highlight-color:rgba(63,108,181,.15)}
+.is-clickable:focus-visible{outline:3px solid var(--blue);outline-offset:3px;border-radius:12px}
+.is-clickable:active{transform:scale(.985)!important;transition-duration:.08s}
+.met-cell.is-clickable{transition:transform .25s,box-shadow .25s}
+.met-cell.is-clickable:hover{transform:translateY(-4px);box-shadow:0 14px 34px rgba(63,108,181,.14)}
+@media (prefers-reduced-motion:reduce){.is-clickable,.is-clickable:active{transition:none!important;transform:none!important}}
+
+/* Top-of-page reading progress */
+#scroll-progress{position:fixed;top:0;left:0;height:3px;width:100%;z-index:1100;pointer-events:none;background:linear-gradient(90deg,var(--blue),var(--orange));transform-origin:left center;transform:scaleX(0);will-change:transform}

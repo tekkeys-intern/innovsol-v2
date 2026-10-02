@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apply – Senior AI Engineer | InnovSol</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#0b0f19;--text:#1f2430;--muted:#5b6272;--line:#e3e6ed;--blue:#1d5be0;--navy:#09121c}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{background:#fff}
+  body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;color:var(--text);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  a{color:inherit;text-decoration:none}
+  button,input,select,textarea{font-family:inherit}
+  svg.lucide{display:block}
+  .page{width:916px;margin:0 auto;position:relative;background:#fff;font-weight:500}
+
+  .hdr{height:89px;border-bottom:1px solid #eceef3;position:relative}
+  .back{position:absolute;left:29px;top:34px;display:flex;align-items:center;gap:10px;font-size:13.3px;font-weight:600;color:var(--ink)}
+  .back svg{width:19px;height:19px;stroke-width:2.2}
+  .logo{position:absolute;left:362px;top:9px;width:154px}
+  .burger{position:absolute;right:33px;top:33px;width:27px;height:20px;display:flex;flex-direction:column;justify-content:space-between;border:0;background:none}
+  .burger span{height:2.6px;background:var(--ink);border-radius:2px}
+
+  .main{display:grid;grid-template-columns:543px 250px;column-gap:37px;padding:0 0 0 40px}
+  .title{padding-top:33px}
+  .title h1{font-size:24px;font-weight:700;color:var(--ink);letter-spacing:-.4px;line-height:30px}
+  .title p{font-size:12.3px;color:var(--muted);margin-top:5px}
+  .steps{position:relative;height:76px;margin-top:17px}
+  .step{position:absolute;top:4px;width:90px;margin-left:-45px;text-align:center}
+  .step .c{width:36px;height:36px;border-radius:50%;border:1.4px solid #343a46;margin:0 auto;display:flex;align-items:center;justify-content:center;background:#fff;color:#343a46}
+  .step .c svg{width:16px;height:16px;stroke-width:1.8}
+  .step.on .c{background:var(--blue);border-color:var(--blue);color:#fff}
+  .step span{display:block;font-size:10.2px;color:#5b6272;margin-top:7px}
+  .step.on span{color:var(--blue)}
+  .dash{position:absolute;top:21px;border-top:1.6px dashed #6b7280}
+  .dash.b{border-color:var(--blue)}
+
+  .form{border:1px solid var(--line);border-radius:12px;padding:12px 15px 12px;margin-top:0;height:1055px}
+  .form h3{font-size:14.8px;font-weight:700;color:var(--ink);letter-spacing:-.2px}
+  .grid{display:grid;grid-template-columns:248px 248px;column-gap:17px}
+  .f label{display:block;font-size:11.2px;font-weight:700;color:var(--ink);margin-bottom:8px}
+  .f label i{color:var(--blue);font-style:normal;margin-left:3px}
+  .f label em{font-style:normal;font-weight:500;color:#5b6272}
+  .in{height:37px;border:1px solid #dde1e8;border-radius:5px;display:flex;align-items:center;padding:0 11px;font-size:11.5px;color:#6b7280;background:#fff;width:100%}
+  .in input,.in select,.in textarea{border:0;outline:0;background:none;font-size:11.5px;color:var(--ink);width:100%;height:100%;font-weight:500}
+  .in input::placeholder,textarea::placeholder{color:#737a88}
+  .in svg{width:15px;height:15px;color:#2b3040;stroke-width:1.9;flex:none}
+  .sel{justify-content:space-between}
+  .sel svg{width:13px;height:13px;stroke-width:2.2}
+  .phone{padding:0}
+  .phone .cc{width:75px;height:100%;border-right:1px solid #dde1e8;display:flex;align-items:center;gap:16px;padding-left:11px;color:var(--ink);font-size:11.5px}
+  .phone input{padding-left:11px}
+  .upload{height:136px;border:1.3px dashed #9db8ef;border-radius:7px;background:#f7f9fe;text-align:center;padding-top:15px}
+  .upload svg.lucide{width:24px;height:24px;color:var(--blue);margin:0 auto;stroke-width:1.8}
+  .upload b{display:block;font-size:10.8px;color:var(--ink);margin-top:6px}
+  .upload small{display:block;font-size:9px;color:#4b5263;margin-top:6px}
+  .upload button{margin-top:9px;width:97px;height:27px;border:1.3px solid var(--blue);border-radius:5px;background:#fff;color:var(--blue);font-size:10.5px;font-weight:600;cursor:pointer}
+  .or{display:flex;align-items:center;gap:13px;font-size:10px;color:#4b5263;margin-top:14px}
+  .or:before,.or:after{content:"";flex:1;height:1px;background:#dfe2e8}
+  textarea{resize:vertical}
+  .ta{height:66px;align-items:flex-start;padding:9px 11px;position:relative}
+  .ta textarea{resize:none;height:48px}
+  .ta:after{content:"";position:absolute;right:4px;bottom:4px;width:7px;height:7px;background:linear-gradient(135deg,transparent 45%,#8a909c 46%,#8a909c 54%,transparent 55%,transparent 70%,#8a909c 71%,#8a909c 79%,transparent 80%)}
+  .agree{display:flex;gap:7px;font-size:9.6px;line-height:16px;color:#2b3040;margin-top:9px}
+  .agree .box{width:13px;height:13px;border-radius:2px;background:var(--blue);flex:none;margin-top:1.5px;display:flex;align-items:center;justify-content:center}
+  .agree a{color:var(--blue)}
+  .agree b{font-weight:600;color:var(--ink)}
+  .submit{display:block;width:100%;height:34px;border:0;border-radius:5px;background:#1a56db;color:#fff;font-size:12.6px;font-weight:600;margin-top:12px;cursor:pointer}
+  .secure{display:flex;align-items:center;justify-content:center;gap:7px;font-size:9.8px;color:#7b8190;margin-top:11px}
+  .secure svg{width:11px;height:11px;stroke-width:2}
+
+  /* sidebar */
+  .safe{display:flex;gap:10px;margin-top:49px;margin-left:28px}
+  .safe .ic{width:32px;height:32px;border-radius:50%;background:#edf2fd;display:flex;align-items:center;justify-content:center;color:#3b6fe0}
+  .safe .ic svg{width:17px;height:17px;stroke-width:1.7}
+  .safe p{font-size:10.6px;line-height:19px;color:#2b3040;margin-top:-3px}
+  .side{border:1px solid var(--line);border-radius:12px;padding:0 15px}
+  .side h3{font-size:15.5px;font-weight:700;color:var(--ink);letter-spacing:-.2px}
+  .js{margin-top:33px;height:421px;padding-top:21px}
+  .jcard{margin-top:16px;height:76px;border:1px solid var(--line);border-radius:8px;display:flex;align-items:center;gap:11px;padding:0 11px}
+  .jcard .ic{width:44px;height:44px;border-radius:9px;background:#e9effd;display:flex;align-items:center;justify-content:center;color:var(--blue)}
+  .jcard .ic svg{width:25px;height:25px;stroke-width:1.7}
+  .jcard b{font-size:14.2px;font-weight:700;color:var(--ink);display:block;margin-top:-4px}
+  .jbadge{display:inline-flex;align-items:center;gap:5px;background:#fff0d9;color:#f08a00;font-size:9.8px;font-weight:600;height:19px;padding:0 7px;border-radius:4px;margin-top:6px}
+  .jbadge svg{width:11px;height:11px;stroke-width:2.2}
+  .dl{margin-top:23px;padding-left:2px}
+  .dl div{display:flex;gap:10px;height:55px}
+  .dl div:nth-child(3){height:52px}
+  .dl svg{width:17px;height:17px;stroke-width:1.7;color:#2b3040;margin-top:0}
+  .dl b{display:block;font-size:11px;font-weight:700;color:var(--ink);margin-top:1px}
+  .dl span{display:block;font-size:11px;color:#4b5263;margin-top:7px}
+  .vjd{display:flex;align-items:center;gap:9px;color:var(--blue);font-weight:600;font-size:12px;margin-top:-4px}
+  .vjd svg{width:13px;height:13px;stroke-width:2.2}
+  .wj{margin-top:23px;height:401px;padding-top:17px}
+  .wj ul{list-style:none;margin-top:13px}
+  .wj li{display:flex;align-items:center;gap:14px;height:57px;font-size:10.9px;line-height:20px;color:#1d2230}
+  .wj .ic{width:40px;height:40px;border-radius:50%;background:#edf2fd;display:flex;align-items:center;justify-content:center;color:var(--blue);flex:none}
+  .wj .ic svg{width:20px;height:20px;stroke-width:1.6}
+  .help{margin-top:21px;height:238px;padding-top:18px}
+  .help p{font-size:10.3px;line-height:17px;color:#2b3040;margin-top:8px}
+  .help ul{list-style:none;margin-top:13px}
+  .help li{display:flex;align-items:center;gap:12px;height:34.5px;font-size:11.4px;color:var(--ink)}
+  .help li.b{color:var(--blue);font-weight:600}
+  .help svg{width:16px;height:16px;stroke-width:1.7;color:var(--blue)}
+  .help li:last-child svg{color:#2b3040}
+
+  /* quick note */
+  .note{margin:25px 46px 0 40px;height:149px;background:#f6f8fc;border:1px solid #eceff5;border-radius:12px;position:relative}
+  .note .art{position:absolute;left:30px;top:16px;width:128px;height:115px}
+  .note .txt{position:absolute;left:176px;top:24px}
+  .note h4{font-size:16.5px;font-weight:700;color:var(--ink)}
+  .note .txt p{font-size:10.4px;line-height:18px;color:#1d2230;margin-top:6px}
+  .nc{position:absolute;top:28px;width:134px;text-align:center;border-left:1px solid #dfe3ea;height:93px}
+  .nc svg{width:28px;height:28px;margin:0 auto;color:#1d3f8a;stroke-width:1.6}
+  .nc b{display:block;font-size:10.4px;font-weight:700;color:var(--ink);margin-top:15px}
+  .nc span{display:block;font-size:9px;line-height:15.5px;color:#4b5263;margin-top:2px}
+
+  /* footer */
+  .foot{background:var(--navy);height:200px;margin-top:22px;position:relative;color:#fff;box-shadow:0 0 0 100vmax var(--navy);clip-path:inset(0 -100vmax -100vmax -100vmax)}
+  .flogo{position:absolute;left:37px;top:32px;width:162px}
+  .fcol{position:absolute;top:31px}
+  .fcol h5{font-size:11.8px;font-weight:700}
+  .fcol a{display:block;font-size:10.3px;margin-top:8.5px;color:#fff}
+  .fcol h5+a{margin-top:16px}
+  .soc{display:flex;gap:6px;margin-top:21px}
+  .soc a{width:26px;height:26px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;color:var(--navy)}
+  .soc svg{width:15px;height:15px}
+  .vline{position:absolute;left:670px;top:32px;width:1px;height:84px;background:#3a4252}
+  .news{position:absolute;left:683px;top:33px}
+  .news h5{font-size:11.2px;font-weight:700}
+  .news p{font-size:9.3px;color:#c9ced8;margin-top:10px}
+  .nform{display:flex;margin-top:9px;width:192px;height:35px}
+  .nform input{flex:1;background:transparent;border:1px solid #717886;border-right:0;border-radius:4px 0 0 4px;color:#fff;font-size:10.3px;padding:0 12px;outline:0;font-weight:500}
+  .nform input::placeholder{color:#d5d9e1}
+  .nform button{width:37px;border:0;background:var(--blue);color:#fff;border-radius:0 4px 4px 0;display:flex;align-items:center;justify-content:center}
+  .nform button svg{width:13px;height:13px;stroke-width:2}
+  .copy{position:absolute;left:0;right:0;top:152px;text-align:center;font-size:10.3px;color:#c9ced8}
+  .copy b{color:#fff;font-weight:700}
+</style>
+</head>
+<body>
+<div class="page" id="page">
+  <header class="hdr">
+    <a class="back" href="#"><i data-lucide="arrow-left"></i>Back to Job Details</a>
+    <svg class="logo" viewBox="8 6 150 62" xmlns="http://www.w3.org/2000/svg" aria-label="innovsol">
+      <g fill="none" stroke="#2F5FD0" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18.6 34 L27 42.5 L27 64"/><path d="M31.8 18.4 L31.8 64"/><path d="M41 30.4 L41 64"/><path d="M53 30.4 L53 44 L47 51 L47 64"/>
+        <circle cx="16.5" cy="31" r="3.3" fill="#fff"/><circle cx="31.8" cy="15" r="3.4" fill="#F5B301"/><circle cx="41" cy="27" r="3.3" fill="#fff"/><circle cx="53" cy="27" r="3.3" fill="#fff"/>
+      </g>
+      <text x="60" y="49" font-family="Poppins" font-size="16.8" letter-spacing="3" textLength="92" fill="#141414">innovsol</text>
+      <text x="61" y="62.5" font-family="Poppins" font-weight="500" font-size="5.3" textLength="90" fill="#141414">Innovate . Disrupt . Transform</text>
+    </svg>
+    <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </header>
+
+  <div class="main">
+    <!-- LEFT -->
+    <div>
+      <div class="title">
+        <h1>Apply for Senior AI Engineer</h1>
+        <p>Join InnovSol.ai and build the future of AI with us.</p>
+      </div>
+      <div class="steps">
+        <span class="dash b" style="left:82px;width:68px"></span>
+        <span class="dash" style="left:229px;width:86px"></span>
+        <span class="dash" style="left:393px;width:63px"></span>
+        <div class="step on" style="left:41px"><div class="c"><i data-lucide="file-user"></i></div><span>1. Application</span></div>
+        <div class="step" style="left:189px"><div class="c"><i data-lucide="user-round"></i></div><span>2. Details</span></div>
+        <div class="step" style="left:353px"><div class="c"><i data-lucide="file-text"></i></div><span>3. Documents</span></div>
+        <div class="step" style="left:493px"><div class="c"><i data-lucide="check"></i></div><span>4. Review</span></div>
+      </div>
+
+      <form class="form" onsubmit="return false">
+        <h3 style="margin-top:4px">Personal Information</h3>
+        <div class="grid" style="margin-top:14px">
+          <div class="f"><label>Full Name<i>*</i></label><div class="in"><input placeholder="Enter your full name"></div></div>
+          <div class="f"><label>Email Address<i>*</i></label><div class="in"><input type="email" placeholder="Enter your email"></div></div>
+        </div>
+        <div class="grid" style="margin-top:21px">
+          <div class="f"><label>Phone Number<i>*</i></label><div class="in phone"><span class="cc">+91 <i data-lucide="chevron-down" style="width:13px;height:13px"></i></span><input placeholder="Enter your phone number"></div></div>
+          <div class="f"><label>Current Location<i>*</i></label><div class="in"><input placeholder="City, State, Country"><i data-lucide="locate-fixed"></i></div></div>
+        </div>
+
+        <h3 style="margin-top:29px">Professional Information</h3>
+        <div class="grid" style="margin-top:14px">
+          <div class="f"><label>Total Experience (Years)<i>*</i></label><div class="in sel">Select experience <i data-lucide="chevron-down"></i></div></div>
+          <div class="f"><label>Current Designation</label><div class="in"><input placeholder="Enter your current designation"></div></div>
+        </div>
+        <div class="grid" style="margin-top:21px">
+          <div class="f"><label>Current Company</label><div class="in"><input placeholder="Enter your current company"></div></div>
+          <div class="f"><label>Notice Period<i>*</i></label><div class="in sel">Select notice period <i data-lucide="chevron-down"></i></div></div>
+        </div>
+
+        <h3 style="margin-top:23px">Resume</h3>
+        <div class="upload" style="margin-top:12px">
+          <i data-lucide="cloud-upload"></i>
+          <b>Upload your resume</b>
+          <small>PDF, DOC, DOCX (Max 5MB)</small>
+          <button type="button">Choose File</button>
+        </div>
+        <div class="or">or</div>
+
+        <div class="f" style="margin-top:14px"><label>LinkedIn Profile <em>(Optional)</em></label>
+          <div class="in"><svg viewBox="0 0 24 24" style="width:14px;height:14px;margin-right:13px"><rect width="24" height="24" rx="3" fill="#0A66C2"/><path fill="#fff" d="M6.9 9.5h2.7V18H6.9zM8.2 5.3a1.6 1.6 0 110 3.1 1.6 1.6 0 010-3.1zM11.2 9.5h2.6v1.2c.4-.7 1.3-1.4 2.6-1.4 2.8 0 3.3 1.8 3.3 4.2V18H17v-4c0-1 0-2.2-1.3-2.2-1.4 0-1.6 1-1.6 2.1V18h-2.8z"/></svg><input placeholder="https://linkedin.com/in/your-profile"></div>
+        </div>
+
+        <h3 style="margin-top:23px">Additional Information</h3>
+        <div class="f" style="margin-top:14px"><label>Why are you interested in this role? <em>(Optional)</em></label><div class="in ta"><textarea placeholder="Tell us what excites you about this role and InnovSol.ai"></textarea></div></div>
+        <div class="f" style="margin-top:12px"><label>Anything else you'd like to tell us? <em>(Optional)</em></label><div class="in ta" style="height:64px"><textarea placeholder="Share anything else you think is important for us to know"></textarea></div></div>
+
+        <div class="agree">
+          <span class="box"><svg viewBox="0 0 24 24" width="10" height="10"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <span>I confirm that all the information provided is true to the best of my knowledge.<br>I agree to <b>InnovSol.ai</b>’s <a href="#">Privacy Policy</a> and <a href="#">Terms &amp; Conditions</a>.</span>
+        </div>
+        <button class="submit" type="submit">Save &amp; Continue</button>
+        <div class="secure"><i data-lucide="lock-keyhole"></i>Your information is secure and encrypted</div>
+      </form>
+    </div>
+
+    <!-- RIGHT -->
+    <aside>
+      <div class="safe"><span class="ic"><i data-lucide="shield-check"></i></span><p>Your information is safe with us.<br>We respect your privacy.</p></div>
+
+      <section class="side js">
+        <h3>Job Summary</h3>
+        <div class="jcard">
+          <span class="ic"><i data-lucide="briefcase-business"></i></span>
+          <div><b>Senior AI Engineer</b><span class="jbadge"><i data-lucide="star"></i>High Priority Hiring</span></div>
+        </div>
+        <div class="dl">
+          <div><i data-lucide="map-pin"></i><p><b>Location</b><span>Remote / Hybrid / Gurgaon</span></p></div>
+          <div><i data-lucide="briefcase-business"></i><p><b>Job Type</b><span>Full-Time</span></p></div>
+          <div><i data-lucide="briefcase"></i><p><b>Experience</b><span>3 - 8 Years</span></p></div>
+          <div><i data-lucide="wallet-cards"></i><p><b>CTC</b><span>₹30-50 LPA (Competitive)</span></p></div>
+        </div>
+        <a class="vjd" href="#">View Job Details <i data-lucide="arrow-right"></i></a>
+      </section>
+
+      <section class="side wj">
+        <h3>Why Join InnovSol.ai?</h3>
+        <ul>
+          <li><span class="ic"><i data-lucide="rocket"></i></span>Work on cutting-edge<br>AI projects</li>
+          <li><span class="ic"><i data-lucide="zap"></i></span>Fast-paced, innovative<br>startup culture</li>
+          <li><span class="ic"><i data-lucide="globe"></i></span>Global clients &amp;<br>real-world impact</li>
+          <li><span class="ic"><i data-lucide="chart-spline"></i></span>Continuous learning<br>&amp; growth</li>
+          <li><span class="ic"><i data-lucide="user-round"></i></span>Ownership, autonomy<br>&amp; career acceleration</li>
+          <li><span class="ic"><i data-lucide="heart-handshake"></i></span>Great team, transparent<br>culture &amp; fun!</li>
+        </ul>
+      </section>
+
+      <section class="side help">
+        <h3>Need Help?</h3>
+        <p>If you face any issues while applying,<br>our HR team is here to help.</p>
+        <ul>
+          <li class="b"><i data-lucide="mail"></i>careers@innovsol.ai</li>
+          <li><i data-lucide="phone"></i>+91 98765 43210</li>
+          <li class="b"><i data-lucide="message-circle-more"></i>Chat with HR</li>
+          <li><i data-lucide="clock"></i>Mon - Fri, 10:00 AM - 7:00 PM IST</li>
+        </ul>
+      </section>
+    </aside>
+  </div>
+
+  <!-- quick note -->
+  <section class="note">
+    <svg class="art" viewBox="0 0 128 115" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="62" cy="57" r="56" fill="#e6edfb"/>
+      <rect x="13" y="22" width="80" height="54" rx="4" fill="#fff" stroke="#2b4fae" stroke-width="2.2"/>
+      <rect x="18" y="27" width="70" height="44" rx="1.5" fill="#f3f6fd"/>
+      <circle cx="30" cy="37" r="5.5" fill="#cddbf7"/><circle cx="30" cy="35.5" r="2" fill="#3a6ae0"/><path d="M26.5 40.5c.8-2 5.9-2 7 0" fill="#3a6ae0"/>
+      <rect x="40" y="33" width="36" height="3.5" rx="1.7" fill="#d5e0f6"/><rect x="40" y="40" width="26" height="3.5" rx="1.7" fill="#d5e0f6"/>
+      <rect x="24" y="51" width="18" height="4" rx="2" fill="#d5e0f6"/><rect x="24" y="59" width="30" height="4" rx="2" fill="#d5e0f6"/>
+      <path d="M5 76h97l-3 5H8z" fill="#2b4fae"/><rect x="44" y="76" width="18" height="2" rx="1" fill="#8ea8e6"/>
+      <path d="M92 50l22 8v16c0 13-9 21-22 26-13-5-22-13-22-26V58z" fill="#bcd0f7" stroke="#2b4fae" stroke-width="2"/>
+      <path d="M92 55l17 6.2v12.6c0 10-7 16.5-17 20.5-10-4-17-10.5-17-20.5V61.2z" fill="#6f96ec"/>
+      <rect x="84.5" y="72" width="15" height="12" rx="2" fill="#2c5bd6"/><path d="M87.5 72v-3.5a4.5 4.5 0 019 0V72" fill="none" stroke="#2c5bd6" stroke-width="2.2"/><circle cx="92" cy="77.5" r="1.7" fill="#fff"/>
+    </svg>
+    <div class="txt">
+      <h4>A quick note</h4>
+      <p>We review every application carefully.<br>If your profile matches our requirements,<br>our team will get in touch with you within<br>5-7 working days.</p>
+    </div>
+    <div class="nc" style="left:400px"><i data-lucide="user-round-search"></i><b>Careful Review</b><span>Every application<br>is read by our team.</span></div>
+    <div class="nc" style="left:534px"><i data-lucide="users-round"></i><b>Fair Process</b><span>We evaluate skills,<br>potential &amp; culture fit.</span></div>
+    <div class="nc" style="left:668px;width:146px"><i data-lucide="mail"></i><b>Timely Updates</b><span>We’ll get back to you<br>within 5-7 working days.</span></div>
+  </section>
+
+  <!-- footer -->
+  <footer class="foot">
+    <svg class="flogo" viewBox="8 6 150 62" xmlns="http://www.w3.org/2000/svg" aria-label="innovsol">
+      <g fill="none" stroke="#fff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18.6 34 L27 42.5 L27 64"/><path d="M31.8 18.4 L31.8 64"/><path d="M41 30.4 L41 64"/><path d="M53 30.4 L53 44 L47 51 L47 64"/>
+        <circle cx="16.5" cy="31" r="3.3"/><circle cx="31.8" cy="15" r="3.4"/><circle cx="41" cy="27" r="3.3"/><circle cx="53" cy="27" r="3.3"/>
+      </g>
+      <text x="60" y="49" font-family="Poppins" font-size="16.8" letter-spacing="3" textLength="92" fill="#fff">innovsol</text>
+      <text x="61" y="62.5" font-family="Poppins" font-weight="500" font-size="5.3" textLength="90" fill="#fff">Innovate . Disrupt . Transform</text>
+    </svg>
+    <div class="fcol" style="left:276px"><h5>Company</h5><a href="#">About Us</a><a href="#">Careers</a><a href="#">Contact Us</a></div>
+    <div class="fcol" style="left:396px"><h5>Resources</h5><a href="#">Blog</a><a href="#">Privacy Policy</a><a href="#">Terms &amp; Conditions</a></div>
+    <div class="fcol" style="left:533px;top:33px"><h5>Connect</h5>
+      <div class="soc">
+        <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M5 9h3.3v10.5H5zM6.6 3.8a1.9 1.9 0 110 3.8 1.9 1.9 0 010-3.8zM10.4 9h3.1v1.4c.5-.8 1.6-1.7 3.2-1.7 3.4 0 4 2.2 4 5.1v5.7h-3.3v-5c0-1.2 0-2.7-1.6-2.7s-1.9 1.3-1.9 2.6v5.1h-3.3z"/></svg></a>
+        <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M22 5.8c-.7.3-1.5.5-2.3.6.8-.5 1.5-1.3 1.8-2.2-.8.5-1.7.8-2.6 1a4.1 4.1 0 00-7 3.7A11.6 11.6 0 013.4 4.6a4.1 4.1 0 001.3 5.5c-.7 0-1.3-.2-1.9-.5 0 2 1.4 3.7 3.3 4.1-.6.2-1.2.2-1.9.1.5 1.6 2.1 2.8 3.9 2.9A8.3 8.3 0 012 18.4 11.6 11.6 0 008.3 20.2c7.5 0 11.7-6.3 11.7-11.7v-.5c.8-.6 1.5-1.3 2-2.2z"/></svg></a>
+        <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M21.6 7.2a2.5 2.5 0 00-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.5 2.5 0 002.4 7.2 26 26 0 002 12a26 26 0 00.4 4.8 2.5 2.5 0 001.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4a2.5 2.5 0 001.8-1.8A26 26 0 0022 12a26 26 0 00-.4-4.8zM10 15V9l5.2 3z"/></svg></a>
+        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".6" fill="currentColor"/></svg></a>
+      </div>
+    </div>
+    <span class="vline"></span>
+    <div class="news"><h5>Stay Updated</h5><p>Subscribe to our newsletter</p>
+      <form class="nform" onsubmit="return false"><input type="email" placeholder="Enter your email"><button aria-label="Subscribe"><i data-lucide="send"></i></button></form>
+    </div>
+    <div class="copy">© 2025 <b>InnovSol.ai</b> Technologies Pvt. Ltd. All rights reserved.</div>
+  </footer>
+</div>
+
+<script src="assets/lucide.min.js"></script>
+<script>
+  lucide.createIcons();
+  (function(){
+    var W = 916, p = document.getElementById('page');
+    function fit(){ p.style.zoom = Math.min(Math.max(innerWidth / W, 0.35), 1.7); }
+    fit(); addEventListener('resize', fit);
+  })();
+</script>
+</body>
+</html>

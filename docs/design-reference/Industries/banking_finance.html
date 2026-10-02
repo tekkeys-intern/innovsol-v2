@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Banking &amp; Financial Services – InnovSol</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#0b1022;--text:#1f2430;--muted:#4b5263;--line:#e3e7ef;--blue:#1d5be0;--navy:#061432;--red:#c62828;--green:#197a4b}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{background:#fff}
+  body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;color:var(--text);-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  svg.lucide{display:block}
+  .page{width:863px;margin:0 auto;position:relative;background:#fff;font-weight:500;overflow:hidden}
+  .abs{position:absolute}
+
+  /* nav */
+  .nav{height:69px;border-bottom:1px solid #dfe5f1;position:relative;background:#fff}
+  .logo{position:absolute;left:28px;top:8px;width:127px}
+  .menu{position:absolute;top:27px;display:flex;font-size:11.2px;font-weight:600;color:var(--ink)}
+  .menu a{position:absolute;display:flex;align-items:center;gap:6px;white-space:nowrap}
+  .menu svg{width:12px;height:12px;stroke-width:2.2}
+  .contact{position:absolute;left:751px;top:22px;width:82px;height:28px;border-radius:4px;background:var(--navy);color:#fff;font-size:10.6px;font-weight:700;display:flex;align-items:center;justify-content:center}
+
+  /* hero */
+  .hero{height:422px;position:relative;background:linear-gradient(180deg,#f2f6fd 0%,#f5f8fe 70%,#fdfeff 100%)}
+  .hero .art{position:absolute;left:418px;top:31px;width:445px;height:392px;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 8%);mask-image:linear-gradient(90deg,transparent 0,#000 8%)}
+  .crumb{position:absolute;left:35px;top:27px;font-size:9.8px;color:#1d2230;display:flex;align-items:center;gap:8px}
+  .crumb svg{width:9px;height:9px;stroke-width:2.4}
+  .hero h1{position:absolute;left:34px;top:71px;font-size:40.5px;line-height:50px;font-weight:700;color:var(--ink);letter-spacing:-1px}
+  .hero h2{position:absolute;left:35px;top:178px;font-size:17px;line-height:24px;font-weight:700;color:var(--blue);letter-spacing:-.2px}
+  .hero p{position:absolute;left:35px;top:237px;font-size:12.4px;line-height:19.6px;color:#2b3040}
+  .hb{position:absolute;top:321px;height:37px;border-radius:4px;display:flex;align-items:center;justify-content:center;gap:9px;font-size:10.3px;font-weight:700}
+  .hb svg{width:14px;height:14px;stroke-width:1.9}
+  .hb.dk{left:35px;width:188px;background:var(--navy);color:#fff}
+  .hb.ol{left:238px;width:143px;border:1.4px solid var(--blue);color:#1b3fa0;background:#fff}
+  .conf{position:absolute;left:37px;top:387px;display:flex;align-items:center;gap:8px;font-size:9.8px;color:#4b5263}
+  .conf svg{width:14px;height:14px;stroke-width:1.7;color:#6b7280}
+
+  /* section title */
+  .st{text-align:center;font-size:16.3px;font-weight:700;color:var(--ink);letter-spacing:-.2px;position:relative}
+  .st:after{content:"";display:block;width:28px;height:2.6px;border-radius:2px;background:var(--blue);margin:9px auto 0}
+
+  /* before / after */
+  .ba{position:relative;height:237px;margin-top:15px}
+  .bx{position:absolute;top:0;height:237px;border-radius:8px}
+  .bx.b{left:35px;width:375px;background:#fff5f5;border:1px solid #f3dada}
+  .bx.a{left:422px;width:405px;background:#f3faf8;border:1px solid #d3e9e1}
+  .bx h4{position:absolute;top:17px;font-size:11.8px;font-weight:800;letter-spacing:.1px}
+  .bx ul{list-style:none;position:absolute;top:43px}
+  .bx li{display:flex;align-items:center;gap:9px;height:30.2px;font-size:9.4px;color:#1d2230}
+  .ico-x,.ico-c{width:10px;height:10px;border-radius:50%;flex:none;display:flex;align-items:center;justify-content:center}
+  .ico-x{background:#f8d3d3}.ico-c{background:#cfeadd}
+  .bx img{position:absolute;top:48px;width:146px;height:155px}
+  .vs{position:absolute;left:390px;top:100px;width:51px;height:51px;border-radius:50%;background:#fff;border:1px solid #e3e6ec;box-shadow:0 2px 8px rgba(0,0,0,.06);display:flex;align-items:center;justify-content:center;font-size:14.6px;font-weight:800;color:var(--ink);z-index:2}
+
+  .stats{margin:18px 36px 0 35px;height:83px;border:1px solid #dfe4ee;border-radius:8px;position:relative}
+  .sti{position:absolute;top:0;height:83px;display:flex;align-items:center;gap:10px}
+  .sti svg{width:36px;height:36px;color:var(--blue);stroke-width:1.5}
+  .sti b{display:block;font-size:17.3px;font-weight:800;color:var(--blue);letter-spacing:-.2px;line-height:20px}
+  .sti span{display:block;font-size:7.9px;color:#4b5263;margin-top:3px}
+
+  /* ecosystem */
+  .eco{position:relative;height:194px;margin-top:14px}
+  .node{position:absolute;top:13px;width:150px;margin-left:-75px;text-align:center}
+  .ring{width:91px;height:91px;border-radius:50%;margin:0 auto;border:1px solid #edf1f8;display:flex;align-items:center;justify-content:center;background:#fff}
+  .ring span{width:78px;height:78px;border-radius:50%;background:#e7eefb;display:flex;align-items:center;justify-content:center;color:#1c3f94}
+  .ring svg{width:40px;height:40px;stroke-width:1.7}
+  .node b{display:block;font-size:10.6px;font-weight:700;color:var(--blue);margin-top:11px}
+  .node p{font-size:9.1px;line-height:15px;color:#3b4252;margin-top:6px}
+  .arr{position:absolute;top:53px;width:12px;height:12px;color:var(--blue);stroke-width:2.2}
+  .list{position:absolute;left:491px;top:0;width:168px;height:156px;border:1px solid #e3e7ef;border-radius:8px;background:#fff;box-shadow:0 2px 8px rgba(20,30,60,.04);padding:13px 0 0 22px}
+  .list div{display:flex;align-items:center;gap:12px;height:27px;font-size:9.3px;color:#1d2230}
+  .list i{width:21px;height:21px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex:none}
+  .list i svg{width:12px;height:12px;stroke-width:2}
+
+  /* modules */
+  .mods{position:relative;height:185px;margin-top:14px}
+  .mod{position:absolute;top:0;width:126px;height:185px;border:1px solid #e3e7ef;border-radius:7px;background:#fff;text-align:center;box-shadow:0 1px 6px rgba(20,30,60,.03)}
+  .mod img{width:56px;height:56px;display:block;margin:12px auto 0}
+  .mod h5{font-size:9.9px;font-weight:700;color:var(--ink);margin-top:7px;letter-spacing:-.1px}
+  .mod p{font-size:8.6px;line-height:15.8px;color:#3b4252;margin-top:6px}
+  .mod a{position:absolute;left:0;right:0;top:157px;display:flex;align-items:center;justify-content:center;gap:9px;font-size:9.4px;font-weight:700;color:var(--blue)}
+  .mod a svg{width:11px;height:11px;stroke-width:2.4}
+
+  /* integrations */
+  .logos{margin:14px 36px 0 35px;height:66px;border:1px solid #e0e5ee;border-radius:7px;position:relative}
+  .logos{display:flex;align-items:center}
+  .lg{height:40px;display:flex;align-items:center;justify-content:center;flex-direction:column;border-left:1px solid #e6e9f0}
+  .lg:first-child{border-left:0}
+
+  /* bottom block */
+  .blk{margin:19px 25px 0 25px;height:178px;background:#f2f5fc;border-radius:8px;position:relative}
+  .why{position:absolute;left:22px;top:21px}
+  .why h4{font-size:12.8px;font-weight:700;color:var(--ink)}
+  .why ul{list-style:none;margin-top:13px}
+  .why li{display:flex;align-items:center;gap:8px;height:22px;font-size:8.9px;color:#1d2230}
+  .chk{width:9px;height:9px;flex:none}
+  .vdiv{position:absolute;left:196px;top:22px;width:1px;height:135px;background:#dbe1ec}
+  .sec{position:absolute;left:210px;top:32px;width:290px;text-align:center}
+  .sec h4{font-size:12px;font-weight:700;color:var(--ink)}
+  .sec .row{display:flex;justify-content:space-between;margin-top:34px;padding:0 3px}
+  .sec .row div{width:60px;font-size:8.4px;line-height:14.5px;color:#2b3040}
+  .sec svg{width:22px;height:22px;stroke-width:1.4;color:#3b4252;margin:0 auto 7px}
+  .cta{position:absolute;left:535px;top:16px;width:262px;height:160px;border-radius:6px;background:var(--navy);text-align:center;color:#fff;box-shadow:none}
+  .cta h4{font-size:15.2px;font-weight:700;line-height:19.5px;margin-top:14px}
+  .cta p{font-size:9.8px;line-height:16.5px;color:#dfe4f0;margin-top:7px}
+  .cta a{position:absolute;left:23px;top:103px;width:216px;height:45px;border-radius:4px;background:#2360e6;display:flex;align-items:center;justify-content:center;gap:24px;font-size:10.3px;line-height:15.5px;font-weight:700}
+  .cta a svg{width:13px;height:13px;stroke-width:2.2}
+  .pb{margin:12px 25px 10px 25px;height:76px;background:var(--navy);border-radius:5px;position:relative;color:#fff}
+  .pb .ic{position:absolute;left:162px;top:15px;width:44px;height:48px;color:#cfd6e6}
+  .pb h5{position:absolute;left:222px;top:15px;font-size:10.4px;font-weight:700}
+  .pb p{position:absolute;left:222px;top:33px;font-size:8.3px;line-height:16px;color:#dfe4f0}
+  .pb a{position:absolute;left:510px;top:22px;width:160px;height:33px;border:1.2px solid #e6e9f0;border-radius:4px;display:flex;align-items:center;justify-content:center;gap:7px;font-size:8.8px;font-weight:700}
+  .pb a svg{width:11px;height:11px;stroke-width:2.2}
+</style>
+</head>
+<body>
+<div class="page" id="page">
+  <!-- nav -->
+  <header class="nav">
+    <svg class="logo" viewBox="8 6 150 62" xmlns="http://www.w3.org/2000/svg" aria-label="innovsol">
+      <g fill="none" stroke="#2F5FD0" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18.6 34 L27 42.5 L27 64"/><path d="M31.8 18.4 L31.8 64"/><path d="M41 30.4 L41 64"/><path d="M53 30.4 L53 44 L47 51 L47 64"/>
+        <circle cx="16.5" cy="31" r="3.3" fill="#fff"/><circle cx="31.8" cy="15" r="3.4" fill="#F5B301"/><circle cx="41" cy="27" r="3.3" fill="#fff"/><circle cx="53" cy="27" r="3.3" fill="#fff"/>
+      </g>
+      <text x="60" y="49" font-family="Poppins" font-weight="500" font-size="16.8" letter-spacing="3" textLength="92" fill="#141414">innovsol</text>
+      <text x="61" y="62.5" font-family="Poppins" font-weight="500" font-size="5.3" textLength="90" fill="#141414">Innovate . Disrupt . Transform</text>
+    </svg>
+    <nav class="menu">
+      <a href="#" style="left:316px">Industries <i data-lucide="chevron-down"></i></a>
+      <a href="#" style="left:409px">Solutions</a>
+      <a href="#" style="left:483px">AI Modules</a>
+      <a href="#" style="left:567px">Resources <i data-lucide="chevron-down"></i></a>
+      <a href="#" style="left:662px">About Us</a>
+    </nav>
+    <a class="contact" href="#">Contact Us</a>
+  </header>
+
+  <!-- hero -->
+  <section class="hero">
+    <img class="art" src="assets/hero-bank.jpg" alt="AI-powered bank illustration">
+    <div class="crumb">Home <i data-lucide="chevron-right"></i> Industries <i data-lucide="chevron-right"></i> Banking &amp; Financial Services</div>
+    <h1>Banking &amp;<br>Financial Services</h1>
+    <h2>AI That Understands Banking<br>Before It Writes a Single Line of Code</h2>
+    <p>From fraud detection to loan origination, compliance to<br>customer experience – we build AI systems that deliver<br>measurable business outcomes.</p>
+    <a class="hb dk" href="#"><i data-lucide="calendar-days"></i>Book AI Discovery Workshop</a>
+    <a class="hb ol" href="#"><i data-lucide="file-text" style="color:#1d5be0"></i>Download Playbook</a>
+    <div class="conf"><i data-lucide="shield-check"></i>Client confidentiality guaranteed. No customer names disclosed.</div>
+  </section>
+
+  <!-- transforming -->
+  <h3 class="st" style="margin-top:19px">Transforming Banking With AI</h3>
+  <div class="ba">
+    <div class="bx b">
+      <h4 style="left:17px;color:#c62828">BEFORE AI</h4>
+      <ul style="left:18px">
+        <li><span class="ico-x"><svg width="6" height="6" viewBox="0 0 10 10"><path d="M2 2l6 6M8 2l-6 6" stroke="#d93030" stroke-width="2" stroke-linecap="round"/></svg></span>Manual document verification</li>
+        <li><span class="ico-x"><svg width="6" height="6" viewBox="0 0 10 10"><path d="M2 2l6 6M8 2l-6 6" stroke="#d93030" stroke-width="2" stroke-linecap="round"/></svg></span>Loan approval in 5–7 days</li>
+        <li><span class="ico-x"><svg width="6" height="6" viewBox="0 0 10 10"><path d="M2 2l6 6M8 2l-6 6" stroke="#d93030" stroke-width="2" stroke-linecap="round"/></svg></span>High false positives in fraud alerts</li>
+        <li><span class="ico-x"><svg width="6" height="6" viewBox="0 0 10 10"><path d="M2 2l6 6M8 2l-6 6" stroke="#d93030" stroke-width="2" stroke-linecap="round"/></svg></span>Long customer wait times</li>
+        <li><span class="ico-x"><svg width="6" height="6" viewBox="0 0 10 10"><path d="M2 2l6 6M8 2l-6 6" stroke="#d93030" stroke-width="2" stroke-linecap="round"/></svg></span>Manual compliance reporting</li>
+        <li><span class="ico-x"><svg width="6" height="6" viewBox="0 0 10 10"><path d="M2 2l6 6M8 2l-6 6" stroke="#d93030" stroke-width="2" stroke-linecap="round"/></svg></span>High operational costs</li>
+      </ul>
+      <img src="assets/before-ai.png" alt="Overworked banker before AI" style="left:200px;top:49px;clip-path:circle(70px at 74px 78px)">
+    </div>
+    <div class="vs">VS</div>
+    <div class="bx a">
+      <img src="assets/after-ai.png" alt="Analyst using AI dashboard" style="left:15px;top:49px;width:142px;clip-path:circle(69px at 72px 77px)">
+      <h4 style="left:180px;color:#197a4b">AFTER AI</h4>
+      <ul style="left:180px">
+        <li><span class="ico-c"><svg width="7" height="7" viewBox="0 0 10 10"><path d="M2 5.2l2 2 4-4.4" fill="none" stroke="#1f8a55" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Loan approval in same day</li>
+        <li><span class="ico-c"><svg width="7" height="7" viewBox="0 0 10 10"><path d="M2 5.2l2 2 4-4.4" fill="none" stroke="#1f8a55" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>90%+ automated document processing</li>
+        <li><span class="ico-c"><svg width="7" height="7" viewBox="0 0 10 10"><path d="M2 5.2l2 2 4-4.4" fill="none" stroke="#1f8a55" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Real-time fraud detection with high accuracy</li>
+        <li><span class="ico-c"><svg width="7" height="7" viewBox="0 0 10 10"><path d="M2 5.2l2 2 4-4.4" fill="none" stroke="#1f8a55" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Instant customer support 24x7</li>
+        <li><span class="ico-c"><svg width="7" height="7" viewBox="0 0 10 10"><path d="M2 5.2l2 2 4-4.4" fill="none" stroke="#1f8a55" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Compliance reports in hours</li>
+        <li><span class="ico-c"><svg width="7" height="7" viewBox="0 0 10 10"><path d="M2 5.2l2 2 4-4.4" fill="none" stroke="#1f8a55" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Lower costs, higher productivity</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="stats">
+    <div class="sti" style="left:22px"><i data-lucide="gauge"></i><div><b>70%</b><span>Faster Loan Processing</span></div></div>
+    <div class="sti" style="left:180px"><i data-lucide="settings"></i><div><b>50%</b><span>Reduction in Manual Work</span></div></div>
+    <div class="sti" style="left:352px"><i data-lucide="coins"></i><div><b>30%</b><span>Lower Operational Cost</span></div></div>
+    <div class="sti" style="left:508px"><i data-lucide="chart-column-increasing"></i><div><b>2X</b><span>Increase in Productivity</span></div></div>
+    <div class="sti" style="left:655px"><i data-lucide="smile"></i><div><b>Higher</b><span>Customer Satisfaction</span></div></div>
+  </div>
+
+  <!-- ecosystem -->
+  <h3 class="st" style="margin-top:22px">AI Across the Banking Ecosystem</h3>
+  <div class="eco">
+    <div class="node" style="left:93px"><div class="ring"><span><i data-lucide="users-round" style="fill:#1c3f94"></i></span></div><b>Customer</b><p>Mobile, Web,<br>Branch, Call Center</p></div>
+    <i data-lucide="arrow-right" class="arr" style="left:159px"></i>
+    <div class="node" style="left:237px"><div class="ring"><span><i data-lucide="bot-message-square"></i></span></div><b>AI Engagement Layer</b><p>Chatbots, Voice AI,<br>Virtual Assistants</p></div>
+    <i data-lucide="arrow-right" class="arr" style="left:305px"></i>
+    <div class="node" style="left:385px"><div class="ring"><span><i data-lucide="brain-circuit"></i></span></div><b>Decision Intelligence</b><p>AI/ML Models, Rules,<br>Analytics Engine</p></div>
+    <i data-lucide="arrow-right" class="arr" style="left:454px"></i>
+    <div class="list">
+      <div><i style="background:#e8eefb;color:#3056b8"><svg class="lucide" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 3l7 3v5c0 5-3 8-7 10-4-2-7-5-7-10V6z"/><path d="M12 8v5M12 16h.01"/></svg></i>Fraud AI</div>
+      <div><i style="background:#fde5e5;color:#d93030" data-lucide-wrap><svg class="lucide" viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="4" y="4" width="16" height="16" rx="4"/><circle cx="12" cy="12" r="3.5"/></svg></i>Credit AI</div>
+      <div><i style="background:#e1f3ea;color:#1f8a55"><svg class="lucide" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="9" r="3.5"/><path d="M5.5 20c1-3.6 3.6-5.5 6.5-5.5s5.5 1.9 6.5 5.5"/></svg></i>KYC AI</div>
+      <div><i style="background:#e6eef7;color:#2b4a7a"><svg class="lucide" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="8" r="3.5"/><path d="M6 20c.8-3.4 3.2-5.5 6-5.5s5.2 2.1 6 5.5z"/></svg></i>Compliance AI</div>
+      <div><i style="background:#efe6fb;color:#7a45c9"><svg class="lucide" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="8" r="3.5"/><path d="M5.5 20c1-3.6 3.6-5.5 6.5-5.5s5.5 1.9 6.5 5.5"/><path d="M17 4l1.5 1.5M19.5 8H21"/></svg></i>Customer Intelligence</div>
+    </div>
+    <i data-lucide="arrow-right" class="arr" style="left:681px"></i>
+    <div class="node" style="left:755px"><div class="ring"><span><i data-lucide="landmark"></i></span></div><b>Core Systems</b><p>CBS, CRM, DMS,<br>Core Lending, ERP</p></div>
+  </div>
+
+  <!-- modules -->
+  <h3 class="st" style="margin-top:0">Key AI Modules</h3>
+  <div class="mods">
+    <div class="mod" style="left:13px"><img src="assets/module-1.png" alt=""><h5>AI Loan Processing</h5><p>Automate document<br>verification, credit scoring<br>&amp; loan decisioning.</p><a href="#">Explore <i data-lucide="arrow-right"></i></a></div>
+    <div class="mod" style="left:150px"><img src="assets/module-2.png" alt=""><h5>AI Fraud Detection</h5><p>Real-time transaction<br>monitoring &amp; behaviour<br>analytics to stop fraud.</p><a href="#">Explore <i data-lucide="arrow-right"></i></a></div>
+    <div class="mod" style="left:288px"><img src="assets/module-3.png" alt=""><h5>AI KYC &amp; Onboarding</h5><p>Automated KYC, AML<br>screening &amp; risk<br>assessment.</p><a href="#">Explore <i data-lucide="arrow-right"></i></a></div>
+    <div class="mod" style="left:426px"><img src="assets/module-4.png" alt=""><h5>AI Customer Assistant</h5><p>24x7 intelligent support<br>across voice, chat,<br>WhatsApp &amp; email.</p><a href="#">Explore <i data-lucide="arrow-right"></i></a></div>
+    <div class="mod" style="left:564px"><img src="assets/module-5.png" alt=""><h5>AI Compliance</h5><p>Automate regulatory<br>monitoring, reporting &amp;<br>policy updates.</p><a href="#">Explore <i data-lucide="arrow-right"></i></a></div>
+    <div class="mod" style="left:702px;width:127px"><img src="assets/module-6.png" alt=""><h5>Executive Dashboard</h5><p>Real-time insights on risk,<br>performance, fraud &amp;<br>business KPIs.</p><a href="#">Explore <i data-lucide="arrow-right"></i></a></div>
+  </div>
+
+  <!-- integrations -->
+  <h3 class="st" style="margin-top:28px">Works Seamlessly With Your Systems</h3>
+  <div class="logos">
+    <div class="lg" style="width:110px"><span style="font-family:Arial,Helvetica,sans-serif;font-size:17px;font-weight:700;color:#1e3f86;letter-spacing:.2px;line-height:18px">FINACLE</span><span style="font-family:Arial,sans-serif;font-size:6.5px;color:#1e3f86;align-self:flex-end;margin-right:16px;margin-top:1px">from <b style="font-size:10.5px;color:#2d74c4;letter-spacing:-.3px">Infosys</b></span></div>
+    <div class="lg" style="width:117px"><span style="font-size:20px;font-weight:700;color:#1b2b63;letter-spacing:-.2px">Temenos</span></div>
+    <div class="lg" style="width:120px"><span style="font-family:Arial,Helvetica,sans-serif;font-size:16.5px;color:#e2231a;letter-spacing:1px;-webkit-text-stroke:.4px #e2231a;line-height:17px">ORACLE</span><span style="width:74px;height:1px;background:#999;margin:2px 0"></span><span style="font-family:Arial,sans-serif;font-size:8.6px;font-weight:700;color:#222;letter-spacing:.6px">FUSION</span></div>
+    <div class="lg" style="width:118px;flex-direction:row;gap:5px"><svg width="20" height="20" viewBox="0 0 20 20"><rect width="9.5" height="9.5" fill="#F25022"/><rect x="10.5" width="9.5" height="9.5" fill="#7FBA00"/><rect y="10.5" width="9.5" height="9.5" fill="#00A4EF"/><rect x="10.5" y="10.5" width="9.5" height="9.5" fill="#FFB900"/></svg><span style="font-family:'Segoe UI',Arial,sans-serif;font-size:15px;color:#737373">Microsoft</span></div>
+    <div class="lg" style="width:114px"><svg viewBox="0 0 62 31" style="width:60px;height:30px" aria-label="SAP"><defs><linearGradient id="sapg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#00AEEF"/><stop offset="1" stop-color="#0063B5"/></linearGradient></defs><path d="M0 0h62L31 31H0z" fill="url(#sapg)"/><text x="3.5" y="22.5" font-family="Arial Black,Arial,sans-serif" font-weight="900" font-size="18.5" fill="#fff" letter-spacing="-.6">SAP</text></svg></div>
+    <div class="lg" style="width:113px"><svg viewBox="0 0 60 42" style="width:54px;height:38px" aria-label="Salesforce"><g fill="#00A1E0"><circle cx="17" cy="17" r="11"/><circle cx="30" cy="13" r="11.5"/><circle cx="43" cy="16" r="10.5"/><circle cx="49" cy="26" r="9"/><circle cx="35" cy="29" r="11"/><circle cx="20" cy="29" r="10"/><circle cx="10" cy="25" r="8.5"/></g><text x="30" y="24.5" text-anchor="middle" font-family="Arial,sans-serif" font-size="7.4" font-style="italic" fill="#fff">salesforce</text></svg></div>
+    <div class="lg" style="flex:1"><span style="font-size:10.4px;font-weight:600;color:#4b5263">&amp; More</span></div>
+  </div>
+
+  <!-- bottom block -->
+  <section class="blk">
+    <div class="why">
+      <h4>Why Innovsol</h4>
+      <ul>
+        <li><svg class="chk" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#1d5be0"/><path d="M7 12.5l3.3 3.2L17 9" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>Deep domain expertise in BFSI</li>
+        <li><svg class="chk" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#1d5be0"/><path d="M7 12.5l3.3 3.2L17 9" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>AI + Business + Technology</li>
+        <li><svg class="chk" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#1d5be0"/><path d="M7 12.5l3.3 3.2L17 9" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>Secure, Scalable, Compliant</li>
+        <li><svg class="chk" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#1d5be0"/><path d="M7 12.5l3.3 3.2L17 9" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>Human-in-the-loop approach</li>
+        <li><svg class="chk" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#1d5be0"/><path d="M7 12.5l3.3 3.2L17 9" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>Proven frameworks &amp; accelerators</li>
+      </ul>
+    </div>
+    <span class="vdiv"></span>
+    <div class="sec">
+      <h4>Enterprise Grade Security</h4>
+      <div class="row">
+        <div><i data-lucide="lock-keyhole"></i>Data<br>Encryption</div>
+        <div><i data-lucide="user-round"></i>Role Based<br>Access</div>
+        <div><i data-lucide="file-text"></i>Audit<br>Logs</div>
+        <div style="width:66px"><i data-lucide="cloud-cog"></i>On-Prem /<br>Private Cloud</div>
+        <div><i data-lucide="shield-check"></i>Regulatory<br>Compliance</div>
+      </div>
+    </div>
+    <div class="cta">
+      <h4>Ready to Transform<br>Your Bank With AI?</h4>
+      <p>Let’s identify high-impact use cases<br>tailored to your business.</p>
+      <a href="#"><span>Book a Free AI Discovery<br>Workshop</span><i data-lucide="arrow-right"></i></a>
+    </div>
+  </section>
+
+  <section class="pb">
+    <svg class="ic" viewBox="0 0 44 48" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"><path d="M6 3h24l9 9v33H6z"/><path d="M30 3v9h9"/><rect x="11" y="10" width="10" height="9" rx="1"/><path d="M11 24h22M11 29h22M11 34h14"/><rect x="26" y="33" width="9" height="8" rx="1"/><path d="M28 39v-2M30.5 39v-3.5M33 39v-5"/></svg>
+    <h5>Banking AI Transformation Playbook</h5>
+    <p>A practical guide to AI adoption in banking – use cases,<br>frameworks, ROI models &amp; more.</p>
+    <a href="#"><i data-lucide="download"></i>Download Playbook</a>
+  </section>
+</div>
+
+<script src="assets/lucide.min.js"></script>
+<script>
+  lucide.createIcons();
+  (function(){
+    var W = 863, p = document.getElementById('page');
+    function fit(){ p.style.zoom = Math.min(Math.max(innerWidth / W, 0.35), 1.75); }
+    fit(); addEventListener('resize', fit);
+  })();
+</script>
+</body>
+</html>

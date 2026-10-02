@@ -1,0 +1,200 @@
+/* ═══ CONTACT ══════════════════════════════════════════════════════════════ */
+/* Google Maps embed */
+.con-map{display:flex;flex-direction:column;gap:1rem}
+.con-map-label{font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.4);margin:0}
+.con-gmap{
+  position:relative;width:100%;padding-bottom:62%;
+  border-radius:12px;overflow:hidden;
+  box-shadow:0 8px 40px rgba(0,0,0,.5);
+  border:1px solid rgba(255,255,255,.08)}
+.con-gmap iframe{
+  position:absolute;inset:0;width:100%;height:100%;border:0;display:block}
+
+/* Overlay map pins */
+.gmap-pins{position:absolute;inset:0;pointer-events:none;z-index:2}
+.gmap-pin{position:absolute;transform:translate(-50%,-50%);display:flex;flex-direction:column;align-items:center;gap:5px}
+.gmap-dot{width:12px;height:12px;border-radius:50%;border:2px solid #fff;box-shadow:0 0 0 3px rgba(0,0,0,.3);flex-shrink:0}
+.gmap-ring{
+  position:absolute;top:50%;left:50%;
+  width:12px;height:12px;border-radius:50%;
+  transform:translate(-50%,-50%);
+  border:2px solid currentColor;animation:gmap-pulse 2.4s ease-out infinite}
+.gmap-pin.orange .gmap-dot{background:#faa728}
+.gmap-pin.orange .gmap-ring{color:#faa728}
+.gmap-pin.blue   .gmap-dot{background:#6398ff}
+.gmap-pin.blue   .gmap-ring{color:#6398ff}
+.gmap-label{
+  background:rgba(5,15,35,.82);backdrop-filter:blur(4px);
+  color:#fff;font-size:.6rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;
+  padding:3px 8px;border-radius:4px;white-space:nowrap;
+  border:1px solid rgba(255,255,255,.15);margin-top:2px}
+.gmap-pin.orange .gmap-label{border-color:rgba(250,167,32,.5);color:#faa728}
+.gmap-pin.blue   .gmap-label{border-color:rgba(99,152,255,.5);color:#6398ff}
+@keyframes gmap-pulse{
+  0%{width:12px;height:12px;opacity:.9}
+  100%{width:44px;height:44px;margin:-16px;opacity:0}}
+.con-map-legend{display:flex;flex-wrap:wrap;gap:.75rem 1.5rem}
+.cml-item{display:flex;align-items:center;gap:.5rem;font-size:.75rem;font-weight:600;color:rgba(255,255,255,.6);white-space:nowrap}
+.cml-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+
+/* ── Modern form section ─────────────────────────────────────────────── */
+.contact-form-sec{
+  padding:4.5rem 0;
+  background:#000;
+  position:relative;overflow:hidden}
+.contact-form-sec::before{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(120deg,rgba(255,255,255,.05) 0%,transparent 45%,rgba(255,255,255,.03) 75%,transparent 100%);
+  background-size:300% 300%;
+  animation:cfSweep 9s ease-in-out infinite alternate;
+  pointer-events:none}
+@keyframes cfSweep{
+  0%{background-position:0% 50%}
+  100%{background-position:100% 50%}}
+
+/* Two-column layout */
+.contact-form-inner{
+  display:grid;grid-template-columns:1fr 1.35fr;
+  gap:5rem;align-items:start;
+  position:relative;z-index:1}
+
+/* Left panel */
+.cform-left{padding-top:.4rem}
+.cform-tag{
+  font-size:.58rem;font-weight:700;letter-spacing:.18em;
+  text-transform:uppercase;color:rgba(255,255,255,.3);
+  margin:0 0 .9rem}
+.cform-h2{
+  font-size:clamp(2.8rem,4.5vw,4.2rem);
+  font-weight:900;line-height:.9;
+  letter-spacing:-.05em;margin:0 0 1.2rem;color:#fff}
+.cform-h2 em{
+  font-style:normal;display:block;
+  color:transparent;-webkit-text-stroke:1.5px rgba(255,255,255,.6)}
+.cform-sub{
+  font-size:.78rem;color:rgba(255,255,255,.38);
+  line-height:1.8;margin:0 0 1.6rem;max-width:230px}
+.cform-trust{
+  list-style:none;padding:0;margin:0;
+  display:flex;flex-direction:column;gap:.45rem}
+.cform-trust li{
+  font-size:.65rem;color:rgba(255,255,255,.28);
+  display:flex;align-items:center;gap:.5rem}
+.cform-trust li::before{
+  content:'';width:14px;height:1px;
+  background:rgba(255,255,255,.2);flex-shrink:0}
+
+/* Ultra-compact underline form */
+.cform-modern{display:flex;flex-direction:column;gap:0}
+.cform-modern .frow{display:grid;grid-template-columns:1fr 1fr;gap:0 1.2rem}
+.cform-modern .fg{
+  display:flex;flex-direction:column;gap:.1rem;
+  padding:.4rem 0;
+  border-bottom:1px solid rgba(255,255,255,.35);
+  transition:border-color .2s}
+.cform-modern .fg:focus-within{border-bottom-color:#fff}
+.cform-modern .fg label{
+  font-size:.52rem;font-weight:700;letter-spacing:.13em;
+  text-transform:uppercase;color:#fff}
+.cform-modern .fg input,
+.cform-modern .fg select,
+.cform-modern .fg textarea{
+  background:transparent;border:none;
+  padding:.18rem 0;
+  font-size:.78rem;font-family:var(--font);
+  color:#fff;outline:none;
+  -webkit-appearance:none}
+.cform-modern .fg input::placeholder,
+.cform-modern .fg textarea::placeholder{color:rgba(255,255,255,.16)}
+.cform-modern .fg select{color:rgba(255,255,255,.55)}
+.cform-modern .fg select option{background:#111;color:#fff}
+.cform-modern .fg textarea{resize:none;min-height:44px}
+.cform-modern .fsub{
+  width:100%;padding:.58rem;margin-top:1.1rem;
+  background:#fff;color:#000;
+  border:none;border-radius:3px;
+  font-size:.7rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;
+  cursor:pointer;transition:all .2s;font-family:var(--font)}
+.cform-modern .fsub:hover{background:#ddd;transform:translateY(-1px)}
+.cform-modern .fnote{
+  font-size:.55rem;color:rgba(255,255,255,.18);
+  text-align:center;margin-top:.55rem;line-height:1.6}
+
+/* ── Contact redesign — full-bleed map with content overlay ─────────────── */
+#contact{padding:0;background:none;position:relative;overflow:hidden}
+#contact::before{display:none}
+
+.con-hero{position:relative;height:580px;overflow:hidden}
+
+/* Location image fills entire section */
+.con-map-bg{position:absolute;inset:0;z-index:0;overflow:hidden}
+.con-loc-img{width:100%;height:100%;object-fit:cover;object-position:center 90%;display:block}
+.con-map-overlay{
+  position:absolute;inset:0;
+  background:linear-gradient(
+    105deg,
+    rgba(2,10,28,.82) 0%,
+    rgba(2,10,28,.55) 45%,
+    rgba(2,10,28,.15) 75%,
+    transparent 100%);
+  pointer-events:none}
+
+/* Content sits over the map */
+.con-map-content{
+  position:relative;z-index:2;
+  height:100%;display:flex;
+  align-items:center;justify-content:space-between;gap:3rem}
+
+/* Left info panel */
+.con-panel{
+  display:flex;flex-direction:column;gap:.75rem;
+  max-width:420px}
+.con-panel h2{
+  font-size:clamp(1.8rem,3vw,2.6rem);
+  color:#fff;margin:.4rem 0 .6rem;
+  font-weight:800;line-height:1.15;letter-spacing:-.03em}
+.con-panel>p{font-size:.88rem;color:rgba(255,255,255,.65);line-height:1.75;margin:0}
+.con-details{display:flex;flex-direction:column;gap:.65rem;margin-top:.5rem}
+.con-det{display:flex;align-items:center;gap:.75rem;font-size:.84rem;color:rgba(255,255,255,.75)}
+.con-icon{
+  width:34px;height:34px;border-radius:50%;
+  background:rgba(250,167,32,.15);border:1px solid rgba(250,167,32,.3);
+  display:flex;align-items:center;justify-content:center;
+  font-size:.9rem;flex-shrink:0}
+
+/* HQ address simple text */
+.con-hq-text{
+  position:absolute;bottom:28px;right:0;
+  display:flex;flex-direction:column;gap:4px;z-index:3}
+.con-hq-label{
+  font-size:.7rem;font-weight:800;letter-spacing:.08em;
+  text-transform:uppercase;color:var(--orange)}
+.con-hq-addr{font-size:.8rem;color:rgba(255,255,255,.75);line-height:1.7}
+
+@media(max-width:768px){
+  .con-hero{height:auto;min-height:560px}
+  .con-map-content{flex-direction:column;align-items:flex-start;padding:3rem 0;gap:2rem}
+  .con-map-overlay{background:rgba(5,14,32,.85)}
+  .con-hq-text{position:static;margin-top:1rem}
+  .con-panel{max-width:100%}
+}
+.cform{background:#fff;border-radius:14px;padding:1.4rem}
+.cform h3{font-size:.9rem;font-weight:700;color:var(--dark);margin-bottom:.85rem;
+  padding-bottom:.5rem;border-bottom:1px solid var(--border)}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:.6rem}
+.fg{display:flex;flex-direction:column;gap:.22rem;margin-bottom:.5rem}
+.fg label{font-size:.68rem;font-weight:700;color:var(--dark2)}
+.fg input,.fg select,.fg textarea{padding:.42rem .65rem;border:1.5px solid var(--border);border-radius:6px;
+  font-size:.78rem;font-family:var(--font);color:var(--dark);background:#fff;outline:none;transition:.2s}
+.fg input:focus,.fg select:focus,.fg textarea:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(63,108,181,.1)}
+.fg textarea{resize:vertical;min-height:58px}
+.fsub{width:100%;padding:.55rem;background:var(--blue);color:#fff;border:none;border-radius:7px;
+  font-size:.8rem;font-weight:700;cursor:pointer;transition:.2s;font-family:var(--font);margin-top:.15rem}
+.fsub:hover{background:var(--blue2);transform:translateY(-1px)}
+.fnote{font-size:.64rem;color:var(--lgray);margin-top:.4rem;text-align:center}
+
+
+.cform-status{margin-top:.8rem;font-size:.88rem;font-weight:600;min-height:1.2em}
+.cform-status.err{color:#c62828}
+.cform-status.ok{color:#197a4b}
+.fsub:disabled{opacity:.7;cursor:progress}

@@ -1,0 +1,50 @@
+[
+  {
+    "slug": "ai-strategy-and-transformation",
+    "num": "01",
+    "title": "AI Strategy & Transformation",
+    "badge": "2 weeks",
+    "text": "12-month AI roadmap, maturity assessment, ROI models and a board-ready business case — delivered in as little as 2 weeks. We identify your highest-value AI opportunities and build a phased, costed plan.",
+    "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=700&h=400&fit=crop&auto=format&q=85"
+  },
+  {
+    "slug": "ai-product-engineering",
+    "num": "02",
+    "title": "AI Product Engineering",
+    "badge": "8–16 weeks",
+    "text": "End-to-end AI product builds — UX design, backend AI services, production deployment and post-launch optimisation in 8–16 weeks. We build AI-native features your customers will actually adopt.",
+    "image": "https://images.unsplash.com/photo-1559028012-481c04fa702d?w=700&h=400&fit=crop&auto=format&q=85"
+  },
+  {
+    "slug": "ai-agents-and-agentic-automation",
+    "num": "03",
+    "title": "AI Agents & Agentic Automation",
+    "badge": "Autonomous",
+    "text": "Autonomous agents that execute complex multi-step workflows across your enterprise without constant human oversight. We design and deploy agents that work reliably in production at scale.",
+    "image": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=700&h=400&fit=crop&auto=format&q=85"
+  },
+  {
+    "slug": "generative-ai-solutions",
+    "num": "04",
+    "title": "Generative AI Solutions",
+    "badge": "RAG-First",
+    "text": "Custom LLM applications tailored to your domain: document intelligence, knowledge assistants, AI-powered search, and enterprise copilots. RAG-first architecture, security-hardened, deeply integrated with your workflows.",
+    "image": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=700&h=400&fit=crop&auto=format&q=85"
+  },
+  {
+    "slug": "enterprise-ai-infrastructure",
+    "num": "05",
+    "title": "Enterprise AI Infrastructure",
+    "badge": "Next-Gen",
+    "text": "Cloud-native AI platforms, edge computing, scalable data pipelines, and modern enterprise tech stacks — designed for speed, resilience, and the demands of next-generation AI workloads.",
+    "image": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=700&h=400&fit=crop&auto=format&q=90"
+  },
+  {
+    "slug": "forward-deployed-engineering",
+    "num": "06",
+    "title": "Forward Deployed Engineering",
+    "badge": "<12 weeks",
+    "text": "Our engineers embed inside your team, work in your systems, and ship production-ready AI in under 12 weeks. Not strategy decks — engineers inside your organisation building what works for your reality.",
+    "image": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=700&h=400&fit=crop&auto=format&q=85"
+  }
+]

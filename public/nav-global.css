@@ -1,0 +1,27 @@
+﻿/* Global Nav Styles Extracted from Home Page */
+:root {
+  --blue: #1d5be0;
+  --orange: #f08a00;
+  --dark: #000;
+  --dark2: #333;
+}
+#nav{position:fixed;top:0;left:0;right:0;z-index:999;transition:all .3s ease;border-bottom:1px solid rgba(0,0,0,.08);background:#fff}
+.container{max-width:1400px;margin:0 auto;padding:0 clamp(1.5rem,5vw,5rem)}
+.nav-wrap{display:flex;justify-content:space-between;align-items:center;padding:15px 0;height:100%}
+#nav a:first-child{flex-shrink:0}
+.nav-logo-wrap{position:relative;display:block;flex-shrink:0}
+.nav-logo-img{height:95px;width:auto;display:block;flex-shrink:0}
+#nav-logo-alt{display:none;}
+.nav-links{display:flex;align-items:center;gap:clamp(1rem,1.8vw,2.4rem)}
+.nav-links a{font-family:'Inter',sans-serif;font-size:clamp(.78rem,.95vw,1rem);color:var(--dark2);font-weight:600;transition:color .3s;position:relative;padding:6px 0;letter-spacing:-.01em;white-space:nowrap;text-decoration:none}
+.nav-links a::after{content:'';position:absolute;bottom:0;left:0;width:0;height:2px;background:var(--blue);border-radius:2px;transition:width .25s}
+.nav-links a:hover,.nav-links a.act{color:var(--dark)}
+.nav-links a:hover::after,.nav-links a.act::after{width:100%}
+.nav-right{display:flex;align-items:center;gap:1.5rem}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:10px 22px;border-radius:6px;font-family:'Inter',sans-serif;font-weight:700;font-size:.9rem;letter-spacing:-.01em;transition:all .3s ease;text-decoration:none;cursor:pointer}
+.btn-outline-blue{border:1px solid rgba(29,91,224,.3);color:var(--blue);background:rgba(29,91,224,.04)}
+.btn-outline-blue:hover{background:var(--blue);color:#fff}
+.btn-orange{background:var(--orange);color:#fff;border:1px solid var(--orange)}
+.btn-orange:hover{background:#d67c00;border-color:#d67c00;transform:translateY(-1px);box-shadow:0 4px 15px rgba(240,138,0,.3)}
+.ham{display:none;}
+body { padding-top: 126px; } /* Space for fixed nav */

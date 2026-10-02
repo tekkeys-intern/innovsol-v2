@@ -1,0 +1,125 @@
+/* ═══ ENGAGEMENT ══════════════════════════════════════════════════════════ */
+/* ═══ ENGAGEMENT — sticky scroll storytelling ════════════════════════════ */
+
+/* Driver — shorter so cards respond faster (each card ≈ 60vh of scroll) */
+.eng-scroll-driver{height:calc(100vh + 240vh)}
+
+/* Driver is the scroll anchor — no offset needed */
+.eng-scroll-driver{scroll-margin-top:0}
+
+/* Section pins to viewport — padding-top clears the fixed navbar */
+.eng-section{
+  position:sticky;top:0;height:100vh;overflow:hidden;contain:layout paint;
+  background:linear-gradient(160deg,#f4f8ff 0%,#fff 65%);
+  display:flex;align-items:center;
+  padding-top:104px}
+
+/* Single centred column */
+.eng-wrapper{
+  display:flex;flex-direction:column;align-items:center;
+  text-align:center;width:100%;gap:1.8rem}
+
+/* Centred header */
+.eng-header{text-align:center}
+.eng-header h2{font-size:clamp(2rem,3.5vw,3.6rem);color:var(--dark);margin:.5rem 0 0;line-height:1.15}
+
+/* Phase selector — big scroll-driven text nav */
+.eng-steplist{display:flex;flex-direction:row;gap:0;justify-content:center;flex-wrap:wrap;margin-bottom:1.5rem}
+.eng-steplbl{
+  font-size:clamp(1.6rem,2.6vw,2.5rem);font-weight:800;letter-spacing:-.02em;
+  color:rgba(15,40,90,.3);
+  padding:.5rem 1.8rem;border-bottom:3px solid var(--blue);
+  cursor:pointer;transition:color .3s,border-color .3s;text-decoration:none}
+.eng-steplbl.active{color:var(--dark);border-bottom-color:var(--orange)}
+.eng-steplbl:hover:not(.active){color:rgba(15,40,90,.55)}
+
+/* Scroll-driven progress: fills as you move through the four phases */
+.eng-track{width:min(560px,80%);height:4px;border-radius:2px;background:rgba(63,108,181,.14);margin:-.6rem auto 0;overflow:hidden}
+.eng-fill{display:block;height:100%;width:100%;background:linear-gradient(90deg,var(--blue),var(--orange));transform-origin:left center;transform:scaleX(0);will-change:transform}
+
+/* Stage: centred, cards stacked */
+.eng-stage{position:relative;height:auto;min-height:42vh;width:100%;max-width:760px;overflow:visible}
+
+/* Cards — fast transitions */
+.eng-card{will-change:opacity,transform;
+  position:absolute;inset:0;
+  display:flex;align-items:flex-start;justify-content:center;
+  opacity:0;transform:translateY(45px);
+  transition:opacity .38s cubic-bezier(.22,.61,.36,1),transform .38s cubic-bezier(.22,.61,.36,1);
+  pointer-events:none}
+.eng-card.eng-active{opacity:1;transform:translateY(0);pointer-events:auto}
+.eng-card.eng-exit{opacity:0;transform:translateY(-35px);transition:opacity .28s ease,transform .28s ease}
+
+/* Ghost number watermark */
+.eng-ghost-num{
+  position:absolute;left:50%;top:50%;
+  transform:translate(-50%,-50%);
+  font-size:22rem;font-weight:900;color:var(--blue);opacity:.04;
+  line-height:1;pointer-events:none;user-select:none;
+  font-family:var(--font);letter-spacing:-.1em;white-space:nowrap}
+
+/* Card content — bold, centred, no box */
+.eng-card-body{position:relative;z-index:1;max-width:640px;text-align:center}
+
+.eng-card-tag{
+  display:inline-flex;align-items:center;justify-content:center;gap:.55rem;
+  font-size:.65rem;font-weight:800;letter-spacing:.15em;
+  text-transform:uppercase;color:var(--orange);margin-bottom:.9rem}
+.eng-card-tag::before{
+  content:'';display:inline-block;width:22px;height:3px;
+  background:var(--orange);border-radius:2px;flex-shrink:0}
+
+.eng-card-title{
+  font-size:clamp(3.4rem,6.5vw,7rem);font-weight:900;
+  color:var(--dark);letter-spacing:-.04em;line-height:.95;
+  margin:0 0 1.2rem}
+
+.eng-card-desc{
+  font-size:1.15rem;color:var(--gray);
+  line-height:1.75;margin:0 0 1.5rem;font-weight:400}
+
+.eng-deliverable{display:flex;flex-direction:column;gap:.3rem;align-items:center}
+.eng-del-lbl{
+  font-size:.68rem;font-weight:800;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--orange)}
+.eng-del-txt{font-size:1.05rem;color:var(--dark2);font-weight:700}
+
+/* Progress dots — right side, vertical */
+.eng-progress{
+  position:absolute;right:1.5rem;top:50%;transform:translateY(-50%);
+  display:flex;flex-direction:column;align-items:center;gap:.45rem}
+.eng-dot{
+  width:6px;height:6px;border-radius:50%;
+  background:var(--border);transition:all .3s;flex-shrink:0}
+.eng-dot.active{background:var(--orange);height:20px;border-radius:3px}
+.eng-scroll-lbl{
+  margin-top:.3rem;
+  font-size:.55rem;font-weight:700;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--lgray);
+  writing-mode:vertical-rl;text-orientation:mixed}
+
+/* Pills row below the driver */
+.eng-pills-row{background:linear-gradient(160deg,#f4f8ff 0%,#fff 65%);padding:3rem 0 5rem}
+.eng-summary{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+.eng-sum-pill{
+  display:flex;align-items:center;gap:.6rem;background:#fff;
+  border:1.5px solid var(--border);border-radius:30px;
+  padding:.6rem 1.3rem;font-size:.83rem;color:var(--dark);font-weight:600;
+  box-shadow:0 2px 12px rgba(63,108,181,.06);transition:border-color .2s,box-shadow .2s}
+.eng-sum-pill:hover{border-color:var(--blue);box-shadow:0 4px 20px rgba(63,108,181,.12)}
+.eng-sum-pill svg{width:16px;height:16px;flex-shrink:0;color:var(--blue)}
+
+@media(max-width:860px){
+  .eng-scroll-driver{height:auto}
+  #engagement{position:relative;height:auto;padding:5rem 0}
+  .eng-wrapper{grid-template-columns:1fr;gap:2.5rem}
+  .eng-stage{height:auto;overflow:visible}
+  .eng-card{position:relative;opacity:1;transform:none;padding:2rem 0;pointer-events:auto}
+  .eng-card.eng-exit{opacity:1;transform:none}
+  .eng-ghost-num{display:none}
+  .eng-progress{display:none}
+  .eng-steplist{display:none}
+  .eng-track{display:none}
+  .eng-header h2{font-size:clamp(2rem,7vw,3rem);font-weight:900;line-height:1.1}
+}
+

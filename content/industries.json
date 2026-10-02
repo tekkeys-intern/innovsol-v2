@@ -1,0 +1,1307 @@
+{
+  "banking_finance": {
+    "slug": "banking_finance",
+    "name": "Banking & Financial Services",
+    "h1": "Banking &|Financial Services",
+    "eyebrow": "",
+    "tagline": "AI That Understands Banking|Before It Writes a Single Line of Code",
+    "blurb": "From fraud detection to loan origination, compliance to|customer experience – we build AI systems that deliver|measurable business outcomes.",
+    "conf": "Client confidentiality guaranteed. No customer names disclosed.",
+    "headings": [
+      "Transforming Banking With AI",
+      "AI Across the Banking Ecosystem",
+      "Key AI Modules",
+      "Works Seamlessly With Your Systems"
+    ],
+    "before": [
+      "Manual document verification",
+      "Loan approval in 5–7 days",
+      "High false positives in fraud alerts",
+      "Long customer wait times",
+      "Manual compliance reporting",
+      "High operational costs"
+    ],
+    "after": [
+      "Loan approval in same day",
+      "90%+ automated document processing",
+      "Real-time fraud detection with high accuracy",
+      "Instant customer support 24x7",
+      "Compliance reports in hours",
+      "Lower costs, higher productivity"
+    ],
+    "stats": [
+      {
+        "icon": "gauge",
+        "value": "70%",
+        "label": "Faster Loan Processing"
+      },
+      {
+        "icon": "settings",
+        "value": "50%",
+        "label": "Reduction in Manual Work"
+      },
+      {
+        "icon": "coins",
+        "value": "30%",
+        "label": "Lower Operational Cost"
+      },
+      {
+        "icon": "chart-column-increasing",
+        "value": "2X",
+        "label": "Increase in Productivity"
+      },
+      {
+        "icon": "smile",
+        "value": "Higher",
+        "label": "Customer Satisfaction"
+      }
+    ],
+    "eco": [
+      {
+        "icon": "users-round",
+        "title": "Customer",
+        "text": "Mobile, Web,|Branch, Call Center"
+      },
+      {
+        "icon": "bot-message-square",
+        "title": "AI Engagement Layer",
+        "text": "Chatbots, Voice AI,|Virtual Assistants"
+      },
+      {
+        "icon": "brain-circuit",
+        "title": "Decision Intelligence",
+        "text": "AI/ML Models, Rules,|Analytics Engine"
+      },
+      {
+        "icon": "landmark",
+        "title": "Core Systems",
+        "text": "CBS, CRM, DMS,|Core Lending, ERP"
+      }
+    ],
+    "ecoList": [
+      "Fraud AI",
+      "Credit AI",
+      "KYC AI",
+      "Compliance AI",
+      "Customer Intelligence"
+    ],
+    "modules": [
+      {
+        "title": "AI Loan Processing",
+        "text": "Automate document|verification, credit scoring|& loan decisioning."
+      },
+      {
+        "title": "AI Fraud Detection",
+        "text": "Real-time transaction|monitoring & behaviour|analytics to stop fraud."
+      },
+      {
+        "title": "AI KYC & Onboarding",
+        "text": "Automated KYC, AML|screening & risk|assessment."
+      },
+      {
+        "title": "AI Customer Assistant",
+        "text": "24x7 intelligent support|across voice, chat,|WhatsApp & email."
+      },
+      {
+        "title": "AI Compliance",
+        "text": "Automate regulatory|monitoring, reporting &|policy updates."
+      },
+      {
+        "title": "Executive Dashboard",
+        "text": "Real-time insights on risk,|performance, fraud &|business KPIs."
+      }
+    ],
+    "useCases": [],
+    "steps": [],
+    "integrations": [
+      "FINACLEfrom Infosys",
+      "Temenos",
+      "ORACLEFUSION",
+      "Microsoft",
+      "SAP",
+      "salesforce"
+    ],
+    "why": [
+      "Deep domain expertise in BFSI",
+      "AI + Business + Technology",
+      "Secure, Scalable, Compliant",
+      "Human-in-the-loop approach",
+      "Proven frameworks & accelerators"
+    ],
+    "security": [
+      {
+        "icon": "lock-keyhole",
+        "label": "Data|Encryption"
+      },
+      {
+        "icon": "user-round",
+        "label": "Role Based|Access"
+      },
+      {
+        "icon": "file-text",
+        "label": "Audit|Logs"
+      },
+      {
+        "icon": "cloud-cog",
+        "label": "On-Prem /|Private Cloud"
+      },
+      {
+        "icon": "shield-check",
+        "label": "Regulatory|Compliance"
+      }
+    ],
+    "cta": {
+      "title": "Ready to Transform|Your Bank With AI?",
+      "text": "Let’s identify high-impact use cases|tailored to your business."
+    },
+    "playbook": {
+      "title": "Banking AI Transformation Playbook",
+      "text": "A practical guide to AI adoption in banking – use cases,|frameworks, ROI models & more."
+    },
+    "accent": "#1d5be0"
+  },
+  "manufacturingOperations": {
+    "slug": "manufacturingOperations",
+    "name": "Manufacturing & Operations",
+    "h1": "AI-Powered Manufacturing|for Smarter Operations",
+    "eyebrow": "MANUFACTURING & OPERATIONS",
+    "tagline": "",
+    "blurb": "From shop floor to supply chain, we bring AI to every layer|of your operations—driving quality, efficiency and|predictability at scale.",
+    "conf": "Client confidentiality guaranteed. No customer names disclosed.",
+    "headings": [
+      "The Manufacturing Challenge – Before vs After AI",
+      "AI Use Cases Across Manufacturing",
+      "How We Drive AI Transformation",
+      "Works Seamlessly With Your Systems"
+    ],
+    "before": [
+      "Unplanned downtime & machine failures",
+      "Inconsistent product quality",
+      "Manual quality inspection",
+      "Inventory stock-outs & overstocking",
+      "Supply chain disruptions",
+      "High energy consumption",
+      "Siloed data & slow decisions"
+    ],
+    "after": [
+      "Predict failures & avoid downtime",
+      "Real-time quality monitoring",
+      "Automated visual inspection",
+      "Optimized inventory & demand planning",
+      "End-to-end supply chain visibility",
+      "Energy optimization",
+      "Data-driven, real-time decisions"
+    ],
+    "stats": [
+      {
+        "icon": "timer",
+        "value": "20–40%",
+        "label": "Reduction in|Unplanned Downtime"
+      },
+      {
+        "icon": "shield-check",
+        "value": "15–30%",
+        "label": "Improvement in|Product Quality"
+      },
+      {
+        "icon": "package-open",
+        "value": "10–20%",
+        "label": "Lower Inventory|Holding Cost"
+      },
+      {
+        "icon": "zap",
+        "value": "10–25%",
+        "label": "Energy Cost|Savings"
+      },
+      {
+        "icon": "chart-column-increasing",
+        "value": "2–3X",
+        "label": "Increase in Overall|Productivity"
+      },
+      {
+        "icon": "smile",
+        "value": "Higher",
+        "label": "Customer|Satisfaction"
+      }
+    ],
+    "eco": [],
+    "ecoList": [],
+    "modules": [],
+    "useCases": [
+      {
+        "title": "Predictive Maintenance",
+        "text": "AI predicts equipment|failures before they|happen and recommends|actions.",
+        "img": "assets/usecase-1.png"
+      },
+      {
+        "title": "Quality Inspection AI",
+        "text": "Computer vision detects|defects in real time with|higher accuracy.",
+        "img": "assets/usecase-2.png"
+      },
+      {
+        "title": "Production Optimization",
+        "text": "AI optimizes schedules,|resources and throughput|across lines.",
+        "img": "assets/usecase-3.png"
+      },
+      {
+        "title": "Supply Chain Intelligence",
+        "text": "Demand forecasting, risk|alerts and supplier|performance insights.",
+        "img": "assets/usecase-4.png"
+      },
+      {
+        "title": "Inventory Optimization",
+        "text": "AI balances inventory levels|across plants and|warehouses.",
+        "img": "assets/usecase-5.png"
+      },
+      {
+        "title": "Energy Management AI",
+        "text": "AI monitors, predicts and|reduces energy|consumption.",
+        "img": "assets/usecase-6.png"
+      }
+    ],
+    "steps": [
+      {
+        "icon": "search",
+        "title": "Discover",
+        "text": "Understand processes,|data, systems and|business goals."
+      },
+      {
+        "icon": "database",
+        "title": "Assess",
+        "text": "Identify high-impact use|cases and data readiness."
+      },
+      {
+        "icon": "monitor-cog",
+        "title": "Build",
+        "text": "Develop and train AI|models and solutions."
+      },
+      {
+        "icon": "flask-conical",
+        "title": "Pilot",
+        "text": "Deploy pilot, validate|ROI and refine."
+      },
+      {
+        "icon": "rocket",
+        "title": "Scale",
+        "text": "Scale across plants,|lines and functions."
+      },
+      {
+        "icon": "chart-column-increasing",
+        "title": "Optimize",
+        "text": "Continuously improve|models and outcomes."
+      }
+    ],
+    "integrations": [
+      "SAP",
+      "ORACLE",
+      "Microsoft",
+      "SIEMENS",
+      "RockwellAutomation",
+      "AVEVA"
+    ],
+    "why": [
+      "Deep manufacturing domain expertise",
+      "AI + Data + Industry knowledge",
+      "End-to-end solution from pilot to scale",
+      "Proven frameworks & accelerators",
+      "Flexible engagement models"
+    ],
+    "security": [
+      {
+        "icon": "lock-keyhole",
+        "label": "Data|Encryption"
+      },
+      {
+        "icon": "user-round",
+        "label": "Role Based|Access"
+      },
+      {
+        "icon": "file-text",
+        "label": "Audit|Logs"
+      },
+      {
+        "icon": "cloud-upload",
+        "label": "On-Prem /|Private Cloud"
+      },
+      {
+        "icon": "shield-check",
+        "label": "Regulatory|Compliance"
+      }
+    ],
+    "cta": {
+      "title": "Ready to Transform|Your Operations with AI?",
+      "text": "Let’s identify high-impact use cases|tailored to your manufacturing environment."
+    },
+    "playbook": {
+      "title": "Manufacturing AI Transformation Playbook",
+      "text": "A practical guide to AI adoption in manufacturing –|use cases, frameworks, ROI models & more."
+    },
+    "accent": "#1d5be0"
+  },
+  "healthcare": {
+    "slug": "healthcare",
+    "name": "Healthcare & Life Sciences",
+    "h1": "Healthcare &|Life Sciences",
+    "eyebrow": "",
+    "tagline": "AI That Saves Time So Clinicians|Can Save Lives",
+    "blurb": "From clinical documentation to patient flow, prior auth to|medical imaging – we build AI that reduces burden|and measurably improves patient outcomes.",
+    "conf": "Client confidentiality guaranteed. No patient data disclosed.",
+    "headings": [
+      "Transforming Healthcare With AI",
+      "AI Across the Healthcare Ecosystem",
+      "Key AI Modules",
+      "Works Seamlessly With Your Systems"
+    ],
+    "before": [
+      "Manual clinical documentation",
+      "Weeks-long prior auth delays",
+      "Inconsistent patient scheduling",
+      "Missed diagnostic patterns",
+      "High clinician burnout from admin",
+      "Reactive patient care models"
+    ],
+    "after": [
+      "Auto-generated clinical notes",
+      "Same-day prior auth decisions",
+      "AI-optimised patient flow",
+      "AI-assisted imaging diagnosis",
+      "Clinicians focused on patient care",
+      "Predictive & preventive care models"
+    ],
+    "stats": [
+      {
+        "icon": "clock",
+        "value": "60%",
+        "label": "Reduction in Documentation Time"
+      },
+      {
+        "icon": "activity",
+        "value": "45%",
+        "label": "Faster Prior Auth Decisions"
+      },
+      {
+        "icon": "heart-pulse",
+        "value": "30%",
+        "label": "Improvement in Patient Outcomes"
+      },
+      {
+        "icon": "chart-column-increasing",
+        "value": "2X",
+        "label": "Clinician Productivity"
+      },
+      {
+        "icon": "smile",
+        "value": "Higher",
+        "label": "Patient Satisfaction"
+      }
+    ],
+    "eco": [
+      {
+        "icon": "users-round",
+        "title": "Patient",
+        "text": "Appointments,|Portal, Wearables"
+      },
+      {
+        "icon": "bot-message-square",
+        "title": "AI Care Layer",
+        "text": "Symptom checker,|Clinical assistant"
+      },
+      {
+        "icon": "brain-circuit",
+        "title": "Clinical Intelligence",
+        "text": "Diagnostics, NLP,|Imaging AI"
+      },
+      {
+        "icon": "database",
+        "title": "Core Systems",
+        "text": "EHR, LIS, RIS,|Claims, ERP"
+      }
+    ],
+    "ecoList": [
+      "Prior Auth AI",
+      "Imaging AI",
+      "Patient Flow AI",
+      "Clinical Docs AI",
+      "Compliance AI"
+    ],
+    "modules": [
+      {
+        "title": "Clinical Documentation AI",
+        "text": "Auto-generate SOAP|notes & discharge|summaries."
+      },
+      {
+        "title": "Medical Imaging AI",
+        "text": "Detect anomalies in|X-rays, MRI & CT|scans in seconds."
+      },
+      {
+        "title": "Prior Auth AI",
+        "text": "Automate authorisation|decisions with|AI engines."
+      },
+      {
+        "title": "Patient Flow AI",
+        "text": "Reduce wait times &|optimise scheduling|at every touchpoint."
+      },
+      {
+        "title": "Predictive Risk AI",
+        "text": "Flag high-risk patients|early with real-time|health analytics."
+      },
+      {
+        "title": "Revenue Cycle AI",
+        "text": "Automate coding,|billing & claims|reconciliation."
+      }
+    ],
+    "useCases": [],
+    "steps": [],
+    "integrations": [
+      "Epic",
+      "Cerner",
+      "Meditech",
+      "Microsoft",
+      "SAP",
+      "Allscripts"
+    ],
+    "why": [
+      "Deep healthcare domain expertise",
+      "Built to support HIPAA & HL7 FHIR requirements",
+      "Clinician-in-the-loop approach",
+      "EHR integration specialists",
+      "Proven clinical AI frameworks"
+    ],
+    "security": [
+      {
+        "icon": "lock-keyhole",
+        "label": "Data|Encryption"
+      },
+      {
+        "icon": "user-round",
+        "label": "Role Based|Access"
+      },
+      {
+        "icon": "file-text",
+        "label": "Audit|Logs"
+      },
+      {
+        "icon": "cloud-cog",
+        "label": "On-Prem /|Private Cloud"
+      },
+      {
+        "icon": "shield-check",
+        "label": "HIPAA|Support"
+      }
+    ],
+    "cta": {
+      "title": "Ready to Transform|Your Healthcare AI?",
+      "text": "Let's identify high-impact use cases|tailored to your organisation."
+    },
+    "playbook": {
+      "title": "Healthcare AI Transformation Playbook",
+      "text": "A practical guide to AI adoption in healthcare – use cases,|frameworks, ROI models & more."
+    },
+    "accent": "#0da868"
+  },
+  "retail": {
+    "slug": "retail",
+    "name": "Retail & E-Commerce",
+    "h1": "Retail &|E-Commerce",
+    "eyebrow": "",
+    "tagline": "AI That Personalises Every|Customer Interaction at Scale",
+    "blurb": "From hyper-personalisation to demand forecasting, dynamic|pricing to conversational commerce – we build AI that|drives revenue and keeps customers coming back.",
+    "conf": "Client confidentiality guaranteed. No customer data disclosed.",
+    "headings": [
+      "Transforming Retail With AI",
+      "AI Across the Retail Ecosystem",
+      "Key AI Modules",
+      "Works Seamlessly With Your Systems"
+    ],
+    "before": [
+      "Generic, one-size-fits-all promotions",
+      "Inaccurate demand forecasting",
+      "Static pricing strategies",
+      "High cart abandonment rates",
+      "Manual customer service queues",
+      "Overstocking and stockouts"
+    ],
+    "after": [
+      "Hyper-personalised promotions",
+      "AI-powered demand forecasting",
+      "Real-time dynamic pricing",
+      "AI cart recovery & nudges",
+      "24/7 AI customer service agents",
+      "Optimal inventory across locations"
+    ],
+    "stats": [
+      {
+        "icon": "trending-up",
+        "value": "35%",
+        "label": "Increase in Conversion Rate"
+      },
+      {
+        "icon": "package",
+        "value": "25%",
+        "label": "Reduction in Inventory Costs"
+      },
+      {
+        "icon": "shopping-bag",
+        "value": "40%",
+        "label": "Higher Average Order Value"
+      },
+      {
+        "icon": "chart-column-increasing",
+        "value": "3X",
+        "label": "Personalisation ROI"
+      },
+      {
+        "icon": "smile",
+        "value": "Higher",
+        "label": "Customer Loyalty & NPS"
+      }
+    ],
+    "eco": [
+      {
+        "icon": "users-round",
+        "title": "Shopper",
+        "text": "Web, App,|In-store, Social"
+      },
+      {
+        "icon": "bot-message-square",
+        "title": "AI Commerce Layer",
+        "text": "Recommendations,|Search, Chatbots"
+      },
+      {
+        "icon": "brain-circuit",
+        "title": "Decision Engine",
+        "text": "Pricing, Demand,|Inventory AI"
+      },
+      {
+        "icon": "database",
+        "title": "Core Systems",
+        "text": "OMS, ERP, WMS,|POS, CRM"
+      }
+    ],
+    "ecoList": [
+      "Promo AI",
+      "Cart Recovery AI",
+      "Loyalty AI",
+      "Visual Search AI",
+      "Commerce AI"
+    ],
+    "modules": [
+      {
+        "title": "Personalisation Engine",
+        "text": "AI recommendations|across every channel|& touchpoint."
+      },
+      {
+        "title": "Dynamic Pricing AI",
+        "text": "Real-time competitive|pricing that maximises|margin."
+      },
+      {
+        "title": "Demand Forecasting AI",
+        "text": "Predict demand with|95%+ accuracy across|all SKUs."
+      },
+      {
+        "title": "Conversational Commerce AI",
+        "text": "AI agents that sell,|support & upsell|24x7."
+      },
+      {
+        "title": "Inventory Optimisation AI",
+        "text": "Right stock, right place,|right time across|all warehouses."
+      },
+      {
+        "title": "Visual Search AI",
+        "text": "Let customers search|by image & find|products instantly."
+      }
+    ],
+    "useCases": [],
+    "steps": [],
+    "integrations": [
+      "Shopify",
+      "Salesforce",
+      "SAP",
+      "Microsoft",
+      "Magento",
+      "AWS"
+    ],
+    "why": [
+      "Deep retail & e-commerce expertise",
+      "AI + Commerce + Technology",
+      "Designed for GDPR & PCI DSS requirements",
+      "Real-time personalisation at scale",
+      "Proven retail AI frameworks"
+    ],
+    "security": [
+      {
+        "icon": "lock-keyhole",
+        "label": "Data|Encryption"
+      },
+      {
+        "icon": "user-round",
+        "label": "Role Based|Access"
+      },
+      {
+        "icon": "file-text",
+        "label": "Audit|Logs"
+      },
+      {
+        "icon": "cloud-cog",
+        "label": "On-Prem /|Private Cloud"
+      },
+      {
+        "icon": "shield-check",
+        "label": "PCI DSS|Support"
+      }
+    ],
+    "cta": {
+      "title": "Ready to Transform|Your Retail With AI?",
+      "text": "Let's identify high-impact use cases|tailored to your business."
+    },
+    "playbook": {
+      "title": "Retail AI Transformation Playbook",
+      "text": "A practical guide to AI adoption in retail – use cases,|frameworks, ROI models & more."
+    },
+    "accent": "#f97316"
+  },
+  "telecom": {
+    "slug": "telecom",
+    "name": "Telecom & Media",
+    "h1": "Telecom &|Media",
+    "eyebrow": "",
+    "tagline": "AI That Keeps Networks Running|and Subscribers Engaged",
+    "blurb": "From network operations to churn prediction, AI customer|care to revenue assurance – we build AI that drives|efficiency, retention and new revenue streams.",
+    "conf": "Client confidentiality guaranteed. No subscriber data disclosed.",
+    "headings": [
+      "Transforming Telecom With AI",
+      "AI Across the Telecom Ecosystem",
+      "Key AI Modules",
+      "Works Seamlessly With Your Systems"
+    ],
+    "before": [
+      "Reactive network fault management",
+      "High subscriber churn rates",
+      "Manual revenue assurance",
+      "High call centre costs",
+      "Generic customer offers",
+      "Slow fraud detection"
+    ],
+    "after": [
+      "AI-predictive network management",
+      "Churn prediction & prevention",
+      "Automated revenue leakage detection",
+      "AI agents deflect 60%+ calls",
+      "Personalised offers & bundles",
+      "Real-time telecom fraud detection"
+    ],
+    "stats": [
+      {
+        "icon": "radio-tower",
+        "value": "40%",
+        "label": "Network Downtime Reduction"
+      },
+      {
+        "icon": "user-check",
+        "value": "35%",
+        "label": "Churn Rate Improvement"
+      },
+      {
+        "icon": "phone-call",
+        "value": "60%",
+        "label": "Call Deflection via AI"
+      },
+      {
+        "icon": "chart-column-increasing",
+        "value": "2X",
+        "label": "Revenue Assurance ROI"
+      },
+      {
+        "icon": "smile",
+        "value": "Higher",
+        "label": "Subscriber Satisfaction"
+      }
+    ],
+    "eco": [
+      {
+        "icon": "users-round",
+        "title": "Subscriber",
+        "text": "Mobile, Broadband,|Enterprise, IPTV"
+      },
+      {
+        "icon": "bot-message-square",
+        "title": "AI Care Layer",
+        "text": "Voice AI, Chat,|Self-serve portals"
+      },
+      {
+        "icon": "brain-circuit",
+        "title": "Network & Revenue AI",
+        "text": "NOC, Fraud,|Revenue Assurance"
+      },
+      {
+        "icon": "database",
+        "title": "Core Systems",
+        "text": "BSS, OSS, CRM,|Billing, NOC"
+      }
+    ],
+    "ecoList": [
+      "Network AI",
+      "Fraud AI",
+      "Churn AI",
+      "Revenue AI",
+      "CX AI"
+    ],
+    "modules": [
+      {
+        "title": "Network Operations AI",
+        "text": "Predict and prevent|outages before|they happen."
+      },
+      {
+        "title": "Churn Prediction AI",
+        "text": "Identify at-risk|subscribers and trigger|retention actions."
+      },
+      {
+        "title": "AI Customer Care",
+        "text": "Deflect >60% calls|with intelligent voice|& chat agents."
+      },
+      {
+        "title": "Revenue Assurance AI",
+        "text": "Detect leakage, fraud|& billing errors in|real-time."
+      },
+      {
+        "title": "Next Best Offer AI",
+        "text": "Personalised upsell|& cross-sell across|all channels."
+      },
+      {
+        "title": "Telecom Fraud AI",
+        "text": "Catch SIM swap, toll|fraud & subscription|fraud instantly."
+      }
+    ],
+    "useCases": [],
+    "steps": [],
+    "integrations": [
+      "Amdocs",
+      "Ericsson",
+      "Nokia",
+      "Microsoft",
+      "SAP",
+      "AWS"
+    ],
+    "why": [
+      "Deep telecom domain expertise",
+      "BSS/OSS integration specialists",
+      "Designed for GDPR & telecom regulatory requirements",
+      "Network AI & real-time analytics",
+      "Proven telecom AI frameworks"
+    ],
+    "security": [
+      {
+        "icon": "lock-keyhole",
+        "label": "Data|Encryption"
+      },
+      {
+        "icon": "user-round",
+        "label": "Role Based|Access"
+      },
+      {
+        "icon": "file-text",
+        "label": "Audit|Logs"
+      },
+      {
+        "icon": "cloud-cog",
+        "label": "On-Prem /|Private Cloud"
+      },
+      {
+        "icon": "shield-check",
+        "label": "Regulatory|Compliance"
+      }
+    ],
+    "cta": {
+      "title": "Ready to Transform|Your Telecom With AI?",
+      "text": "Let's identify high-impact use cases|tailored to your network."
+    },
+    "playbook": {
+      "title": "Telecom AI Transformation Playbook",
+      "text": "A practical guide to AI adoption in telecom – use cases,|frameworks, ROI models & more."
+    },
+    "accent": "#7c3aed"
+  },
+  "insurance": {
+    "slug": "insurance",
+    "name": "Insurance",
+    "h1": "Insurance",
+    "eyebrow": "",
+    "tagline": "AI That Transforms Risk, Claims|and Customer Experience",
+    "blurb": "From intelligent claims automation to AI underwriting,|fraud detection to personalised policies – we build AI that|makes insurance faster, fairer and more profitable.",
+    "conf": "Client confidentiality guaranteed. No customer data disclosed.",
+    "headings": [
+      "Transforming Insurance With AI",
+      "AI Across the Insurance Ecosystem",
+      "Key AI Modules",
+      "Works Seamlessly With Your Systems"
+    ],
+    "before": [
+      "Manual claims assessment weeks",
+      "High claims fraud losses",
+      "Slow underwriting processes",
+      "Generic policy pricing",
+      "Poor customer experience",
+      "High operational costs"
+    ],
+    "after": [
+      "Claims settled in hours, not weeks",
+      "AI fraud detection saves millions",
+      "AI-assisted underwriting decisions",
+      "Dynamic risk-based pricing",
+      "Conversational AI for policyholders",
+      "40% lower loss adjustment expenses"
+    ],
+    "stats": [
+      {
+        "icon": "clock",
+        "value": "70%",
+        "label": "Faster Claims Processing"
+      },
+      {
+        "icon": "shield-check",
+        "value": "40%",
+        "label": "Fraud Detection Improvement"
+      },
+      {
+        "icon": "file-check",
+        "value": "3X",
+        "label": "Underwriting Speed"
+      },
+      {
+        "icon": "chart-column-increasing",
+        "value": "25%",
+        "label": "Reduction in Loss Ratio"
+      },
+      {
+        "icon": "smile",
+        "value": "Higher",
+        "label": "Policyholder Satisfaction"
+      }
+    ],
+    "eco": [
+      {
+        "icon": "users-round",
+        "title": "Policyholder",
+        "text": "Web, App,|Broker, Agent"
+      },
+      {
+        "icon": "bot-message-square",
+        "title": "AI Service Layer",
+        "text": "Claims FNOL,|Policy AI, Chatbots"
+      },
+      {
+        "icon": "brain-circuit",
+        "title": "Risk & Decision AI",
+        "text": "Underwriting,|Pricing, Fraud"
+      },
+      {
+        "icon": "database",
+        "title": "Core Systems",
+        "text": "Policy Admin,|Claims, CRM, ERP"
+      }
+    ],
+    "ecoList": [
+      "Claims AI",
+      "Fraud AI",
+      "Underwriting AI",
+      "Customer AI",
+      "Pricing AI"
+    ],
+    "modules": [
+      {
+        "title": "Claims Automation AI",
+        "text": "Auto-process FNOL,|damage assessment|& settlement."
+      },
+      {
+        "title": "Insurance Fraud AI",
+        "text": "Detect suspicious|claims & patterns|in real time."
+      },
+      {
+        "title": "AI Underwriting",
+        "text": "Risk scoring &|underwriting decisions|in minutes."
+      },
+      {
+        "title": "Policyholder AI",
+        "text": "Conversational AI|for quotes, renewals|& support."
+      },
+      {
+        "title": "Dynamic Pricing AI",
+        "text": "Usage-based and|risk-based pricing|at policy level."
+      },
+      {
+        "title": "Regulatory Compliance AI",
+        "text": "Automate regulatory|filings, reports &|policy updates."
+      }
+    ],
+    "useCases": [],
+    "steps": [],
+    "integrations": [
+      "Guidewire",
+      "Duck Creek",
+      "Applied",
+      "Microsoft",
+      "SAP",
+      "Salesforce"
+    ],
+    "why": [
+      "Deep insurance domain expertise",
+      "Built to support IRDAI & regulatory requirements",
+      "Claims-to-cash AI specialisation",
+      "Policy & claims system integration",
+      "Proven insurance AI frameworks"
+    ],
+    "security": [
+      {
+        "icon": "lock-keyhole",
+        "label": "Data|Encryption"
+      },
+      {
+        "icon": "user-round",
+        "label": "Role Based|Access"
+      },
+      {
+        "icon": "file-text",
+        "label": "Audit|Logs"
+      },
+      {
+        "icon": "cloud-cog",
+        "label": "On-Prem /|Private Cloud"
+      },
+      {
+        "icon": "shield-check",
+        "label": "Regulatory|Compliance"
+      }
+    ],
+    "cta": {
+      "title": "Ready to Transform|Your Insurance With AI?",
+      "text": "Let's identify high-impact use cases|tailored to your operations."
+    },
+    "playbook": {
+      "title": "Insurance AI Transformation Playbook",
+      "text": "A practical guide to AI adoption in insurance – use cases,|frameworks, ROI models & more."
+    },
+    "accent": "#0ea5e9"
+  },
+  "gcc": {
+    "slug": "gcc",
+    "name": "GCCs & Shared Services",
+    "h1": "GCCs &|Shared Services",
+    "eyebrow": "",
+    "tagline": "AI That Automates the Back-Office|and Elevates the Strategic Office",
+    "blurb": "From intelligent document processing to AI-augmented F&A,|agentic RPA to compliance automation – we help GCCs|transform from cost centres to value creators.",
+    "conf": "Client confidentiality guaranteed. No business data disclosed.",
+    "headings": [
+      "Transforming GCCs With AI",
+      "AI Across the GCC Ecosystem",
+      "Key AI Modules",
+      "Works Seamlessly With Your Systems"
+    ],
+    "before": [
+      "High-volume manual data entry",
+      "Slow invoice & PO processing",
+      "Manual document classification",
+      "High error rates in reporting",
+      "Talent focused on low-value work",
+      "Compliance gaps & audit risks"
+    ],
+    "after": [
+      "Intelligent automation of data entry",
+      "Touchless invoice processing",
+      "AI-powered IDP for any document",
+      "Auto-generated accurate reports",
+      "Talent shifted to strategic work",
+      "Continuous compliance monitoring"
+    ],
+    "stats": [
+      {
+        "icon": "zap",
+        "value": "80%",
+        "label": "Reduction in Manual Effort"
+      },
+      {
+        "icon": "file-check",
+        "value": "99%",
+        "label": "Document Processing Accuracy"
+      },
+      {
+        "icon": "clock",
+        "value": "60%",
+        "label": "Faster Month-End Closing"
+      },
+      {
+        "icon": "chart-column-increasing",
+        "value": "3X",
+        "label": "Throughput Without Headcount"
+      },
+      {
+        "icon": "trending-up",
+        "value": "Higher",
+        "label": "Strategic Value Delivered"
+      }
+    ],
+    "eco": [
+      {
+        "icon": "building-2",
+        "title": "Parent Org",
+        "text": "Finance, HR, Legal,|Procurement"
+      },
+      {
+        "icon": "bot-message-square",
+        "title": "AI Processing Layer",
+        "text": "IDP, Agentic RPA,|AI Co-pilots"
+      },
+      {
+        "icon": "brain-circuit",
+        "title": "Decision Intelligence",
+        "text": "Analytics, Insights,|Compliance AI"
+      },
+      {
+        "icon": "database",
+        "title": "Core Systems",
+        "text": "SAP, Oracle, ERP,|CRM, HCM"
+      }
+    ],
+    "ecoList": [
+      "IDP AI",
+      "Agentic RPA",
+      "F&A AI",
+      "Compliance AI",
+      "Reporting AI"
+    ],
+    "modules": [
+      {
+        "title": "Intelligent Document Processing",
+        "text": "Extract & process|any document with|99%+ accuracy."
+      },
+      {
+        "title": "Touchless Invoice AI",
+        "text": "Auto-match POs,|process invoices &|approvals end-to-end."
+      },
+      {
+        "title": "AI-Augmented F&A",
+        "text": "Reconciliations,|period close & GL|automation with AI."
+      },
+      {
+        "title": "Agentic Back-Office AI",
+        "text": "Multi-step agents that|handle complex process|end-to-end."
+      },
+      {
+        "title": "Compliance Monitoring AI",
+        "text": "Continuous policy|compliance checks|across operations."
+      },
+      {
+        "title": "AI Analytics Dashboard",
+        "text": "Real-time GCC KPIs,|SLA tracking &|predictive insights."
+      }
+    ],
+    "useCases": [],
+    "steps": [],
+    "integrations": [
+      "SAP",
+      "ORACLE",
+      "Microsoft",
+      "Workday",
+      "ServiceNow",
+      "Salesforce"
+    ],
+    "why": [
+      "Deep GCC & shared services expertise",
+      "Process-aware AI & agentic automation",
+      "ERP & enterprise system integration",
+      "Scalable, secure AI designed for compliance needs",
+      "Proven GCC AI transformation frameworks"
+    ],
+    "security": [
+      {
+        "icon": "lock-keyhole",
+        "label": "Data|Encryption"
+      },
+      {
+        "icon": "user-round",
+        "label": "Role Based|Access"
+      },
+      {
+        "icon": "file-text",
+        "label": "Audit|Logs"
+      },
+      {
+        "icon": "cloud-cog",
+        "label": "On-Prem /|Private Cloud"
+      },
+      {
+        "icon": "shield-check",
+        "label": "Regulatory|Compliance"
+      }
+    ],
+    "cta": {
+      "title": "Ready to Transform|Your GCC With AI?",
+      "text": "Let's identify automation opportunities|tailored to your operations."
+    },
+    "playbook": {
+      "title": "GCC AI Transformation Playbook",
+      "text": "A practical guide to AI adoption in GCCs – use cases,|frameworks, ROI models & more."
+    },
+    "accent": "#0369a1"
+  },
+  "startups": {
+    "slug": "startups",
+    "name": "High-Growth Startups",
+    "h1": "High-Growth|Startups",
+    "eyebrow": "",
+    "tagline": "AI Features Shipped at Startup Speed,|Built to Enterprise Scale",
+    "blurb": "From LLM integration to AI-native architecture, product AI|to growth intelligence – we help you ship faster, smarter|and with AI woven into every layer of your product.",
+    "conf": "NDA-protected engagements. Your IP stays yours.",
+    "headings": [
+      "From Idea to AI-Native Product",
+      "AI Across Your Startup Stack",
+      "Key AI Modules",
+      "Works With Your Favourite Tools"
+    ],
+    "before": [
+      "Months to ship AI features",
+      "LLM integrations that break at scale",
+      "High AI inference & compute costs",
+      "No AI expertise in-house",
+      "Hallucinations & quality issues",
+      "Data security & compliance gaps"
+    ],
+    "after": [
+      "AI features shipped in weeks",
+      "Production-grade LLM architecture",
+      "Cost-optimised AI inference",
+      "Embedded AI expertise on demand",
+      "RAG & guardrails for reliability",
+      "Built-in security & compliance"
+    ],
+    "stats": [
+      {
+        "icon": "zap",
+        "value": "4X",
+        "label": "Faster AI Feature Delivery"
+      },
+      {
+        "icon": "trending-up",
+        "value": "60%",
+        "label": "Lower AI Infrastructure Cost"
+      },
+      {
+        "icon": "code-2",
+        "value": "10+",
+        "label": "LLM Models Integrated"
+      },
+      {
+        "icon": "chart-column-increasing",
+        "value": "3X",
+        "label": "Faster Time-to-Market"
+      },
+      {
+        "icon": "star",
+        "value": "Higher",
+        "label": "Product Differentiation"
+      }
+    ],
+    "eco": [
+      {
+        "icon": "users-round",
+        "title": "End User",
+        "text": "Web, Mobile,|API, Embedded"
+      },
+      {
+        "icon": "bot-message-square",
+        "title": "AI Product Layer",
+        "text": "Copilot, Search,|Personalisation AI"
+      },
+      {
+        "icon": "brain-circuit",
+        "title": "AI Intelligence Layer",
+        "text": "LLMs, RAG, Agents,|Fine-tuning"
+      },
+      {
+        "icon": "database",
+        "title": "Your Stack",
+        "text": "APIs, Databases,|Cloud, CRM"
+      }
+    ],
+    "ecoList": [
+      "AI Copilot",
+      "AI Search",
+      "Recommendation AI",
+      "AI Guardrails",
+      "Growth AI"
+    ],
+    "modules": [
+      {
+        "title": "AI Copilot Builder",
+        "text": "Ship product copilots|with RAG & LLM|in weeks."
+      },
+      {
+        "title": "AI-Powered Search",
+        "text": "Semantic search &|discovery for your|platform."
+      },
+      {
+        "title": "Personalisation AI",
+        "text": "ML recommendations|& dynamic UX|at scale."
+      },
+      {
+        "title": "Growth Analytics AI",
+        "text": "User behaviour,|churn signals &|growth levers."
+      },
+      {
+        "title": "AI Guardrails & Safety",
+        "text": "LLM safety, output|quality & hallucination|control."
+      },
+      {
+        "title": "AI-Native Architecture",
+        "text": "LLMOps, RAG pipelines|& scalable AI|infrastructure."
+      }
+    ],
+    "useCases": [],
+    "steps": [],
+    "integrations": [
+      "OpenAI",
+      "Claude",
+      "Gemini",
+      "Microsoft",
+      "AWS",
+      "Google Cloud"
+    ],
+    "why": [
+      "Startup-friendly engagement models",
+      "AI product experts, not just engineers",
+      "Ship in weeks, not months",
+      "Cost-optimised AI at every stage",
+      "Scales with your growth trajectory"
+    ],
+    "security": [
+      {
+        "icon": "lock-keyhole",
+        "label": "Data|Encryption"
+      },
+      {
+        "icon": "user-round",
+        "label": "Role Based|Access"
+      },
+      {
+        "icon": "file-text",
+        "label": "Audit|Logs"
+      },
+      {
+        "icon": "cloud-cog",
+        "label": "Cloud /|On-Prem"
+      },
+      {
+        "icon": "shield-check",
+        "label": "SOC 2 &|GDPR support"
+      }
+    ],
+    "cta": {
+      "title": "Ready to Build Your|AI-Native Product?",
+      "text": "Let's design your AI feature roadmap|and ship in weeks."
+    },
+    "playbook": {
+      "title": "Startup AI Acceleration Playbook",
+      "text": "How high-growth startups are building AI-native products|fast – with real frameworks, stacks & timelines."
+    },
+    "accent": "#ea580c"
+  }
+}

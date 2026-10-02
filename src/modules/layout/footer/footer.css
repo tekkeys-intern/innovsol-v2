@@ -1,0 +1,50 @@
+/* ═══ FOOTER ══════════════════════════════════════════════════════════════ */
+footer{background:#000;border-top:3px solid var(--orange)}
+
+/* Main row: logo | nav | contact */
+.ft-main{
+  display:flex;align-items:flex-start;gap:2.5rem;
+  padding:2rem 0 1.8rem;border-bottom:1px solid rgba(255,255,255,.1)}
+
+/* Logo + tagline */
+.ft-left{display:flex;flex-direction:column;gap:.75rem;flex-shrink:0;width:230px}
+.ft-logo-link{
+  display:block;line-height:0;
+  flex-shrink:0}
+.ft-logo-img{
+  width:205px;height:auto;display:block;
+  transition:opacity .25s}
+.ft-logo-img:hover{opacity:.85}
+.ft-tagline{font-size:.7rem;color:rgba(255,255,255,.72);line-height:1.6;margin:0}
+
+/* Nav columns */
+.ft-nav{display:flex;gap:2rem;flex:1;justify-content:center}
+.ft-col{display:flex;flex-direction:column;gap:.28rem}
+.ft-col-head{
+  font-size:.75rem;font-weight:800;letter-spacing:.1em;
+  text-transform:uppercase;color:#fff;
+  margin-bottom:.6rem;padding-bottom:.35rem;
+  border-bottom:1.5px solid var(--orange);
+  display:block;width:fit-content}
+.ft-col a{font-size:.88rem;color:rgba(255,255,255,.72);text-decoration:none;transition:color .2s;line-height:1.6}
+.ft-col a:hover{color:var(--orange)}
+
+/* Right contact + CTA */
+.ft-right{display:flex;flex-direction:column;align-items:flex-end;gap:.55rem;flex-shrink:0}
+.ft-email{font-size:.9rem;font-weight:700;color:#6398ff;text-decoration:none}
+.ft-email:hover{color:var(--orange)}
+.ft-phone{font-size:.85rem;color:rgba(255,255,255,.72);text-decoration:none}
+.ft-phone:hover{color:#fff}
+.ft-cta{font-size:.82rem;padding:.45rem 1rem;margin-top:.4rem;white-space:nowrap}
+
+/* Bottom bar */
+.ft-bar{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:.8rem 0;flex-wrap:wrap;gap:.4rem}
+.ft-bar p{font-size:.78rem;color:rgba(255,255,255,.62);margin:0}
+.ft-bar-links{display:flex;gap:1.2rem}
+.ft-bar-links a{font-size:.78rem;color:rgba(255,255,255,.62);text-decoration:none;transition:color .2s}
+.ft-bar-links a:hover{color:#fff}
+
+
+.ft-legal{display:block;margin-top:.25rem;font-size:.78rem;opacity:.75}

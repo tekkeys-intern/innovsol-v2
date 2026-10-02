@@ -1,0 +1,114 @@
+/* ═══ NAVBAR ══════════════════════════════════════════════════════════════ */
+/* Navbar: transparent glass on hero, solid white when scrolled */
+#nav{position:fixed;top:0;left:0;right:0;z-index:1000;
+  background:transparent;border-bottom:1px solid transparent;
+  transition:background .4s ease,box-shadow .4s ease,border-color .4s ease}
+#nav.sc{background:rgba(255,255,255,.96);backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);border-color:var(--border);box-shadow:0 4px 24px rgba(15,40,90,.06)}
+.nav-wrap{display:flex;align-items:center;justify-content:space-between;height:104px;gap:2rem}
+#nav a:first-child{flex-shrink:0}
+.nav-logo-wrap{position:relative;display:block;flex-shrink:0}
+.nav-logo-img{height:95px;width:auto;display:block;flex-shrink:0}
+#nav-logo-main{transition:opacity .4s ease}
+#nav-logo-alt{position:absolute;top:50%;left:0;transform:translateY(-50%);opacity:0;pointer-events:none;transition:opacity .4s ease}
+#nav.reel-alt #nav-logo-main{opacity:0}
+#nav.reel-alt #nav-logo-alt{opacity:1;pointer-events:auto;height:95px}
+.nav-links{display:flex;align-items:center;gap:clamp(1rem,1.8vw,2.4rem)}
+.nav-links a{font-size:clamp(.78rem,.95vw,1rem);color:rgba(255,255,255,.88);font-weight:600;transition:color .3s;position:relative;padding:6px 0;letter-spacing:-.01em;white-space:nowrap}
+.nav-links a::after{content:'';position:absolute;bottom:0;left:0;width:0;height:2px;background:var(--orange);border-radius:2px;transition:width .25s}
+.nav-links a:hover,.nav-links a.act{color:#fff}
+.nav-links a:hover::after,.nav-links a.act::after{width:100%}
+/* Active link on transparent navbar — orange underline */
+.nav-links a.act{color:#fff}
+.nav-links a.act::after{background:var(--orange);width:100%}
+
+#nav.sc .nav-links a{color:var(--dark2)}
+#nav.sc .nav-links a:hover,#nav.sc .nav-links a.act{color:var(--dark)}
+#nav.sc .nav-links a::after{background:var(--blue)}
+#nav.sc .nav-links a.act{color:var(--blue);font-weight:700}
+#nav.sc .nav-links a.act::after{background:var(--blue);width:100%}
+.nav-right{display:flex;align-items:center;gap:.6rem}
+.nav-right .btn{white-space:nowrap;font-size:clamp(.72rem,.85vw,.9rem);padding:.5rem clamp(.7rem,1vw,1.3rem)}
+/* ── Hamburger button ── */
+.ham{
+  display:none;flex-direction:column;justify-content:center;gap:5px;
+  cursor:pointer;padding:10px;background:none;border:none;
+  min-width:44px;min-height:44px;border-radius:8px;
+  transition:background .2s}
+.ham:hover{background:rgba(255,255,255,.12)}
+.ham span{width:24px;height:2.5px;background:#fff;border-radius:2px;transition:.3s ease;display:block}
+#nav.sc .ham span{background:var(--dark)}
+#nav.sc .ham:hover{background:rgba(15,25,35,.07)}
+/* Ham → X animation */
+.ham.open span:nth-child(1){transform:translateY(7.5px) rotate(45deg)}
+.ham.open span:nth-child(2){opacity:0;transform:scaleX(0)}
+.ham.open span:nth-child(3){transform:translateY(-7.5px) rotate(-45deg)}
+
+/* ── Right-side drawer ── */
+.mob-nav{
+  position:fixed;top:0;right:0;
+  width:min(320px,88vw);height:100%;
+  background:#fff;z-index:2000;
+  display:flex;flex-direction:column;
+  box-shadow:-12px 0 48px rgba(0,0,0,.22);
+  transform:translateX(110%);
+  transition:transform .38s cubic-bezier(.4,0,.2,1);
+  -webkit-overflow-scrolling:touch}
+.mob-nav.open{transform:translateX(0)}
+
+/* Drawer header */
+.mob-nav-header{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:1.2rem 1.4rem 1.2rem 1.2rem;
+  border-bottom:2px solid var(--border);
+  background:#fff;flex-shrink:0;min-height:72px}
+.mob-nav-logo{height:44px;width:auto;display:block}
+
+/* Close button */
+.mob-close{
+  width:44px;height:44px;border-radius:50%;
+  background:var(--bg2);border:none;
+  display:flex;align-items:center;justify-content:center;
+  font-size:1.1rem;color:var(--dark);cursor:pointer;
+  transition:background .2s;flex-shrink:0;line-height:1}
+.mob-close:hover{background:var(--border)}
+
+/* Nav links — scrollable middle section */
+.mob-nav-links{
+  flex:1;overflow-y:auto;overflow-x:hidden;
+  display:flex;flex-direction:column;
+  -webkit-overflow-scrolling:touch}
+.mob-nav-links a{
+  font-size:1.05rem;color:var(--dark);font-weight:600;
+  padding:1rem 1.6rem;
+  border-bottom:1px solid var(--bg2);
+  text-decoration:none;display:block;
+  transition:background .18s,color .18s;
+  min-height:52px;line-height:1.4}
+.mob-nav-links a:hover,.mob-nav-links a:active{background:var(--bg2);color:var(--blue)}
+
+/* Drawer footer CTA */
+.mob-nav-footer{
+  padding:1.2rem 1.4rem;
+  border-top:2px solid var(--border);
+  background:#fff;flex-shrink:0}
+.mob-nav-footer .btn{
+  width:100%;justify-content:center;
+  font-size:1rem;padding:.9rem 1rem;
+  border-radius:8px}
+
+/* Overlay */
+.mob-overlay{
+  display:none;position:fixed;
+  top:0;left:0;right:0;bottom:0;
+  width:100%;height:100%;
+  background:rgba(0,0,0,.55);z-index:1999;
+  backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px)}
+.mob-overlay.open{display:block}
+
+
+/* Sign-in link (candidate / staff portal) */
+.nav-signin{font-size:clamp(.78rem,.95vw,1rem);font-weight:700;color:rgba(255,255,255,.92);padding:.45rem .3rem;white-space:nowrap;transition:color .25s}
+.nav-signin:hover{color:var(--orange)}
+#nav.sc .nav-signin{color:var(--blue2)}
+#nav.sc .nav-signin:hover{color:var(--orange2)}
+@media(max-width:1100px){.nav-right .nav-signin{display:none}}

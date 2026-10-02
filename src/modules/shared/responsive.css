@@ -1,0 +1,232 @@
+/* ═══ RESPONSIVE ══════════════════════════════════════════════════════════ */
+@media(max-width:1024px){
+  .hero-inner{flex-direction:column;gap:2rem}
+
+  .why-grid{grid-template-columns:repeat(2,1fr)}
+  .ind-grid{grid-template-columns:repeat(2,1fr)}
+  .svc-grid{grid-template-columns:repeat(2,1fr)}
+  .met-grid{grid-template-columns:repeat(3,1fr)}
+  /* Footer mobile */
+  .ft-main{flex-direction:column;gap:2rem;padding:2rem 0 1.8rem}
+  .ft-left{width:100%}
+  .ft-logo-link{width:auto}
+  .ft-logo-img{width:180px}
+  .ft-nav{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:1.8rem 1.2rem;
+    flex:none;width:100%;
+    justify-content:flex-start}
+  .ft-right{align-items:flex-start;width:100%;border-top:1px solid rgba(255,255,255,.1);padding-top:1.2rem}
+  .ft-bar{flex-direction:column;align-items:flex-start;gap:.5rem}
+}
+@media(max-width:768px){
+  .container{padding:0 20px}
+
+  /* ── Nav ── */
+  .nav-links,.nav-right .btn-outline-blue,.nav-right .btn-orange{display:none}
+  .ham{display:flex}
+  .nav-logo-img{height:clamp(62px,16vw,94px)}
+  #nav.reel-alt .nav-logo-img{height:clamp(62px,16vw,94px)}
+  #nav.reel-alt #nav-logo-alt{height:clamp(62px,16vw,94px);max-width:calc(100vw - 110px);width:auto}
+  .nav-wrap{height:94px}
+  .mob-overlay{display:none}
+  .mob-overlay.open{display:block}
+
+  /* ── Global section padding — uniform 3rem on mobile ── */
+  #services,#why,#casestudies,
+  #fde,#insights,#careers,#cta,#contact-form{padding:3rem 0}
+  #metrics{padding:2.5rem 0}
+  #strip{padding:2rem 0}
+  #industries{padding:2.5rem 0 1.5rem}
+
+  /* ── Section headings ── */
+  .sec-hd h2{font-size:clamp(1.5rem,6vw,2rem)}
+  .sec-hd p{font-size:.88rem}
+  .section-label{font-size:.72rem}
+
+  /* ── Hero — full-width, no overflow, content centred ── */
+  .hero-reel{min-height:100svh;width:100%;max-width:100vw;overflow:hidden}
+  .reel-bg,.reel-video{width:100%;max-width:100vw}
+  .reel-slide{align-items:center;padding-top:0;padding-bottom:0;width:100%;overflow:hidden;display:flex;justify-content:center}
+  .reel-slide .container{width:100%;padding:0 1.5rem;box-sizing:border-box}
+  .reel-inner{text-align:center;max-width:100%;padding:0;overflow-wrap:break-word;word-break:break-word;margin-top:clamp(94px,13vh,110px)}
+  .reel-eyebrow{font-size:clamp(1.3rem,5.5vw,1.8rem);white-space:normal;letter-spacing:.08em;justify-content:center;width:100%;margin-bottom:1rem}
+  .reel-slide[data-idx="2"] .reel-eyebrow,
+  .reel-slide[data-idx="3"] .reel-eyebrow{font-size:clamp(1.2rem,5vw,1.6rem)}
+  .reel-slide :is(h1,h2.reel-h){font-size:clamp(2.2rem,9vw,3.4rem);text-align:center;overflow-wrap:break-word;word-break:break-word;line-height:1.2;margin-bottom:.5rem}
+  .reel-slide[data-idx="0"] :is(h1,h2.reel-h){font-size:clamp(2.1rem,8.8vw,3.1rem)}
+  .reel-sub{font-size:clamp(1.15rem,5vw,1.4rem);margin-top:.75rem}
+  .reel-nowrap{white-space:normal}
+  .reel-btns{position:relative;bottom:auto;left:auto;right:auto;justify-content:center;flex-wrap:wrap;gap:.75rem;margin-top:2.5rem;padding:0;width:100%}
+  .btn-hero-primary,.btn-outline-light{font-size:clamp(1.1rem,5vw,1.3rem);padding:.75rem 1.6rem;white-space:nowrap}
+  /* Dots — always centred, never clipped */
+  .reel-dots{
+    position:absolute;bottom:1.5rem;
+    left:50%;right:auto;
+    transform:translateX(-50%);
+    gap:6px;
+    width:max-content;max-width:calc(100vw - 32px)}
+
+  /* ── Logo strip ── */
+  .strip-label{font-size:.82rem;margin-bottom:1.2rem}
+  .logo-chip{font-size:.75rem;padding:.55rem .9rem;gap:.5rem;border-radius:8px}
+  .logo-chip svg{width:18px;height:18px}
+  .marq-wrap::before,.marq-wrap::after{width:50px}
+
+  /* ── Services ── */
+  .svc-grid{grid-template-columns:1fr}
+  .svc-card{flex-direction:column}
+
+  /* ── Why / Innovsol Difference ── */
+  .why-grid{grid-template-columns:1fr}
+  .why-img-wrap{height:180px}
+
+  /* ── Industries — horizontal list on mobile ── */
+  .ind-grid{grid-template-columns:1fr;gap:.75rem}
+  .ind-card{flex-direction:row;height:90px}
+  .ind-img-wrap{width:110px;height:100%;flex-shrink:0;border-radius:0}
+  .ind-img-wrap::after{background:linear-gradient(to right,transparent 60%,rgba(10,24,58,.3) 100%)}
+  .ind-body{padding:.65rem .85rem;border-top:none;border-left:3px solid var(--blue);display:flex;flex-direction:column;justify-content:center;gap:.15rem}
+  .ind-card:hover .ind-body{border-left-color:var(--orange);border-top-color:var(--blue)}
+  .ind-icon{display:none}
+  .ind-card h3{font-size:.82rem;margin-bottom:.15rem}
+  .ind-card p{font-size:.68rem;line-height:1.4;
+    display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+
+  /* ── Engagement — sticky scroll re-enabled on mobile ── */
+  /* Use #id to beat the 860px block's #engagement{height:auto} */
+  #engagement{height:calc(100vh + 240vh);padding:0;position:static;margin-top:0}
+  .eng-section{position:sticky;top:0;height:100vh;overflow:hidden;display:flex;align-items:flex-start}
+  .eng-wrapper{gap:.5rem;padding:94px 0 0}
+  .eng-stage{position:relative;height:62vh;width:100%;max-width:100%;overflow:visible}
+  .eng-card{position:absolute;inset:0;opacity:0;transform:translateY(45px);
+    display:flex;align-items:flex-start;justify-content:center;
+    padding:.4rem 0;pointer-events:none}
+  .eng-card.eng-active{opacity:1;transform:translateY(0);pointer-events:auto}
+  .eng-card.eng-exit{opacity:0;transform:translateY(-35px)}
+  .eng-card-body{text-align:center;padding:0 1rem;max-width:100%;display:flex;flex-direction:column;gap:.3rem}
+  .eng-card-tag{font-size:.6rem;margin-bottom:.2rem}
+  .eng-card-title{font-size:clamp(2rem,9vw,3.2rem);margin-bottom:.3rem}
+  .eng-card-desc{font-size:.82rem;line-height:1.55;margin-bottom:.4rem}
+  .eng-del-txt{font-size:.8rem;line-height:1.45;word-break:break-word;overflow-wrap:break-word;white-space:normal}
+  .eng-deliverable{padding:.4rem .75rem;margin-top:.2rem;background:var(--bg2);border-radius:8px;border-left:3px solid var(--orange)}
+  .eng-ghost-num{display:none}
+  .eng-progress{display:none}
+  /* Scrollable phase tabs */
+  .eng-steplist{
+    display:flex;gap:0;flex-wrap:nowrap;overflow-x:auto;
+    -webkit-overflow-scrolling:touch;scrollbar-width:none;
+    width:100%;justify-content:flex-start;margin-bottom:.5rem}
+  .eng-steplist::-webkit-scrollbar{display:none}
+  .eng-steplbl{font-size:clamp(.85rem,4vw,1.1rem);padding:.35rem .9rem;white-space:nowrap;flex-shrink:0}
+  /* Pills */
+  .eng-pills-row{padding:0.25rem 0 0.25rem}
+  #casestudies{padding-top:0.75rem}
+  .eng-summary{flex-wrap:wrap;gap:.4rem;justify-content:center}
+  .eng-sum-pill{font-size:.7rem;padding:.4rem .75rem}
+
+  /* ── Case Studies ── */
+  .cs-grid{grid-template-columns:1fr}
+  .cs-card h3{font-size:.9rem}
+
+  /* ── FDE ── */
+  .fde-grid,.car-grid,.con-grid,.cta-duo{grid-template-columns:1fr}
+  .stat-cards{grid-template-columns:1fr 1fr;gap:.8rem}
+  .stat-card .big{font-size:1.6rem}
+  .stat-card .sm{font-size:.7rem}
+  .fde-stages{gap:.5rem}
+  .fde-stage{font-size:.82rem}
+
+  /* ── Insights ── */
+  .ins-grid{grid-template-columns:1fr}
+  .ins-card{padding:1.2rem}
+
+  /* ── Careers ── */
+  .roles{grid-template-columns:1fr}
+  .car-grid{grid-template-columns:1fr}
+
+  /* ── Hero stats ── */
+  .hero-stats{grid-template-columns:1fr 1fr;max-width:100%}
+  .hstat{padding:1rem .8rem}
+  .hstat .hn{font-size:1.5rem}
+  .hstat .hlbl{font-size:.68rem}
+
+  /* ── Metrics ── */
+  #metrics{padding:2.5rem 0;overflow:hidden}
+  .met-grid{grid-template-columns:repeat(2,1fr);width:100%}
+  .met-cell{padding:1.6rem 1rem;border-right:1px solid rgba(255,255,255,.18);border-bottom:1px solid rgba(255,255,255,.12);min-width:0}
+  .met-cell:nth-child(2n){border-right:none}
+  .met-cell:nth-last-child(-n+1):nth-child(odd){grid-column:1/-1}
+  .met-cell .mn{font-size:clamp(2.2rem,9vw,3.2rem);letter-spacing:-.03em}
+  .met-cell .ml{font-size:clamp(.72rem,3vw,.85rem)}
+  .met-bar{margin:.75rem auto 0}
+
+  /* ── CTA ── */
+  .cta-duo{gap:2rem}
+  .cta-pill{font-size:.72rem;text-align:center}
+
+  /* ── Contact section ── */
+  .con-hero{height:auto;min-height:560px}
+  .con-map-content{flex-direction:column;align-items:flex-start;padding:5rem 0 2rem;gap:1.5rem}
+  .con-panel{max-width:100%;padding-top:2rem}
+  .con-panel h2{font-size:clamp(1.5rem,6vw,2rem)}
+  .con-hq-text{position:static;margin-top:1rem}
+
+  /* ── Contact form ── */
+  .contact-form-inner{grid-template-columns:1fr;gap:2.2rem}
+  .cform-left{padding-top:0}
+  .cform-sub{max-width:100%}
+  .cform-h2{font-size:clamp(2.2rem,8vw,3rem)}
+  .cform-modern .frow{grid-template-columns:1fr}
+
+  /* ── Footer ── */
+  .ft-main{flex-direction:column;gap:2rem;padding:2rem 0 1.8rem}
+  .ft-left{width:100%}
+  .ft-logo-link{width:auto}
+  .ft-logo-img{width:180px}
+  .ft-nav{display:grid;grid-template-columns:1fr 1fr;gap:1.8rem 1.2rem;flex:none;width:100%;justify-content:flex-start}
+  .ft-right{align-items:flex-start;width:100%;border-top:1px solid rgba(255,255,255,.1);padding-top:1.2rem}
+  .ft-bar{flex-direction:column;align-items:flex-start;gap:.5rem}
+}
+
+@media(max-width:480px){
+  .container{padding:0 16px}
+  .ind-img-wrap{width:90px}
+  .met-grid{grid-template-columns:1fr 1fr}
+  .stat-cards{grid-template-columns:1fr 1fr}
+  .cform-modern .frow{grid-template-columns:1fr}
+  .ft-nav{gap:1.2rem .8rem}
+  .ft-bar-links{flex-wrap:wrap;gap:.8rem}
+  .hero-stats{grid-template-columns:1fr 1fr}
+  .sec-hd h2{font-size:clamp(1.3rem,7vw,1.8rem)}
+
+  /* Hero on narrow phones (≤480px) */
+  .reel-slide .container{padding:0 1.2rem}
+  .reel-slide :is(h1,h2.reel-h){font-size:clamp(2rem,8.5vw,2.9rem)}
+  .reel-slide[data-idx="0"] :is(h1,h2.reel-h){font-size:clamp(1.8rem,8vw,2.6rem)}
+  .btn-hero-primary,.btn-outline-light{font-size:1.15rem;padding:.7rem 1.3rem}
+  .reel-dots{bottom:1.2rem;gap:5px}
+  .reel-dot{width:5px;height:5px}
+  .reel-dot.reel-dot-active{width:14px}
+}
+
+/* Extra-small phones — iPhone SE, Galaxy A series (≤360px) */
+@media(max-width:360px){
+  .reel-slide .container{padding:0 .85rem}
+  .reel-slide :is(h1,h2.reel-h){font-size:clamp(1.3rem,5.9vw,1.8rem)}
+  .reel-btns{gap:.5rem}
+  .btn-hero-primary,.btn-outline-light{font-size:1rem;padding:.5rem .85rem}
+  .reel-dots{bottom:1rem}
+  .reel-dot{width:4px;height:4px}
+  /* Metrics extra tight */
+  .met-cell{padding:1.2rem .6rem}
+  .met-cell .mn{font-size:clamp(1.9rem,8vw,2.6rem)}
+  .reel-dot.reel-dot-active{width:12px}
+  /* Engagement — short phones */
+  .eng-wrapper{padding:60px 0 0}
+  .eng-stage{height:65vh}
+  .eng-card-title{font-size:clamp(1.8rem,8vw,2.8rem)}
+  .eng-card-desc{font-size:.76rem}
+  .eng-del-txt{font-size:.74rem}
+}

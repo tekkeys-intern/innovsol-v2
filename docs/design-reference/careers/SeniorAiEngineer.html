@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Senior AI Engineer – InnovSol Careers</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0b0f19; --text:#1f2430; --muted:#4a5162; --line:#e5e8ef; --soft:#f7f8fb;
+    --blue:#1d5be0; --blue-d:#1a4fd0; --orange:#f08a00;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{background:#fff}
+  body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;color:var(--text);-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  button{font-family:inherit;cursor:pointer;border:0;background:none}
+  svg.lucide{display:block}
+  .page{width:864px;margin:0 auto;position:relative;background:#fff;font-weight:500}
+
+  /* header */
+  .hdr{height:85px;border-bottom:1px solid #eef0f4;display:flex;align-items:center;justify-content:space-between;padding:0 30px 0 30px;position:relative}
+  .back{display:flex;align-items:center;gap:12px;font-size:13.5px;font-weight:500;color:var(--ink)}
+  .back svg{width:20px;height:20px;stroke-width:2}
+  .logo{position:absolute;left:309px;top:9px;width:148px}
+  .burger{width:28px;height:22px;display:flex;flex-direction:column;justify-content:space-between;margin-right:5px}
+  .burger span{height:2.6px;background:var(--ink);border-radius:2px}
+
+  .wrap{padding:0 30px}
+  .card{background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:0 2px 10px rgba(20,30,60,.04)}
+  .card.soft{background:var(--soft)}
+  h2{font-size:17px;font-weight:700;color:var(--ink);letter-spacing:-.2px}
+
+  /* hero */
+  .hero{margin-top:18px;height:258px;position:relative;padding:20px 26px}
+  .hero h1{font-size:26.5px;font-weight:700;color:var(--ink);letter-spacing:-.4px;line-height:30px}
+  .badge{display:inline-flex;align-items:center;gap:7px;background:#fff0d9;color:var(--orange);font-weight:600;font-size:12.8px;height:27px;padding:0 11px 0 10px;border-radius:6px;margin-top:10px}
+  .badge svg{width:15px;height:15px;stroke-width:2}
+  .meta{display:grid;grid-template-columns:214px auto;row-gap:14px;margin-top:21px}
+  .meta div{display:flex;align-items:center;gap:10px;font-size:13.2px;color:#1d2230;height:20px}
+  .meta svg{width:17px;height:17px;stroke-width:1.8;color:#2b3040}
+  .btns{display:flex;gap:19px;margin-top:22px}
+  .btn{height:46px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;gap:9px;font-weight:700;font-size:12.8px}
+  .btn svg{width:16px;height:16px;stroke-width:2}
+  .btn-dark{background:#05070c;color:#fff;width:190px}
+  .btn-out{border:1.3px solid #1c1f27;color:var(--ink);width:203px;background:#fff}
+  .hero-art{position:absolute;left:489px;top:8px;width:298px;height:233px}
+  .hero-art img{width:100%;height:100%;display:block}
+  .tag{position:absolute;background:#e9f0fd;color:#2b5fd6;font-size:10.8px;font-weight:600;border-radius:5px;display:flex;align-items:center;justify-content:center}
+
+  /* why join */
+  .why{margin-top:16px;height:235px;background:linear-gradient(180deg,#f7f9ff 0%,#f3f6fe 100%);border:1.3px solid #cfdcf6;border-radius:14px;padding:22px 24px 0}
+  .why h2{font-size:17.5px}
+  .why-grid{display:grid;grid-template-columns:repeat(6,1fr);margin-top:20px}
+  .why-grid>div{text-align:center;padding:0 6px;border-left:1px solid #dfe5f1;height:138px}
+  .why-grid>div:first-child{border-left:0}
+  .why-grid svg{width:34px;height:34px;margin:3px auto 0;color:var(--blue);stroke-width:1.7}
+  .why-grid h4{font-size:12.3px;font-weight:700;color:var(--ink);line-height:18px;margin-top:14px}
+  .why-grid p{font-size:10.6px;line-height:18px;color:#2e3342;margin-top:13px}
+  .why-grid .one h4{margin-top:21px}
+  .why-grid .one p{margin-top:17px}
+
+  /* about + key */
+  .row2{display:grid;grid-template-columns:428px 365px;gap:11px;margin-top:16px}
+  .about{height:206px;padding:22px 18px}
+  .about h2{font-size:16.5px}
+  .about p{font-size:10.4px;line-height:20.2px;color:#1d2230;margin-top:9px}
+  .readmore{display:inline-flex;align-items:center;gap:10px;color:var(--blue);font-weight:700;font-size:11px;margin-top:27px}
+  .readmore svg{width:15px;height:15px;stroke-width:2.2}
+  .key{height:206px;padding:13px 17px}
+  .key h2{font-size:16px}
+  .key ul{list-style:none;margin-top:11px}
+  .key li{display:flex;gap:9px;font-size:10.9px;line-height:18px;color:#1d2230;margin-bottom:5.3px}
+  .chk{width:13px;height:13px;flex:0 0 13px;margin-top:2.5px}
+
+  /* tech stack */
+  .stack{margin-top:15px;height:138px;padding:13px 17px}
+  .chips{display:flex;margin-top:15px}
+  .chips.r2{margin-top:15px}
+  .chip{height:31px;border:1px solid #e3e6ee;background:#fff;border-radius:6px;display:flex;align-items:center;gap:7px;padding:0 0 0 9px;font-size:11.3px;color:#1d2230;flex:none}
+  .chip img,.chip .ci{width:17px;height:17px;flex:none;display:block}
+
+  /* projects */
+  .projects{margin-top:15px;height:99px;padding:10px 17px}
+  .proj{display:flex;margin-top:18px}
+  .proj>div{display:flex;align-items:center;gap:8px;font-size:10.4px;line-height:16.5px;color:#1d2230;flex:none}
+  .pi{width:31px;height:31px;border-radius:6px;background:#eaf0fd;display:flex;align-items:center;justify-content:center;color:var(--blue)}
+  .pi svg{width:20px;height:20px;stroke-width:1.6}
+
+  /* three cols */
+  .row3{display:grid;grid-template-columns:238px 244px 282px;gap:21px 0;column-gap:20px;margin-top:14px}
+  .row3 .card{height:248px;padding:13px 17px}
+  .row3 h2{font-size:15.5px}
+  .growth ul{list-style:none;position:relative;margin-top:18px;padding-left:19px}
+  .growth ul:before{content:"";position:absolute;left:3px;top:6px;bottom:6px;width:1px;background:#cbd5e6}
+  .growth li{font-size:11px;color:#1d2230;height:34px;position:relative;line-height:14px}
+  .growth li:before{content:"";position:absolute;left:-19px;top:3.5px;width:6.5px;height:6.5px;border-radius:50%;background:var(--blue)}
+  .perks ul{list-style:none;margin-top:11px;padding-left:7px}
+  .perks li{display:flex;align-items:center;gap:13px;font-size:10.9px;color:#1d2230;height:25px}
+  .perks svg{width:16px;height:16px;stroke-width:1.6;color:#2b3040}
+  .hire ol{list-style:none;margin-top:10px;padding-left:7px}
+  .hire li{display:flex;align-items:center;gap:13px;font-size:10.9px;color:#1d2230;height:27.3px}
+  .num{width:16px;height:16px;border:1.4px solid var(--blue);border-radius:50%;font-size:9px;font-weight:600;color:var(--blue);display:flex;align-items:center;justify-content:center}
+  .est{display:flex;align-items:center;gap:12px;font-size:10.9px;color:#5b6272;margin-top:13px;padding-left:7px}
+  .est b{color:#1d2230;font-weight:600}
+  .est svg{width:16px;height:16px;stroke-width:1.7;color:#2b3040}
+
+  /* life */
+  .life{margin-top:15px;height:188px;padding:10px 17px}
+  .life h2{font-size:16.5px}
+  .photos{display:flex;gap:15px;margin-top:14px}
+  .photos img{height:120px;border-radius:7px;object-fit:cover;display:block}
+  .dots{display:flex;gap:13px;justify-content:center;margin-top:10px;padding-left:6px}
+  .dots i{width:7px;height:7px;border-radius:50%;background:#d3d7df}
+  .dots i:first-child{background:#141821}
+
+  /* testimonials */
+  .tests{display:grid;grid-template-columns:394px 395px;gap:15px;margin-top:14px}
+  .test{height:114px;position:relative;padding:0}
+  .test .q{position:absolute;left:16px;top:12px;font-family:Georgia,serif;font-size:30px;font-weight:700;color:#98a6c4;line-height:1}
+  .test .av{position:absolute;left:28px;top:18px;width:75px;height:75px;border-radius:50%;overflow:hidden}
+  .test .av img{width:100%;height:100%;display:block;border-radius:50%}
+  .test .body{position:absolute;left:113px;top:18px}
+  .stars{color:#f6a300;font-size:13px;letter-spacing:1.2px;line-height:13px}
+  .test p{font-size:11.2px;line-height:18.5px;color:#1d2230;margin-top:9px}
+  .test .who{font-size:11.2px;font-weight:700;color:var(--ink);margin-top:3px}
+
+  /* related */
+  .related{margin-top:14px}
+  .related h3{font-size:13px;font-weight:700;color:var(--ink)}
+  .rel{display:flex;gap:0;margin-top:9px}
+  .rel a{height:31px;border:1px solid #cfd4dd;border-radius:4px;display:flex;align-items:center;justify-content:center;gap:9px;font-size:10.9px;color:#1d2230;flex:none;background:#fff}
+  .rel svg{width:12px;height:12px;stroke-width:2.2}
+
+  /* bottom bar */
+  .bar{position:sticky;bottom:0;background:linear-gradient(to bottom,rgba(255,255,255,0) 0,#fff 8px);display:flex;gap:13px;padding:8px 36px 9px 25px;margin-top:0}
+  .bar a{height:42px;border-radius:4px;display:flex;align-items:center;justify-content:center;gap:11px;color:#fff;font-weight:700;font-size:11.8px}
+  .bar svg{width:17px;height:17px;stroke-width:2}
+  .bar .dk{background:#05070c;width:247px}
+  .bar .bl{background:#1a56db;width:283px}
+</style>
+</head>
+<body>
+<div class="page" id="page">
+
+  <header class="hdr">
+    <a class="back" href="#"><i data-lucide="arrow-left"></i>Back to Careers</a>
+    <svg class="logo" viewBox="8 6 150 62" xmlns="http://www.w3.org/2000/svg" aria-label="innovsol">
+      <g fill="none" stroke="#2F5FD0" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18.6 34 L27 42.5 L27 64"/><path d="M31.8 18.4 L31.8 64"/><path d="M41 30.4 L41 64"/><path d="M53 30.4 L53 44 L47 51 L47 64"/>
+        <circle cx="16.5" cy="31" r="3.3" fill="#fff"/><circle cx="31.8" cy="15" r="3.4" fill="#F5B301"/><circle cx="41" cy="27" r="3.3" fill="#fff"/><circle cx="53" cy="27" r="3.3" fill="#fff"/>
+      </g>
+      <text x="60" y="49" font-family="Poppins" font-size="16.8" letter-spacing="3" textLength="92" fill="#141414">innovsol</text>
+      <text x="61" y="62.5" font-family="Poppins" font-weight="500" font-size="5.3" textLength="90" fill="#141414">Innovate . Disrupt . Transform</text>
+    </svg>
+    <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </header>
+
+  <main class="wrap">
+    <!-- hero -->
+    <section class="card hero">
+      <h1>Senior AI Engineer</h1>
+      <span class="badge"><i data-lucide="star"></i>High Priority Hiring</span>
+      <div class="meta">
+        <div><i data-lucide="map-pin"></i>Remote / Hybrid / Gurgaon</div>
+        <div><i data-lucide="briefcase-business"></i>Full-Time</div>
+        <div><i data-lucide="wallet-cards"></i>₹30-50 LPA / Competitive</div>
+        <div><i data-lucide="briefcase"></i>3 - 8 Years Experience</div>
+      </div>
+      <div class="btns">
+        <a class="btn btn-dark" href="#">Apply Now <i data-lucide="send"></i></a>
+        <a class="btn btn-out" href="#">Share Job <i data-lucide="share-2"></i></a>
+      </div>
+      <div class="hero-art">
+        <img src="assets/hero-ai.jpg" alt="AI chip illustration">
+        <span class="tag" style="left:8px;top:63px;width:44px;height:25px">LLM</span>
+        <span class="tag" style="left:215px;top:41px;width:71px;height:26px">AI Agents</span>
+        <span class="tag" style="left:202px;top:172px;width:44px;height:24px">RAG</span>
+      </div>
+    </section>
+
+    <!-- why join -->
+    <section class="why">
+      <h2>Why Join InnovSol.ai?</h2>
+      <div class="why-grid">
+        <div class="one"><i data-lucide="rocket"></i><h4>Work on Real<br>AI Projects</h4><p>Build solutions used<br>by global enterprises.</p></div>
+        <div><i data-lucide="zap" style="color:#f5a524"></i><h4>Startup Speed</h4><p style="margin-top:21px">Fast decisions,<br>ownership and<br>high impact.</p></div>
+        <div><i data-lucide="globe"></i><h4>Global Impact</h4><p style="margin-top:21px">Work with clients<br>across US, Europe,<br>Middle East &amp; India.</p></div>
+        <div><i data-lucide="cpu"></i><h4>Latest Tech</h4><p style="margin-top:21px">Hands-on with<br>LLMs, Agents,<br>RAG, MCP &amp; more.</p></div>
+        <div class="one"><i data-lucide="user-round"></i><h4>Ownership<br>Culture</h4><p>Ideas welcome.<br>You build, you<br>own.</p></div>
+        <div class="one"><i data-lucide="lightbulb"></i><h4>Innovation<br>First</h4><p>Experiment, learn<br>and create the<br>future.</p></div>
+      </div>
+    </section>
+
+    <!-- about + responsibilities -->
+    <div class="row2">
+      <section class="card soft about">
+        <h2>About the Role</h2>
+        <p>As a Senior AI Engineer, you will design and build scalable AI solutions, LLM applications and intelligent agents that solve complex business problems. You will work closely with clients, architects and cross-functional teams to deliver impact at scale.</p>
+        <a class="readmore" href="#">Read more <i data-lucide="chevron-down"></i></a>
+      </section>
+      <section class="card soft key">
+        <h2>Key Responsibilities</h2>
+        <ul>
+          <li><svg class="chk" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#1d5be0"/><path d="M7 12.5l3.3 3.2L17 9" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Design and develop AI powered applications<br>using LLMs and Agentic frameworks</span></li>
+          <li><svg class="chk" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#1d5be0"/><path d="M7 12.5l3.3 3.2L17 9" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Build RAG systems and intelligent workflows</li>
+          <li><svg class="chk" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#1d5be0"/><path d="M7 12.5l3.3 3.2L17 9" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Prompt engineering and model orchestration</li>
+          <li><svg class="chk" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#1d5be0"/><path d="M7 12.5l3.3 3.2L17 9" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Deploy and optimize models for production</li>
+          <li><svg class="chk" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#1d5be0"/><path d="M7 12.5l3.3 3.2L17 9" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Collaborate with clients and internal teams</li>
+          <li><svg class="chk" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#1d5be0"/><path d="M7 12.5l3.3 3.2L17 9" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Mentor and guide junior engineers</li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- tech stack -->
+    <section class="card soft stack">
+      <h2>Tech Stack You’ll Use</h2>
+      <div class="chips" style="gap:12px">
+        <span class="chip" style="width:72px"><img src="assets/python.svg" alt="">Python</span>
+        <span class="chip" style="width:93px"><img src="assets/langchain.svg" alt="">LangChain</span>
+        <span class="chip" style="width:93px"><svg class="ci" viewBox="0 0 24 24"><rect x="1" y="5" width="22" height="14" rx="7" fill="#1f2937"/><circle cx="8" cy="12" r="2.3" fill="#fff"/><circle cx="16" cy="12" r="2.3" fill="#fff"/><path d="M9.5 12h5" stroke="#fff" stroke-width="1.6"/></svg>LangGraph</span>
+        <span class="chip" style="width:74px"><svg class="ci" viewBox="0 0 24 24"><path d="M4 20c1-6 5-11 10-13" stroke="#1f2937" stroke-width="2.2" fill="none" stroke-linecap="round"/><path d="M14 3c3 0 6 2 6 5.5 0 4-4 6.5-8 6.5 2-2 3-4.5 2-7-1-2-3-2-4-1.5C11 4.3 12.3 3 14 3z" fill="#e8483b"/><path d="M3 21h18" stroke="#1f2937" stroke-width="2" stroke-linecap="round"/></svg>CrewAI</span>
+        <span class="chip" style="width:76px"><img src="assets/fastapi.svg" alt="">FastAPI</span>
+        <span class="chip" style="width:81px"><img src="assets/docker.svg" alt="" style="width:19px">Docker</span>
+        <span class="chip" style="width:93px"><img src="assets/kubernetes.svg" alt="">Kubernetes</span>
+        <span class="chip" style="width:102px"><img src="assets/postgresql.svg" alt="">PostgreSQL</span>
+      </div>
+      <div class="chips r2">
+        <span class="chip" style="width:66px"><img src="assets/redis.svg" alt="">Redis</span>
+        <span class="chip" style="width:78px;margin-left:17px"><img src="assets/amazonwebservices.svg" alt="" style="width:24px;height:17px">AWS</span>
+        <span class="chip" style="width:82px;margin-left:16px"><img src="assets/azure.svg" alt="">Azure</span>
+        <span class="chip" style="width:87px;margin-left:15px"><img src="assets/openai.svg" alt="">OpenAI</span>
+        <span class="chip" style="width:83px;margin-left:16px"><img src="assets/claude.svg" alt="">Claude</span>
+        <span class="chip" style="width:75px;margin-left:11px"><svg class="ci" viewBox="0 0 24 24"><defs><linearGradient id="gm" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#1c7df0"/><stop offset=".6" stop-color="#5b8cf5"/><stop offset="1" stop-color="#a17ff0"/></linearGradient></defs><path d="M12 1.5c.5 5.6 4.9 10 10.5 10.5-5.6.5-10 4.9-10.5 10.5C11.5 16.9 7.1 12.5 1.5 12 7.1 11.5 11.5 7.1 12 1.5z" fill="url(#gm)"/></svg>Gemini</span>
+        <span class="chip" style="width:56px;margin-left:16px"><img src="assets/git.svg" alt="">Git</span>
+        <span class="chip" style="width:73px;margin-left:14px"><img src="assets/linux.svg" alt="">Linux</span>
+      </div>
+    </section>
+
+    <!-- projects -->
+    <section class="card soft projects">
+      <h2>Projects You May Work On</h2>
+      <div class="proj">
+        <div style="width:146px"><span class="pi"><i data-lucide="scan-face"></i></span>AI Customer<br>Support Agent</div>
+        <div style="width:130px"><span class="pi"><i data-lucide="clipboard-plus"></i></span>Healthcare<br>AI Assistant</div>
+        <div style="width:117px"><span class="pi"><i data-lucide="users-round"></i></span>HR Copilot</div>
+        <div style="width:154px"><span class="pi"><i data-lucide="brain-circuit"></i></span>Enterprise<br>Knowledge Chatbot</div>
+        <div style="width:120px"><span class="pi"><i data-lucide="share-2"></i></span>AI Sales<br>Automation</div>
+        <div><span class="pi"><i data-lucide="file-text"></i></span>AI Document<br>Processing</div>
+      </div>
+    </section>
+
+    <!-- growth / perks / hiring -->
+    <div class="row3">
+      <section class="card soft growth">
+        <h2>Growth Path</h2>
+        <ul><li>AI Engineer</li><li>Senior AI Engineer</li><li>AI Architect</li><li>Technical Lead</li><li>Practice Head</li><li style="height:14px">CTO</li></ul>
+      </section>
+      <section class="card soft perks">
+        <h2 style="padding-left:7px">Benefits &amp; Perks</h2>
+        <ul>
+          <li><i data-lucide="house"></i>Remote Friendly</li>
+          <li><i data-lucide="book-open"></i>Learning Budget</li>
+          <li><i data-lucide="award"></i>Certifications Sponsored</li>
+          <li><i data-lucide="monitor"></i>Latest Hardware</li>
+          <li><i data-lucide="shield-plus"></i>Medical Insurance</li>
+          <li><i data-lucide="calendar-check"></i>Paid Leaves</li>
+          <li><i data-lucide="tent"></i>Team Retreats</li>
+          <li><i data-lucide="hand-coins"></i>ESOP (If Applicable)</li>
+        </ul>
+      </section>
+      <section class="card soft hire">
+        <h2 style="padding-left:7px">Our Hiring Process</h2>
+        <ol>
+          <li><span class="num">1</span>Apply</li>
+          <li><span class="num">2</span>Resume Review</li>
+          <li><span class="num">3</span>Technical Assessment</li>
+          <li><span class="num">4</span>AI Design Interview</li>
+          <li><span class="num">5</span>Founder Discussion</li>
+          <li><span class="num">6</span>Offer</li>
+        </ol>
+        <div class="est"><i data-lucide="timer"></i><span>Estimated Time: <b>7 – 10 Days</b></span></div>
+      </section>
+    </div>
+
+    <!-- life -->
+    <section class="card life">
+      <h2>Life at InnovSol.ai</h2>
+      <div class="photos">
+        <img src="assets/life-1.jpg" alt="Team collaborating" style="width:183px">
+        <img src="assets/life-2.jpg" alt="InnovSol team photo" style="width:183px">
+        <img src="assets/life-3.jpg" alt="Engineers working" style="width:183px">
+        <img src="assets/life-4.jpg" alt="InnovSol office" style="width:181px">
+      </div>
+      <div class="dots"><i></i><i></i><i></i><i></i><i></i></div>
+    </section>
+
+    <!-- testimonials -->
+    <div class="tests">
+      <section class="card soft test">
+        <span class="q">“</span>
+        <span class="av"><img src="assets/avatar-arjun.jpg" alt="Arjun K."></span>
+        <div class="body"><div class="stars">★★★★★</div><p>“Working here accelerated my AI career.<br>The ownership and learning are unmatched.”</p><div class="who">– Arjun K., Senior ML Engineer</div></div>
+      </section>
+      <section class="card soft test">
+        <span class="q">“</span>
+        <span class="av"><img src="assets/avatar-neha.jpg" alt="Neha S."></span>
+        <div class="body"><div class="stars">★★★★★</div><p>“Lots of challenging problems, smart people<br>and a culture that truly cares.”</p><div class="who">– Neha S., AI Architect</div></div>
+      </section>
+    </div>
+
+    <!-- related -->
+    <section class="related">
+      <h3>Related Open Positions</h3>
+      <div class="rel">
+        <a href="#" style="width:175px">Machine Learning Engineer <i data-lucide="arrow-right"></i></a>
+        <a href="#" style="width:147px;margin-left:10px">AI Solutions Architect <i data-lucide="arrow-right"></i></a>
+        <a href="#" style="width:111px;margin-left:11px">Data Engineer <i data-lucide="arrow-right"></i></a>
+        <a href="#" style="width:154px;margin-left:12px">AI Strategy Consultant <i data-lucide="arrow-right"></i></a>
+        <a href="#" style="width:159px;margin-left:12px">FDE Engagement Lead <i data-lucide="arrow-right"></i></a>
+      </div>
+    </section>
+  </main>
+
+  <nav class="bar">
+    <a class="dk" href="#"><i data-lucide="heart"></i>Save Job</a>
+    <a class="dk" href="#" style="width:248px"><i data-lucide="forward"></i>Share</a>
+    <a class="bl" href="#"><i data-lucide="rocket"></i>Apply Now</a>
+  </nav>
+</div>
+
+<script src="assets/lucide.min.js"></script>
+<script>
+  lucide.createIcons();
+  // Scale the pixel-exact 864px layout to fit the viewport (crisp: text & SVG re-render at any zoom)
+  (function(){
+    var W = 864, p = document.getElementById('page');
+    function fit(){ p.style.zoom = Math.min(Math.max(innerWidth / W, 0.35), 1.7); }
+    fit(); addEventListener('resize', fit);
+  })();
+</script>
+</body>
+</html>

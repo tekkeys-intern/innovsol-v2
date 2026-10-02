@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Manufacturing &amp; Operations – InnovSol</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#0b1022;--text:#1f2430;--muted:#4b5263;--line:#e3e7ef;--blue:#1d5be0;--navy:#001339}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{background:#fff}
+  body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;color:var(--text);-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  svg.lucide{display:block}
+  .page{width:864px;margin:0 auto;position:relative;background:#fff;font-weight:500;overflow:hidden}
+
+  .nav{height:69px;border-bottom:1px solid #dfe5f1;position:relative;background:#fff}
+  .logo{position:absolute;left:28px;top:8px;width:127px}
+  .menu a{position:absolute;top:28px;display:flex;align-items:center;gap:6px;font-size:11.2px;font-weight:600;color:var(--ink);white-space:nowrap}
+  .menu svg{width:12px;height:12px;stroke-width:2.2}
+  .contact{position:absolute;left:754px;top:21px;width:83px;height:30px;border-radius:4px;background:var(--navy);color:#fff;font-size:10.6px;font-weight:700;display:flex;align-items:center;justify-content:center}
+
+  .hero{height:397px;position:relative;background:linear-gradient(90deg,#fdfdfe 0%,#f7f8fb 45%,#eef1f6 100%)}
+  .hero .art{position:absolute;left:395px;top:1px;width:469px;height:396px;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 22%);mask-image:linear-gradient(90deg,transparent 0,#000 22%)}
+  .crumb{position:absolute;left:33px;top:26px;font-size:9.8px;color:#1d2230;display:flex;align-items:center;gap:8px}
+  .crumb svg{width:9px;height:9px;stroke-width:2.4}
+  .eyebrow{position:absolute;left:33px;top:78px;font-size:10.4px;font-weight:600;color:var(--blue);letter-spacing:.1px}
+  .hero h1{position:absolute;left:33px;top:106px;font-size:27px;line-height:40px;font-weight:700;color:var(--ink);letter-spacing:-.5px}
+  .hero p{position:absolute;left:33px;top:196px;font-size:12.2px;line-height:22.6px;color:#4b5263}
+  .hb{position:absolute;top:292px;height:37px;border-radius:4px;display:flex;align-items:center;justify-content:center;gap:9px;font-size:10.3px;font-weight:700}
+  .hb svg{width:14px;height:14px;stroke-width:1.9}
+  .hb.dk{left:33px;width:183px;background:var(--navy);color:#fff}
+  .hb.ol{left:229px;width:140px;border:1.4px solid var(--blue);color:#1b3fa0;background:#fff}
+  .conf{position:absolute;left:34px;top:357px;display:flex;align-items:center;gap:8px;font-size:9.8px;color:#4b5263}
+  .conf svg{width:14px;height:14px;stroke-width:1.7;color:#6b7280}
+
+  .st{text-align:center;font-size:15.8px;font-weight:700;color:var(--ink);letter-spacing:-.2px}
+  .st:after{content:"";display:block;width:26px;height:2.6px;border-radius:2px;background:var(--blue);margin:9px auto 0}
+
+  .ba{position:relative;height:256px;margin-top:14px}
+  .bx{position:absolute;top:0;height:256px;border-radius:8px}
+  .bx.b{left:33px;width:386px;background:#fff5f5;border:1px solid #f3dada}
+  .bx.a{left:443px;width:386px;background:#f3faf8;border:1px solid #d3e9e1}
+  .bx h4{position:absolute;left:17px;top:16px;font-size:11.8px;font-weight:800}
+  .bx ul{list-style:none;position:absolute;left:18px;top:45px}
+  .bx li{display:flex;align-items:center;gap:8px;height:25.4px;font-size:8.9px;color:#1d2230}
+  .ico-x,.ico-c{width:10px;height:10px;border-radius:50%;flex:none;display:flex;align-items:center;justify-content:center}
+  .ico-x{background:#f8d3d3}.ico-c{background:#cfeadd}
+  .bx img{position:absolute}
+  .vs{position:absolute;left:406px;top:108px;width:51px;height:51px;border-radius:50%;background:#fff;border:1px solid #e3e6ec;box-shadow:0 2px 8px rgba(0,0,0,.06);display:flex;align-items:center;justify-content:center;font-size:14.6px;font-weight:800;color:var(--ink);z-index:2}
+
+  .stats{margin:24px 35px 0 33px;height:91px;border:1px solid #dfe4ee;border-radius:8px;display:flex;align-items:center}
+  .sti{flex:none;display:flex;align-items:center;gap:11px;height:64px;border-left:1px solid #e3e7ef;padding-left:12px}
+  .sti:first-child{border-left:0;padding-left:16px}
+  .sti svg{width:36px;height:36px;color:var(--blue);stroke-width:1.5;flex:none}
+  .sti b{display:block;font-size:13.8px;font-weight:800;color:var(--blue);line-height:17px}
+  .sti span{display:block;font-size:7.8px;line-height:14.5px;color:#3b4252;margin-top:3px}
+
+  .uses{position:relative;height:228px;margin-top:12px}
+  .uc{position:absolute;top:0;height:228px;border:1px solid #e3e7ef;border-radius:7px;background:#fff;box-shadow:0 1px 6px rgba(20,30,60,.03)}
+  .uc img{position:absolute;left:4px;top:9px;height:88px;width:calc(100% - 8px);object-fit:contain}
+  .uc h5{position:absolute;left:9px;top:108px;font-size:9.3px;font-weight:700;color:var(--ink);letter-spacing:-.1px}
+  .uc p{position:absolute;left:9px;top:128px;font-size:8.5px;line-height:15.3px;color:#2b3040}
+  .uc a{position:absolute;left:9px;top:201px;display:flex;align-items:center;gap:9px;font-size:9.2px;font-weight:700;color:var(--blue)}
+  .uc a svg{width:10px;height:10px;stroke-width:2.4}
+
+  .steps{position:relative;height:150px;margin-top:6px}
+  .stp{position:absolute;top:0;width:140px;margin-left:-70px;text-align:center}
+  .stp .c{width:62px;height:62px;border-radius:50%;border:1px solid #e3e8f2;background:#fff;margin:0 auto;display:flex;align-items:center;justify-content:center;color:var(--blue)}
+  .stp .c svg{width:34px;height:34px;stroke-width:1.5}
+  .stp b{display:block;font-size:9.4px;font-weight:700;color:var(--ink);margin-top:12px}
+  .stp p{font-size:8.6px;line-height:15.5px;color:#2b3040;margin-top:6px}
+  .sarr{position:absolute;top:22px;width:17px;height:17px;color:#1d2230;stroke-width:1.8}
+
+  .logos{margin:7px 35px 0 33px;height:61px;border:1px solid #e0e5ee;border-radius:7px;display:flex;align-items:center}
+  .lg{height:38px;display:flex;align-items:center;justify-content:center;border-left:1px solid #e6e9f0;flex:none}
+  .lg:first-child{border-left:0}
+
+  .blk{position:relative;height:178px;margin-top:18px}
+  .card2{position:absolute;top:0;height:168px;border-radius:8px;background:#f2f5fc}
+  .why{left:33px;width:209px;padding:18px 0 0 15px}
+  .why h4{font-size:12.4px;font-weight:700;color:var(--ink)}
+  .why ul{list-style:none;margin-top:12px}
+  .why li{display:flex;align-items:center;gap:8px;height:21.3px;font-size:8.8px;color:#1d2230}
+  .chk{width:9px;height:9px;flex:none}
+  .sec{left:254px;width:283px;text-align:center;padding-top:22px}
+  .sec h4{font-size:12px;font-weight:700;color:var(--ink)}
+  .sec .row{display:flex;justify-content:space-between;margin-top:25px;padding:0 10px}
+  .sec .row div{width:54px;font-size:8.5px;line-height:15px;color:#2b3040}
+  .sec svg{width:24px;height:24px;stroke-width:1.4;color:#3b4252;margin:0 auto 8px}
+  .cta{position:absolute;left:551px;top:0;width:278px;height:177px;border-radius:7px;background:var(--navy);text-align:center;color:#fff}
+  .cta h4{font-size:14.6px;font-weight:700;line-height:21.5px;margin-top:17px}
+  .cta p{font-size:9.6px;line-height:17px;color:#dfe4f0;margin-top:11px}
+  .cta a{position:absolute;left:20px;top:121px;width:235px;height:39px;border-radius:4px;background:#2360e6;display:flex;align-items:center;justify-content:center;gap:12px;font-size:10px;font-weight:700}
+  .cta a svg{width:13px;height:13px;stroke-width:2.2}
+  .pb{margin:12px 35px 14px 33px;height:86px;background:var(--navy);border-radius:5px;position:relative;color:#fff}
+  .pb img{position:absolute;left:65px;top:3px;width:97px;height:82px;border-radius:4px}
+  .pb h5{position:absolute;left:181px;top:18px;font-size:10.4px;font-weight:700}
+  .pb p{position:absolute;left:181px;top:36px;font-size:8.4px;line-height:16px;color:#dfe4f0}
+  .pb a{position:absolute;left:468px;top:24px;width:168px;height:38px;border:1.3px solid #e6e9f0;border-radius:4px;display:flex;align-items:center;justify-content:center;gap:9px;font-size:9.8px;font-weight:700}
+  .pb a svg{width:14px;height:14px;stroke-width:2}
+</style>
+</head>
+<body>
+<div class="page" id="page">
+  <header class="nav">
+    <svg class="logo" viewBox="8 6 150 62" xmlns="http://www.w3.org/2000/svg" aria-label="innovsol">
+      <g fill="none" stroke="#2F5FD0" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18.6 34 L27 42.5 L27 64"/><path d="M31.8 18.4 L31.8 64"/><path d="M41 30.4 L41 64"/><path d="M53 30.4 L53 44 L47 51 L47 64"/>
+        <circle cx="16.5" cy="31" r="3.3" fill="#fff"/><circle cx="31.8" cy="15" r="3.4" fill="#F5B301"/><circle cx="41" cy="27" r="3.3" fill="#fff"/><circle cx="53" cy="27" r="3.3" fill="#fff"/>
+      </g>
+      <text x="60" y="49" font-family="Poppins" font-weight="500" font-size="16.8" letter-spacing="3" textLength="92" fill="#141414">innovsol</text>
+      <text x="61" y="62.5" font-family="Poppins" font-weight="500" font-size="5.3" textLength="90" fill="#141414">Innovate · Disrupt · Transform</text>
+    </svg>
+    <nav class="menu">
+      <a href="#" style="left:315px">Industries <i data-lucide="chevron-down"></i></a>
+      <a href="#" style="left:408px">Solutions <i data-lucide="chevron-down"></i></a>
+      <a href="#" style="left:495px">AI Modules <i data-lucide="chevron-down"></i></a>
+      <a href="#" style="left:590px">Resources <i data-lucide="chevron-down"></i></a>
+      <a href="#" style="left:680px">About Us</a>
+    </nav>
+    <a class="contact" href="#">Contact Us</a>
+  </header>
+
+  <section class="hero">
+    <img class="art" src="assets/hero-factory.jpg" alt="Robotic arms on a production line with AI dashboard">
+    <div class="crumb">Home <i data-lucide="chevron-right"></i> Industries <i data-lucide="chevron-right"></i> Manufacturing &amp; Operations</div>
+    <div class="eyebrow">MANUFACTURING &amp; OPERATIONS</div>
+    <h1>AI-Powered Manufacturing<br>for Smarter Operations</h1>
+    <p>From shop floor to supply chain, we bring AI to every layer<br>of your operations—driving quality, efficiency and<br>predictability at scale.</p>
+    <a class="hb dk" href="#"><i data-lucide="calendar-days"></i>Book AI Discovery Workshop</a>
+    <a class="hb ol" href="#"><i data-lucide="file-text" style="color:#1d5be0"></i>Download Playbook</a>
+    <div class="conf"><i data-lucide="shield-check"></i>Client confidentiality guaranteed. No customer names disclosed.</div>
+  </section>
+
+  <h3 class="st" style="margin-top:21px">The Manufacturing Challenge – Before vs After AI</h3>
+  <div class="ba">
+    <div class="bx b">
+      <h4 style="color:#c62828">BEFORE AI</h4>
+      <ul>
+        <li><span class="ico-x"><svg width="6" height="6" viewBox="0 0 10 10"><path d="M2 2l6 6M8 2l-6 6" stroke="#d93030" stroke-width="2" stroke-linecap="round"/></svg></span>Unplanned downtime &amp; machine failures</li>
+        <li><span class="ico-x"><svg width="6" height="6" viewBox="0 0 10 10"><path d="M2 2l6 6M8 2l-6 6" stroke="#d93030" stroke-width="2" stroke-linecap="round"/></svg></span>Inconsistent product quality</li>
+        <li><span class="ico-x"><svg width="6" height="6" viewBox="0 0 10 10"><path d="M2 2l6 6M8 2l-6 6" stroke="#d93030" stroke-width="2" stroke-linecap="round"/></svg></span>Manual quality inspection</li>
+        <li><span class="ico-x"><svg width="6" height="6" viewBox="0 0 10 10"><path d="M2 2l6 6M8 2l-6 6" stroke="#d93030" stroke-width="2" stroke-linecap="round"/></svg></span>Inventory stock-outs &amp; overstocking</li>
+        <li><span class="ico-x"><svg width="6" height="6" viewBox="0 0 10 10"><path d="M2 2l6 6M8 2l-6 6" stroke="#d93030" stroke-width="2" stroke-linecap="round"/></svg></span>Supply chain disruptions</li>
+        <li><span class="ico-x"><svg width="6" height="6" viewBox="0 0 10 10"><path d="M2 2l6 6M8 2l-6 6" stroke="#d93030" stroke-width="2" stroke-linecap="round"/></svg></span>High energy consumption</li>
+        <li><span class="ico-x"><svg width="6" height="6" viewBox="0 0 10 10"><path d="M2 2l6 6M8 2l-6 6" stroke="#d93030" stroke-width="2" stroke-linecap="round"/></svg></span>Siloed data &amp; slow decisions</li>
+      </ul>
+      <img src="assets/before-factory.png" alt="Traditional factory" style="left:195px;top:39px;width:174px;height:163px;mix-blend-mode:multiply;-webkit-mask-image:radial-gradient(ellipse 50% 50% at 50% 50%,#000 70%,transparent 100%);mask-image:radial-gradient(ellipse 50% 50% at 50% 50%,#000 70%,transparent 100%)">
+    </div>
+    <div class="vs">VS</div>
+    <div class="bx a">
+      <h4 style="color:#197a4b">AFTER AI</h4>
+      <ul>
+        <li><span class="ico-c"><svg width="7" height="7" viewBox="0 0 10 10"><path d="M2 5.2l2 2 4-4.4" fill="none" stroke="#1f8a55" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Predict failures &amp; avoid downtime</li>
+        <li><span class="ico-c"><svg width="7" height="7" viewBox="0 0 10 10"><path d="M2 5.2l2 2 4-4.4" fill="none" stroke="#1f8a55" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Real-time quality monitoring</li>
+        <li><span class="ico-c"><svg width="7" height="7" viewBox="0 0 10 10"><path d="M2 5.2l2 2 4-4.4" fill="none" stroke="#1f8a55" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Automated visual inspection</li>
+        <li><span class="ico-c"><svg width="7" height="7" viewBox="0 0 10 10"><path d="M2 5.2l2 2 4-4.4" fill="none" stroke="#1f8a55" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Optimized inventory &amp; demand planning</li>
+        <li><span class="ico-c"><svg width="7" height="7" viewBox="0 0 10 10"><path d="M2 5.2l2 2 4-4.4" fill="none" stroke="#1f8a55" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>End-to-end supply chain visibility</li>
+        <li><span class="ico-c"><svg width="7" height="7" viewBox="0 0 10 10"><path d="M2 5.2l2 2 4-4.4" fill="none" stroke="#1f8a55" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Energy optimization</li>
+        <li><span class="ico-c"><svg width="7" height="7" viewBox="0 0 10 10"><path d="M2 5.2l2 2 4-4.4" fill="none" stroke="#1f8a55" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Data-driven, real-time decisions</li>
+      </ul>
+      <img src="assets/after-factory.png" alt="AI-enabled factory" style="left:189px;top:52px;width:186px;height:150px;mix-blend-mode:multiply;-webkit-mask-image:radial-gradient(ellipse 50% 50% at 50% 50%,#000 70%,transparent 100%);mask-image:radial-gradient(ellipse 50% 50% at 50% 50%,#000 70%,transparent 100%)">
+    </div>
+  </div>
+
+  <div class="stats">
+    <div class="sti" style="width:147px"><i data-lucide="timer"></i><div><b>20–40%</b><span>Reduction in<br>Unplanned Downtime</span></div></div>
+    <div class="sti" style="width:137px"><i data-lucide="shield-check"></i><div><b>15–30%</b><span>Improvement in<br>Product Quality</span></div></div>
+    <div class="sti" style="width:137px"><i data-lucide="package-open"></i><div><b>10–20%</b><span>Lower Inventory<br>Holding Cost</span></div></div>
+    <div class="sti" style="width:128px"><i data-lucide="zap"></i><div><b>10–25%</b><span>Energy Cost<br>Savings</span></div></div>
+    <div class="sti" style="width:128px"><i data-lucide="chart-column-increasing"></i><div><b>2–3X</b><span>Increase in Overall<br>Productivity</span></div></div>
+    <div class="sti" style="flex:1"><i data-lucide="smile"></i><div><b>Higher</b><span>Customer<br>Satisfaction</span></div></div>
+  </div>
+
+  <h3 class="st" style="margin-top:26px">AI Use Cases Across Manufacturing</h3>
+  <div class="uses">
+    <div class="uc" style="left:33px;width:123px"><img src="assets/usecase-1.png" alt=""><h5>Predictive Maintenance</h5><p>AI predicts equipment<br>failures before they<br>happen and recommends<br>actions.</p><a href="#">Explore <i data-lucide="arrow-right"></i></a></div>
+    <div class="uc" style="left:165px;width:123px"><img src="assets/usecase-2.png" alt=""><h5>Quality Inspection AI</h5><p>Computer vision detects<br>defects in real time with<br>higher accuracy.</p><a href="#">Explore <i data-lucide="arrow-right"></i></a></div>
+    <div class="uc" style="left:297px;width:123px"><img src="assets/usecase-3.png" alt=""><h5>Production Optimization</h5><p>AI optimizes schedules,<br>resources and throughput<br>across lines.</p><a href="#">Explore <i data-lucide="arrow-right"></i></a></div>
+    <div class="uc" style="left:434px;width:129px"><img src="assets/usecase-4.png" alt=""><h5>Supply Chain Intelligence</h5><p>Demand forecasting, risk<br>alerts and supplier<br>performance insights.</p><a href="#">Explore <i data-lucide="arrow-right"></i></a></div>
+    <div class="uc" style="left:572px;width:123px"><img src="assets/usecase-5.png" alt=""><h5>Inventory Optimization</h5><p>AI balances inventory levels<br>across plants and<br>warehouses.</p><a href="#">Explore <i data-lucide="arrow-right"></i></a></div>
+    <div class="uc" style="left:705px;width:124px"><img src="assets/usecase-6.png" alt=""><h5>Energy Management AI</h5><p>AI monitors, predicts and<br>reduces energy<br>consumption.</p><a href="#">Explore <i data-lucide="arrow-right"></i></a></div>
+  </div>
+
+  <h3 class="st" style="margin-top:20px">How We Drive AI Transformation</h3>
+  <div class="steps">
+    <div class="stp" style="left:85px"><div class="c"><i data-lucide="search"></i></div><b>1. Discover</b><p>Understand processes,<br>data, systems and<br>business goals.</p></div>
+    <i data-lucide="arrow-right" class="sarr" style="left:145px"></i>
+    <div class="stp" style="left:220px"><div class="c"><i data-lucide="database"></i></div><b>2. Assess</b><p>Identify high-impact use<br>cases and data readiness.</p></div>
+    <i data-lucide="arrow-right" class="sarr" style="left:280px"></i>
+    <div class="stp" style="left:355px"><div class="c"><i data-lucide="monitor-cog"></i></div><b>3. Build</b><p>Develop and train AI<br>models and solutions.</p></div>
+    <i data-lucide="arrow-right" class="sarr" style="left:415px"></i>
+    <div class="stp" style="left:490px"><div class="c"><i data-lucide="flask-conical"></i></div><b>4. Pilot</b><p>Deploy pilot, validate<br>ROI and refine.</p></div>
+    <i data-lucide="arrow-right" class="sarr" style="left:550px"></i>
+    <div class="stp" style="left:626px"><div class="c"><i data-lucide="rocket"></i></div><b>5. Scale</b><p>Scale across plants,<br>lines and functions.</p></div>
+    <i data-lucide="arrow-right" class="sarr" style="left:687px"></i>
+    <div class="stp" style="left:763px"><div class="c"><i data-lucide="chart-column-increasing"></i></div><b>6. Optimize</b><p>Continuously improve<br>models and outcomes.</p></div>
+  </div>
+
+  <h3 class="st" style="margin-top:5px">Works Seamlessly With Your Systems</h3>
+  <div class="logos">
+    <div class="lg" style="width:111px"><svg viewBox="0 0 62 31" style="width:50px;height:25px" aria-label="SAP"><defs><linearGradient id="sapg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#00AEEF"/><stop offset="1" stop-color="#0063B5"/></linearGradient></defs><path d="M0 0h62L31 31H0z" fill="url(#sapg)"/><text x="3.5" y="22.5" font-family="Arial Black,Arial,sans-serif" font-weight="900" font-size="18.5" fill="#fff" letter-spacing="-.6">SAP</text></svg></div>
+    <div class="lg" style="width:123px"><span style="font-family:Arial,Helvetica,sans-serif;font-size:14.5px;color:#e2231a;letter-spacing:1.2px;-webkit-text-stroke:.35px #e2231a">ORACLE</span></div>
+    <div class="lg" style="width:123px;gap:5px"><svg width="19" height="19" viewBox="0 0 20 20"><rect width="9.5" height="9.5" fill="#F25022"/><rect x="10.5" width="9.5" height="9.5" fill="#7FBA00"/><rect y="10.5" width="9.5" height="9.5" fill="#00A4EF"/><rect x="10.5" y="10.5" width="9.5" height="9.5" fill="#FFB900"/></svg><span style="font-family:'Segoe UI',Arial,sans-serif;font-size:14.5px;color:#737373">Microsoft</span></div>
+    <div class="lg" style="width:112px"><span style="font-family:Arial,Helvetica,sans-serif;font-size:15.5px;font-weight:900;color:#009999;letter-spacing:.4px">SIEMENS</span></div>
+    <div class="lg" style="width:112px;flex-direction:column;line-height:12px"><span style="font-family:Arial,Helvetica,sans-serif;font-size:12.4px;font-weight:900;color:#c8102e;letter-spacing:-.1px">Rockwell</span><span style="font-family:Arial,Helvetica,sans-serif;font-size:12.4px;font-weight:900;color:#c8102e;letter-spacing:-.2px">Automation</span></div>
+    <div class="lg" style="width:108px"><span style="font-family:Arial,Helvetica,sans-serif;font-size:16px;color:#4b2382;letter-spacing:1.4px;-webkit-text-stroke:.2px #4b2382">A<span style="display:inline-block;transform:scaleY(1.05)">V</span>EVA</span></div>
+    <div class="lg" style="flex:1"><span style="width:58px;height:28px;border-radius:4px;background:#f0f2f6;border:1px solid #e3e6ec;display:flex;align-items:center;justify-content:center;font-size:9.6px;font-weight:600;color:#2b3040">&amp; More</span></div>
+  </div>
+
+  <div class="blk">
+    <section class="card2 why">
+      <h4>Why Innovsol</h4>
+      <ul>
+        <li><svg class="chk" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#1d5be0"/><path d="M7 12.5l3.3 3.2L17 9" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>Deep manufacturing domain expertise</li>
+        <li><svg class="chk" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#1d5be0"/><path d="M7 12.5l3.3 3.2L17 9" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>AI + Data + Industry knowledge</li>
+        <li><svg class="chk" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#1d5be0"/><path d="M7 12.5l3.3 3.2L17 9" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>End-to-end solution from pilot to scale</li>
+        <li><svg class="chk" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#1d5be0"/><path d="M7 12.5l3.3 3.2L17 9" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>Proven frameworks &amp; accelerators</li>
+        <li><svg class="chk" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#1d5be0"/><path d="M7 12.5l3.3 3.2L17 9" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>Flexible engagement models</li>
+      </ul>
+    </section>
+    <section class="card2 sec">
+      <h4>Enterprise Grade Security</h4>
+      <div class="row">
+        <div><i data-lucide="lock-keyhole"></i>Data<br>Encryption</div>
+        <div><i data-lucide="user-round"></i>Role Based<br>Access</div>
+        <div><i data-lucide="file-text"></i>Audit<br>Logs</div>
+        <div style="width:62px"><i data-lucide="cloud-upload"></i>On-Prem /<br>Private Cloud</div>
+        <div style="width:58px"><i data-lucide="shield-check"></i>Regulatory<br>Compliance</div>
+      </div>
+    </section>
+    <section class="cta">
+      <h4>Ready to Transform<br>Your Operations with AI?</h4>
+      <p>Let’s identify high-impact use cases<br>tailored to your manufacturing environment.</p>
+      <a href="#">Book a Free AI Discovery Workshop <i data-lucide="arrow-right"></i></a>
+    </section>
+  </div>
+
+  <section class="pb">
+    <img src="assets/playbook-book.png" alt="Manufacturing AI Transformation Playbook">
+    <h5>Manufacturing AI Transformation Playbook</h5>
+    <p>A practical guide to AI adoption in manufacturing –<br>use cases, frameworks, ROI models &amp; more.</p>
+    <a href="#"><i data-lucide="download"></i>Download Playbook</a>
+  </section>
+</div>
+
+<script src="assets/lucide.min.js"></script>
+<script>
+  lucide.createIcons();
+  (function(){
+    var W = 864, p = document.getElementById('page');
+    function fit(){ p.style.zoom = Math.min(Math.max(innerWidth / W, 0.35), 1.75); }
+    fit(); addEventListener('resize', fit);
+  })();
+</script>
+</body>
+</html>

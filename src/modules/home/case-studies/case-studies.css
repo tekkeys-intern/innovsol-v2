@@ -1,0 +1,16 @@
+/* ═══ CASE STUDIES ════════════════════════════════════════════════════════ */
+#casestudies{padding:6rem 0;background:linear-gradient(135deg,var(--dark) 0%,#0D2147 100%)}
+#casestudies .sec-hd h2{color:#fff}
+#casestudies .sec-hd p{color:rgba(255,255,255,.6)}
+.cs-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;margin-top:2.5rem}
+.cs-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:12px;
+  padding:1.8rem;transition:.3s;cursor:pointer}
+.cs-card:hover{background:rgba(63,108,181,.12);border-color:var(--blue);transform:translateY(-4px)}
+.cs-ind{font-size:.7rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.4)}
+.cs-type{font-size:.7rem;font-weight:700;color:var(--orange);margin-bottom:1rem}
+.cs-card h3{font-size:1.02rem;font-weight:700;color:#fff;line-height:1.38;margin-bottom:.55rem}
+.cs-det{font-size:.78rem;color:rgba(255,255,255,.38);margin-bottom:1.1rem;line-height:1.55}
+.cs-sep{height:1px;background:rgba(255,255,255,.08);margin-bottom:1rem}
+.cs-r1{font-size:.85rem;font-weight:700;color:var(--orange);margin-bottom:.35rem}
+.cs-r2{font-size:.85rem;font-weight:700;color:#7EC8F8}
+

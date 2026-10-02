@@ -1,0 +1,42 @@
+[
+  {
+    "q": "What is a Forward Deployed Engineering (FDE) model?",
+    "a": "Instead of delivering a report and leaving, Innovsol engineers embed inside your team. They work in your codebase, your ticketing and your sprint rhythm, so what gets built fits how your organisation actually runs and reaches production."
+  },
+  {
+    "q": "How quickly can we go from idea to production?",
+    "a": "Our delivery model targets production-ready AI in under 12 weeks. Timelines depend on scope, data readiness and integration complexity; the Discover phase exists to confirm a realistic plan before you commit."
+  },
+  {
+    "q": "What is a Discovery Sprint?",
+    "a": "A short, fixed-price engagement (about two weeks) that produces your AI roadmap: prioritised use cases, a technical blueprint and a business case. It requires no long-term commitment, so you can decide on the next phase with evidence."
+  },
+  {
+    "q": "Which industries do you work in?",
+    "a": "Banking and financial services, manufacturing and operations, healthcare and life sciences, retail and e-commerce, telecom and media, insurance, GCCs and shared services, and high-growth startups. Each has a dedicated page describing typical use cases."
+  },
+  {
+    "q": "What technologies do you use?",
+    "a": "We choose the stack to fit your environment. Past engagements have included Azure OpenAI, Anthropic Claude, LangChain, Pinecone, AWS SageMaker and Kafka, among others. We are comfortable on the major clouds and with on-premises or private-cloud deployments."
+  },
+  {
+    "q": "How do you handle security and confidentiality?",
+    "a": "We design delivery around data isolation, role-based access and audit logging, and can work in private-cloud or on-premises environments. Client confidentiality is respected: we do not disclose customer names. See the Security page for details of what we do and what this website does."
+  },
+  {
+    "q": "Do you support regulated industries?",
+    "a": "Regulatory needs differ by industry and by engagement (for example HIPAA, PCI DSS, GDPR or local insurance and banking regulators). Tell us which apply and we will confirm in writing what our approach does and does not cover before work starts."
+  },
+  {
+    "q": "Can startups work with you?",
+    "a": "Yes. We offer engagement models suited to early-stage teams that want to ship AI features quickly, with NDA-protected engagements. See the High-Growth Startups page."
+  },
+  {
+    "q": "How do I start a conversation?",
+    "a": "Use the contact form or book a strategy call. Tell us your industry and the problem you want to solve and we will reply within one business day."
+  },
+  {
+    "q": "Are you hiring?",
+    "a": "We hire AI engineers, ML engineers, solutions architects, data engineers, strategy consultants and engagement leads. See open roles on the Careers page and apply through the candidate portal or by email."
+  }
+]

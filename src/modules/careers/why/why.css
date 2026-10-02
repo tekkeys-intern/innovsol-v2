@@ -1,0 +1,26 @@
+/* ── Why Join ────────────────────────────────────────────────────────── */
+.car-why{padding:6rem 0;background:#f8f9fb}
+.car-why-hd{text-align:center;margin-bottom:3rem}
+.car-why-hd .section-label{color:var(--blue)}
+.car-why-hd h2{
+  font-size:clamp(1.8rem,3vw,2.8rem);
+  font-weight:900;color:var(--dark);letter-spacing:-.04em;margin:.4rem 0}
+.car-why-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
+.car-why-card{
+  padding:1.8rem;border:1px solid rgba(0,0,0,.07);
+  border-radius:14px;background:#fff;
+  transition:all .3s}
+.car-why-card:hover{
+  border-color:rgba(63,108,181,.25);
+  box-shadow:0 10px 36px rgba(63,108,181,.08);
+  transform:translateY(-3px)}
+.car-why-icon{
+  width:38px;height:38px;margin-bottom:1rem;color:var(--blue)}
+.car-why-icon svg{width:100%;height:100%}
+.car-why-card h3{
+  font-size:.9rem;font-weight:700;color:var(--dark);
+  margin:0 0 .45rem;letter-spacing:-.02em}
+.car-why-card p{
+  font-size:.76rem;color:var(--dark2);line-height:1.8;margin:0}
+

@@ -1,0 +1,14 @@
+{
+  "siteName": "Innovsol",
+  "url": "https://innovsol.ai",
+  "email": "hello@innovsol.ai",
+  "phone": "+91 95827 99988",
+  "address": "411, Good Earth Business Bay-1, Sector-58, Gurugram-122098, India",
+  "legalName": "",
+  "registration": "",
+  "bookingUrl": "",
+  "analytics": { "ga4Id": "", "plausibleDomain": "" },
+  "turnstileSiteKey": "",
+  "showTestimonials": false,
+  "_help": "Fill legalName / registration (shown in the footer), bookingUrl (Calendly or Cal.com link: 'Book a Strategy Call' opens it), analytics IDs (loaded only after cookie consent) and turnstileSiteKey. Env overrides: BOOKING_URL, GA4_ID, PLAUSIBLE_DOMAIN, TURNSTILE_SITE_KEY, SHOW_TESTIMONIALS=1. Then run: npm run gen"
+}

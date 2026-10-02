@@ -1,0 +1,567 @@
+﻿<!-- ══ NAVBAR ════════════════════════════════════════════════════════════ -->
+<nav id="nav">
+  <div class="container nav-wrap">
+    <a href="/#home" class="nav-logo-wrap">
+      <img src="/images/logo.png" alt="Innovsol" class="nav-logo-img" id="nav-logo-main"/>
+      <img src="/images/white-text-logo.png" alt="Innovsol" class="nav-logo-img" id="nav-logo-alt"/>
+    </a>
+    <div class="nav-links">
+      <a href="/#home">Home</a>
+      <a href="/#services">Services</a>
+      <a href="/#industries">Industries</a>
+      <a href="/#casestudies">Case Studies</a>
+      <a href="/#fde">FDE Team</a>
+      <a href="/#insights">Insights</a>
+      <a href="/#careers">Careers</a>
+    </div>
+    <div class="nav-right">
+      <a href="/#contact-form" class="btn btn-outline-blue">Contact Us</a>
+      <a href="/#contact-form" class="btn btn-orange">Book a Strategy Call</a>
+      <button class="ham" id="ham" onclick="toggleMob()"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<!-- ══ MOBILE DRAWER — outside <nav> so backdrop-filter never clips it ═══ -->
+<div class="mob-nav" id="mobNav">
+  <div class="mob-nav-header">
+    <img src="/images/logo.png" alt="Innovsol" class="mob-nav-logo"/>
+    <button class="mob-close" onclick="toggleMob()" aria-label="Close menu">&#x2715;</button>
+  </div>
+  <div class="mob-nav-links">
+    <a href="/#home" onclick="toggleMob()">Home</a>
+    <a href="/#services" onclick="toggleMob()">Services</a>
+    <a href="/#industries" onclick="toggleMob()">Industries</a>
+    <a href="/#casestudies" onclick="toggleMob()">Case Studies</a>
+    <a href="/#fde" onclick="toggleMob()">FDE Team</a>
+    <a href="/#insights" onclick="toggleMob()">Insights</a>
+    <a href="/#careers" onclick="toggleMob()">Careers</a>
+    <a href="/#contact-form" onclick="toggleMob()">Contact Us</a>
+  </div>
+  <div class="mob-nav-footer">
+    <a href="/#contact-form" class="btn btn-orange" onclick="toggleMob()">Book a Strategy Call &rarr;</a>
+  </div>
+</div>
+<div class="mob-overlay" id="mobOverlay" onclick="toggleMob()"></div>
+
+<!-- ══ CAREERS HERO ═══════════════════════════════════════════════════════ -->
+<section class="car-hero" id="car-top">
+  <div class="container car-hero-content">
+    <p class="car-eyebrow">Careers at Innovsol</p>
+    <h1 class="car-h1">Build AI That<br><em>Actually Ships.</em></h1>
+    <p class="car-sub">Embed inside Fortune 500s. Write code that hits production — not decks. Work on hard problems. See your AI running in the real world, fast.</p>
+    <div class="car-hero-btns">
+      <a href="#openings" class="btn btn-orange car-scroll-link">View Open Roles &rarr;</a>
+      <a href="/#contact-form" class="btn btn-outline-white">Get in Touch</a>
+    </div>
+    <div class="car-stats">
+      <div class="car-stat"><span class="car-stat-n">12+</span><span class="car-stat-l">Active Engagements</span></div>
+      <div class="car-stat-div"></div>
+      <div class="car-stat"><span class="car-stat-n">6</span><span class="car-stat-l">Countries</span></div>
+      <div class="car-stat-div"></div>
+      <div class="car-stat"><span class="car-stat-n">40+</span><span class="car-stat-l">AI Engineers</span></div>
+      <div class="car-stat-div"></div>
+      <div class="car-stat"><span class="car-stat-n">100%</span><span class="car-stat-l">Production Deployed</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ THE FDE WAY ════════════════════════════════════════════════════════ -->
+<section class="car-model">
+  <div class="container">
+    <div class="car-model-hd">
+      <p class="section-label" style="color:var(--orange)">The FDE Model</p>
+      <h2>How We Work</h2>
+      <p class="car-model-sub">Unlike traditional consulting, we embed engineers directly inside client teams. You own the code. You see the impact.</p>
+    </div>
+    <div class="car-model-grid">
+      <div class="car-model-card">
+        <div class="car-model-num">01</div>
+        <h3>Embedded, Not Consulting</h3>
+        <p>You work inside the client's organisation — their systems, their data, their team. No slide decks. Just engineering.</p>
+      </div>
+      <div class="car-model-card">
+        <div class="car-model-num">02</div>
+        <h3>Production First</h3>
+        <p>Every engagement ends with AI running in production. Not a PoC. Not a prototype. Real systems, real users, real impact.</p>
+      </div>
+      <div class="car-model-card">
+        <div class="car-model-num">03</div>
+        <h3>12-Week Sprints</h3>
+        <p>Structured 12-week engagements with clear milestones, weekly cadences, and measurable outcomes. Focused. Fast. Delivered.</p>
+      </div>
+      <div class="car-model-card">
+        <div class="car-model-num">04</div>
+        <h3>Cross-Domain Exposure</h3>
+        <p>Banking, healthcare, manufacturing, GCCs — you'll work across industries, building expertise and a portfolio that spans sectors.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ WHY INNOVSOL ═══════════════════════════════════════════════════════ -->
+<section class="car-why">
+  <div class="container">
+    <div class="car-why-hd">
+      <p class="section-label">Why Join Us</p>
+      <h2>Built for Engineers<br>Who Want More</h2>
+    </div>
+    <div class="car-why-grid">
+      <div class="car-why-card">
+        <div class="car-why-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        </div>
+        <h3>Cutting-Edge Stack</h3>
+        <p>LLMs, RAG, MLOps, vector DBs, streaming pipelines. We work with the tools that matter — updated constantly as the field evolves.</p>
+      </div>
+      <div class="car-why-card">
+        <div class="car-why-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+        </div>
+        <h3>Real Production Impact</h3>
+        <p>Your models run in Fortune 500 production environments. You see the metrics. You feel the impact. No vanity projects.</p>
+      </div>
+      <div class="car-why-card">
+        <div class="car-why-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h3>Senior Peer Network</h3>
+        <p>Work alongside ex-FAANG, Big-4, and deep-tech engineers. Every engagement is a masterclass in enterprise AI delivery.</p>
+      </div>
+      <div class="car-why-card">
+        <div class="car-why-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+        </div>
+        <h3>Accelerated Growth</h3>
+        <p>Multiple client exposures per year, a structured growth framework, and a leadership track for those who want to lead engagements.</p>
+      </div>
+      <div class="car-why-card">
+        <div class="car-why-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+        </div>
+        <h3>Remote-First Flexibility</h3>
+        <p>Hybrid engagement model. Work from our offices, client sites, or remotely — with travel for key milestones and workshops.</p>
+      </div>
+      <div class="car-why-card">
+        <div class="car-why-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3>Competitive Packages</h3>
+        <p>Market-leading compensation, performance bonuses tied to engagement outcomes, equity participation, and comprehensive benefits.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ OPEN ROLES ═════════════════════════════════════════════════════════ -->
+<section id="openings" class="car-roles">
+  <div class="container">
+    <div class="car-roles-hd">
+      <p class="section-label" style="color:var(--orange)">Open Positions</p>
+      <h2>Current Openings</h2>
+      <p class="car-roles-sub">All roles are open globally. We hire for impact &mdash; not location.</p>
+    </div>
+    <div class="car-roles-list">
+
+      <!-- Role 1: Senior AI Engineer -->
+      <div class="car-role" id="role-1">
+        <div class="car-role-hd" onclick="window.location.href='/careers/SeniorAiEngineer.html'" style="cursor: pointer;">
+          <div class="car-role-left">
+            <span class="car-role-badge">Hiring</span>
+            <div>
+              <h3 class="car-role-title">Senior AI Engineer</h3>
+              <div class="car-role-tags">
+                <span>Python</span><span>LLMs</span><span>MLOps</span><span>Cloud Infrastructure</span>
+              </div>
+            </div>
+          </div>
+          <div class="car-role-right">
+            <span class="car-role-type">Full-time &middot; Remote</span>
+            <button class="car-role-toggle" aria-label="Toggle details">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="car-role-body">
+          <div class="car-role-content">
+            <div class="car-role-col">
+              <h4>About the Role</h4>
+              <p>You'll design, build, and deploy production-grade AI systems embedded within enterprise client environments. From LLM orchestration to MLOps pipelines, you'll own the full stack and see your work in production within weeks.</p>
+              <h4>Requirements</h4>
+              <ul>
+                <li>5+ years Python development; 3+ years in production AI/ML systems</li>
+                <li>Deep expertise in LLM frameworks — LangChain, LlamaIndex, Semantic Kernel or equivalent</li>
+                <li>Hands-on MLOps: model versioning, monitoring, CI/CD pipelines (MLflow, W&amp;B, DVC)</li>
+                <li>Cloud infrastructure at scale — AWS SageMaker, GCP Vertex AI, or Azure ML</li>
+                <li>Container orchestration: Docker, Kubernetes, Helm</li>
+                <li>RAG architectures and vector databases (Pinecone, Weaviate, Qdrant)</li>
+                <li>Strong understanding of fine-tuning, PEFT, and LoRA techniques</li>
+              </ul>
+            </div>
+            <div class="car-role-col">
+              <h4>Nice to Have</h4>
+              <ul>
+                <li>Published research or open-source AI contributions</li>
+                <li>Multi-agent system design experience</li>
+                <li>Security-first mindset for enterprise AI deployments</li>
+              </ul>
+              <h4>What You'll Work On</h4>
+              <ul>
+                <li>Production LLM systems for Fortune 500 clients</li>
+                <li>Enterprise RAG architectures serving 10k+ daily users</li>
+                <li>MLOps infrastructure scaling across business units</li>
+                <li>AI agent pipelines automating complex enterprise workflows</li>
+              </ul>
+              <a href="/#contact-form" class="btn btn-orange car-apply-btn">Apply for This Role &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Role 2: Machine Learning Engineer -->
+      <div class="car-role" id="role-2">
+        <div class="car-role-hd" onclick="window.location.href='/careers/MachineLearningEngineer.html'" style="cursor: pointer;">
+          <div class="car-role-left">
+            <span class="car-role-badge">Hiring</span>
+            <div>
+              <h3 class="car-role-title">Machine Learning Engineer</h3>
+              <div class="car-role-tags">
+                <span>NLP</span><span>Classification</span><span>Time-series</span><span>Production Models</span>
+              </div>
+            </div>
+          </div>
+          <div class="car-role-right">
+            <span class="car-role-type">Full-time &middot; Remote</span>
+            <button class="car-role-toggle" aria-label="Toggle details">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="car-role-body">
+          <div class="car-role-content">
+            <div class="car-role-col">
+              <h4>About the Role</h4>
+              <p>Build and ship ML models that solve real enterprise problems — from NLP classification systems to time-series forecasting at scale. You'll work within client teams, own model development end-to-end, and ensure production reliability.</p>
+              <h4>Requirements</h4>
+              <ul>
+                <li>3+ years ML engineering with production model deployments</li>
+                <li>Strong NLP background: transformers, BERT, text classification and extraction</li>
+                <li>Time-series expertise: LSTM, Prophet, or classical statistical methods</li>
+                <li>Framework proficiency: PyTorch, TensorFlow, scikit-learn, Hugging Face</li>
+                <li>Model serving: FastAPI, TorchServe, or Triton Inference Server</li>
+                <li>Feature engineering and data pipeline development</li>
+                <li>A/B testing and model monitoring experience</li>
+              </ul>
+            </div>
+            <div class="car-role-col">
+              <h4>Nice to Have</h4>
+              <ul>
+                <li>Experience with multimodal models (vision + text)</li>
+                <li>Databricks or Spark ML platform familiarity</li>
+                <li>MLOps platform ownership (not just usage)</li>
+              </ul>
+              <h4>What You'll Work On</h4>
+              <ul>
+                <li>NLP pipelines extracting insights from enterprise document repositories</li>
+                <li>Forecasting models driving supply-chain and financial decisions</li>
+                <li>Classification systems processing millions of events daily</li>
+                <li>Model monitoring frameworks ensuring production reliability</li>
+              </ul>
+              <a href="/#contact-form" class="btn btn-orange car-apply-btn">Apply for This Role &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Role 3: AI Solutions Architect -->
+      <div class="car-role" id="role-3">
+        <div class="car-role-hd" onclick="window.location.href='/careers/AISolutionsArchitect.html'" style="cursor: pointer;">
+          <div class="car-role-left">
+            <span class="car-role-badge">Hiring</span>
+            <div>
+              <h3 class="car-role-title">AI Solutions Architect</h3>
+              <div class="car-role-tags">
+                <span>Pre-sales</span><span>Enterprise Architecture</span><span>Delivery Leadership</span>
+              </div>
+            </div>
+          </div>
+          <div class="car-role-right">
+            <span class="car-role-type">Full-time &middot; Hybrid</span>
+            <button class="car-role-toggle" aria-label="Toggle details">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="car-role-body">
+          <div class="car-role-content">
+            <div class="car-role-col">
+              <h4>About the Role</h4>
+              <p>Sit at the intersection of sales, engineering, and delivery. You'll lead technical pre-sales conversations, design enterprise AI architectures, and own delivery leadership across complex, multi-stakeholder engagements.</p>
+              <h4>Requirements</h4>
+              <ul>
+                <li>7+ years in enterprise technology, consulting, or solutions engineering</li>
+                <li>Pre-sales expertise: RFP responses, solution demos, PoC leadership</li>
+                <li>Enterprise architecture design across complex, regulated organisations</li>
+                <li>Strong communicator: C-suite presentations to technical deep-dives</li>
+                <li>Delivery leadership: managing cross-functional teams and sprint governance</li>
+                <li>Commercial acumen: pricing models, SOW construction, contract negotiation</li>
+                <li>AI/ML literacy: evaluate feasibility, scope, and ROI of AI initiatives</li>
+              </ul>
+            </div>
+            <div class="car-role-col">
+              <h4>Nice to Have</h4>
+              <ul>
+                <li>Domain expertise in Banking, Healthcare, or Manufacturing</li>
+                <li>Cloud certifications (AWS Solutions Architect, GCP Professional)</li>
+                <li>MBA or equivalent commercial education background</li>
+              </ul>
+              <h4>What You'll Work On</h4>
+              <ul>
+                <li>Designing AI transformation roadmaps for FTSE 500 clients</li>
+                <li>Leading technical pre-sales for &pound;1M+ engagements</li>
+                <li>Building reference architectures adopted across client portfolios</li>
+                <li>Owning delivery governance across 5+ concurrent FDE engagements</li>
+              </ul>
+              <a href="/#contact-form" class="btn btn-orange car-apply-btn">Apply for This Role &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Role 4: Data Engineer -->
+      <div class="car-role" id="role-4">
+        <div class="car-role-hd" onclick="window.location.href='/careers/DataEngineer.html'" style="cursor: pointer;">
+          <div class="car-role-left">
+            <span class="car-role-badge">Hiring</span>
+            <div>
+              <h3 class="car-role-title">Data Engineer</h3>
+              <div class="car-role-tags">
+                <span>Pipelines</span><span>Streaming</span><span>AI Data Infrastructure</span>
+              </div>
+            </div>
+          </div>
+          <div class="car-role-right">
+            <span class="car-role-type">Full-time &middot; Remote</span>
+            <button class="car-role-toggle" aria-label="Toggle details">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="car-role-body">
+          <div class="car-role-content">
+            <div class="car-role-col">
+              <h4>About the Role</h4>
+              <p>Build the data infrastructure that powers enterprise AI. From real-time streaming pipelines to vector databases serving LLMs, you'll be the foundation on which AI systems are built — at enterprise scale.</p>
+              <h4>Requirements</h4>
+              <ul>
+                <li>4+ years data engineering with focus on AI/ML data infrastructure</li>
+                <li>Pipeline expertise: Apache Airflow, dbt, Spark, Flink</li>
+                <li>Streaming at scale: Kafka, Kinesis, or Google Pub/Sub</li>
+                <li>Cloud data platforms: Snowflake, BigQuery, Databricks, or Redshift</li>
+                <li>Vector database management: Pinecone, Weaviate, Qdrant, pgvector</li>
+                <li>Feature store development and management</li>
+                <li>Data quality and observability tooling (Great Expectations, Monte Carlo)</li>
+              </ul>
+            </div>
+            <div class="car-role-col">
+              <h4>Nice to Have</h4>
+              <ul>
+                <li>Lakehouse architectures: Delta Lake, Apache Iceberg</li>
+                <li>Real-time feature engineering for ML serving</li>
+                <li>Security and compliance data handling (GDPR, HIPAA)</li>
+              </ul>
+              <h4>What You'll Work On</h4>
+              <ul>
+                <li>Streaming pipelines processing 100M+ daily events for AI systems</li>
+                <li>Vector infrastructure serving enterprise RAG applications</li>
+                <li>Feature stores enabling real-time ML model scoring</li>
+                <li>Data quality frameworks ensuring AI model reliability</li>
+              </ul>
+              <a href="/#contact-form" class="btn btn-orange car-apply-btn">Apply for This Role &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Role 5: AI Strategy Consultant -->
+      <div class="car-role" id="role-5">
+        <div class="car-role-hd" onclick="window.location.href='/careers/AIStrategyConsultant.html'" style="cursor: pointer;">
+          <div class="car-role-left">
+            <span class="car-role-badge">Hiring</span>
+            <div>
+              <h3 class="car-role-title">AI Strategy Consultant</h3>
+              <div class="car-role-tags">
+                <span>Roadmaps</span><span>ROI Models</span><span>C-suite Engagement</span>
+              </div>
+            </div>
+          </div>
+          <div class="car-role-right">
+            <span class="car-role-type">Full-time &middot; Hybrid</span>
+            <button class="car-role-toggle" aria-label="Toggle details">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="car-role-body">
+          <div class="car-role-content">
+            <div class="car-role-col">
+              <h4>About the Role</h4>
+              <p>Help enterprise leaders navigate AI transformation. Build AI roadmaps, quantify ROI, and sit in boardrooms helping C-suites make confident decisions about where and how to deploy AI. You're the bridge between ambition and execution.</p>
+              <h4>Requirements</h4>
+              <ul>
+                <li>5+ years in strategy consulting, AI advisory, or enterprise transformation</li>
+                <li>AI roadmap development: capability assessments and phased delivery plans</li>
+                <li>ROI modelling: business case construction and board-level presentations</li>
+                <li>C-suite engagement: executive communication and workshop facilitation</li>
+                <li>Technology literacy: evaluate AI solutions and challenge vendor claims</li>
+                <li>Change management and organisational design experience</li>
+              </ul>
+            </div>
+            <div class="car-role-col">
+              <h4>Nice to Have</h4>
+              <ul>
+                <li>Big-4 or boutique consulting background</li>
+                <li>Domain expertise: Banking, Healthcare, or Manufacturing</li>
+                <li>Published thought leadership or conference speaking experience</li>
+              </ul>
+              <h4>What You'll Work On</h4>
+              <ul>
+                <li>AI transformation roadmaps for global enterprise clients</li>
+                <li>Board-level AI strategy presentations and investment cases</li>
+                <li>ROI models quantifying AI impact across business functions</li>
+                <li>Organisational AI capability assessments and uplift programmes</li>
+              </ul>
+              <a href="/#contact-form" class="btn btn-orange car-apply-btn">Apply for This Role &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Role 6: FDE Engagement Lead -->
+      <div class="car-role" id="role-6">
+        <div class="car-role-hd" onclick="window.location.href='/careers/FDEEngagementLead.html'" style="cursor: pointer;">
+          <div class="car-role-left">
+            <span class="car-role-badge">Hiring</span>
+            <div>
+              <h3 class="car-role-title">FDE Engagement Lead</h3>
+              <div class="car-role-tags">
+                <span>Senior Engineering</span><span>Client Leadership</span><span>12-Week Sprints</span>
+              </div>
+            </div>
+          </div>
+          <div class="car-role-right">
+            <span class="car-role-type">Full-time &middot; Hybrid</span>
+            <button class="car-role-toggle" aria-label="Toggle details">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="car-role-body">
+          <div class="car-role-content">
+            <div class="car-role-col">
+              <h4>About the Role</h4>
+              <p>The most senior delivery role at Innovsol. Lead FDE teams inside enterprise clients — setting technical direction, managing stakeholders at C-suite level, and ensuring every 12-week sprint delivers measurable, production AI outcomes.</p>
+              <h4>Requirements</h4>
+              <ul>
+                <li>8+ years engineering with senior technical leadership experience</li>
+                <li>Client-facing leadership: stakeholder management and executive reporting</li>
+                <li>FDE delivery expertise: embedded engineering, 12-week sprint methodology</li>
+                <li>Full-stack AI delivery: architecture through code review to production handover</li>
+                <li>Commercial awareness: scope management and resource optimisation</li>
+                <li>People management: mentoring engineers, structured performance feedback</li>
+                <li>Strong communication: daily standups to C-suite QBRs</li>
+              </ul>
+            </div>
+            <div class="car-role-col">
+              <h4>Nice to Have</h4>
+              <ul>
+                <li>Multiple concurrent client-site engagement experience</li>
+                <li>Background in Big Tech, FAANG, or top-tier consulting firms</li>
+                <li>Experience scaling AI teams from 2 to 20+ engineers</li>
+              </ul>
+              <h4>What You'll Work On</h4>
+              <ul>
+                <li>Leading 6&ndash;8 person FDE teams inside Fortune 500 clients</li>
+                <li>Owning technical and commercial outcomes for &pound;500K+ engagements</li>
+                <li>Building long-term client relationships across multiple sprint cycles</li>
+                <li>Mentoring the next generation of Innovsol AI engineers</li>
+              </ul>
+              <a href="/#contact-form" class="btn btn-orange car-apply-btn">Apply for This Role &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /car-roles-list -->
+  </div>
+</section>
+
+<!-- ══ APPLY CTA ══════════════════════════════════════════════════════════ -->
+<section class="car-apply-cta">
+  <div class="container car-apply-cta-inner">
+    <div class="car-apply-cta-txt">
+      <p class="section-label" style="color:var(--orange)">Don&rsquo;t See Your Role?</p>
+      <h2>We&rsquo;re Always Looking<br>for Exceptional Talent.</h2>
+      <p>If you're a senior engineer, strategist, or leader who wants to work at the frontier of enterprise AI — get in touch. We hire on potential as much as experience.</p>
+    </div>
+    <a href="/#contact-form" class="btn btn-orange car-apply-cta-btn">Start the Conversation &rarr;</a>
+  </div>
+</section>
+
+<!-- ══ FOOTER ══════════════════════════════════════════════════════════════ -->
+<footer>
+  <div class="container">
+    <div class="ft-main">
+      <div class="ft-left">
+        <a href="/" class="ft-logo-link"><img src="/images/white-text-logo.png" alt="Innovsol" class="ft-logo-img"/></a>
+        <p class="ft-tagline">Enterprise AI. Deployed,<br>Not Just Discussed.</p>
+      </div>
+      <nav class="ft-nav">
+        <div class="ft-col">
+          <span class="ft-col-head">Company</span>
+          <a href="/#why">About Us</a>
+          <a href="/#fde">FDE Team</a>
+          <a href="/#careers">Careers</a>
+          <a href="/#contact-form">Contact</a>
+        </div>
+        <div class="ft-col">
+          <span class="ft-col-head">Services</span>
+          <a href="/#services">AI Strategy</a>
+          <a href="/#services">AI Agents</a>
+          <a href="/#services">GenAI Solutions</a>
+          <a href="/#services">FDE Engineering</a>
+        </div>
+        <div class="ft-col">
+          <span class="ft-col-head">Industries</span>
+          <a href="/#industries">Banking</a>
+          <a href="/#industries">Healthcare</a>
+          <a href="/#industries">Manufacturing</a>
+          <a href="/#industries">GCCs</a>
+        </div>
+        <div class="ft-col">
+          <span class="ft-col-head">Resources</span>
+          <a href="/#insights">Blog</a>
+          <a href="/#casestudies">Case Studies</a>
+          <a href="/#contact-form">AI Guide</a>
+          <a href="/#contact-form">Webinars</a>
+        </div>
+      </nav>
+      <div class="ft-right">
+        <a class="ft-email" href="mailto:hello@innovsol.ai">hello@innovsol.ai</a>
+        <a href="tel:+919582799988" class="ft-phone">+91 95827 99988</a>
+        <a href="/#contact-form" class="btn btn-orange ft-cta">Book a Strategy Call &rarr;</a>
+      </div>
+    </div>
+    <div class="ft-bar">
+      <p>&copy; 2026 Innovsol &nbsp;&middot;&nbsp; Innovate . Disrupt . Transform</p>
+      <div class="ft-bar-links">
+        <a href="/#contact-form">Privacy Policy</a>
+        <a href="/#contact-form">Cookie Policy</a>
+        <a href="/#contact-form">Terms of Use</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+

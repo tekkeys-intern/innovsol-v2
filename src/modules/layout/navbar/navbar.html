@@ -1,0 +1,50 @@
+
+
+<!-- ══ NAVBAR ════════════════════════════════════════════════════════════ -->
+<nav id="nav">
+  <div class="container nav-wrap">
+    <a href="#home" class="nav-logo-wrap">
+      <img src="/images/logo.png" alt="Innovsol" class="nav-logo-img" id="nav-logo-main"/>
+      <img src="/images/white-text-logo.png" alt="Innovsol" class="nav-logo-img" id="nav-logo-alt"/>
+    </a>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#industries">Industries</a>
+      <a href="#casestudies">Case Studies</a>
+      <a href="#fde">FDE Team</a>
+      <a href="#insights">Insights</a>
+      <a href="#careers">Careers</a>
+    </div>
+    <div class="nav-right">
+      <a href="/portal/login" class="nav-signin">Sign in</a>
+      <a href="#contact-form" class="btn btn-outline-blue">Contact Us</a>
+      <a href="#contact-form" class="btn btn-orange">Book a Strategy Call</a>
+      <button class="ham" id="ham" onclick="toggleMob()"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<!-- ══ MOBILE DRAWER — outside <nav> so backdrop-filter never clips it ═══ -->
+<div class="mob-nav" id="mobNav">
+  <div class="mob-nav-header">
+    <img src="/images/logo.png" alt="Innovsol" class="mob-nav-logo"/>
+    <button class="mob-close" onclick="toggleMob()" aria-label="Close menu">&#x2715;</button>
+  </div>
+  <div class="mob-nav-links">
+    <a href="#home" onclick="toggleMob()">Home</a>
+    <a href="#services" onclick="toggleMob()">Services</a>
+    <a href="#industries" onclick="toggleMob()">Industries</a>
+    <a href="#casestudies" onclick="toggleMob()">Case Studies</a>
+    <a href="#fde" onclick="toggleMob()">FDE Team</a>
+    <a href="#insights" onclick="toggleMob()">Insights</a>
+    <a href="#careers" onclick="toggleMob()">Careers</a>
+    <a href="#contact-form" onclick="toggleMob()">Contact Us</a>
+    <a href="/portal/login" onclick="toggleMob()">Sign in / Apply</a>
+  </div>
+  <div class="mob-nav-footer">
+    <a href="#contact-form" class="btn btn-orange" onclick="toggleMob()">Book a Strategy Call &rarr;</a>
+  </div>
+</div>
+<div class="mob-overlay" id="mobOverlay"></div>
+
